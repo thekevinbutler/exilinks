@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../../Desktop/mux4SSD.vhd -prj finalproject -o mux4SSD.spl -module mux4SSD -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e mux4SSD.spl C:/Users/Connor/Documents/Phys301/finalproject/mux4SSD.sym 

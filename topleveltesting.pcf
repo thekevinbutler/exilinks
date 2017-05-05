@@ -1,0 +1,28 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu May 04 09:35:24 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "B8" LOCATE = SITE "B8" LEVEL 1;
+COMP "rowI<0>" LOCATE = SITE "B2" LEVEL 1;
+COMP "rowI<1>" LOCATE = SITE "A3" LEVEL 1;
+COMP "rowI<2>" LOCATE = SITE "J3" LEVEL 1;
+COMP "rowI<3>" LOCATE = SITE "B5" LEVEL 1;
+COMP "sseg<0>" LOCATE = SITE "M12" LEVEL 1;
+COMP "sseg<1>" LOCATE = SITE "L13" LEVEL 1;
+COMP "sseg<2>" LOCATE = SITE "P12" LEVEL 1;
+COMP "sseg<3>" LOCATE = SITE "N11" LEVEL 1;
+COMP "sseg<4>" LOCATE = SITE "N14" LEVEL 1;
+COMP "sseg<5>" LOCATE = SITE "H12" LEVEL 1;
+COMP "sseg<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "Col<0>" LOCATE = SITE "C6" LEVEL 1;
+COMP "Col<1>" LOCATE = SITE "B6" LEVEL 1;
+COMP "Col<2>" LOCATE = SITE "C5" LEVEL 1;
+COMP "Col<3>" LOCATE = SITE "B7" LEVEL 1;
+COMP "anO<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "anO<1>" LOCATE = SITE "J12" LEVEL 1;
+COMP "anO<2>" LOCATE = SITE "M13" LEVEL 1;
+COMP "anO<3>" LOCATE = SITE "K14" LEVEL 1;
+NET "B8_BUFGP/IBUFG" BEL "B8_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

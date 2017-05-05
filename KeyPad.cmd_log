@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family spartan3e -refsym KeyPad C:/Users/Connor/Documents/Phys301/finalproject/KeyPad.sch C:/Users/Connor/Documents/Phys301/finalproject/KeyPad.sym 
+sch2sym -intstyle ise -family spartan3e -refsym KeyPad C:/Users/Connor/Documents/Phys301/finalproject/KeyPad.sch C:/Users/Connor/Documents/Phys301/finalproject/KeyPad.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym KeyPad C:/Users/Connor/Documents/Phys301/finalproject/KeyPad.sch C:/Users/Connor/Documents/Phys301/finalproject/KeyPad.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym KeyPad C:/Users/Connor/Documents/Phys301/finalproject/KeyPad.sch C:/Users/Connor/Documents/Phys301/finalproject/KeyPad.sym 

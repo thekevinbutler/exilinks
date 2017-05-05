@@ -1,0 +1,3 @@
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/Connor/Documents/Phys301/finalproject/KeyPad.vhf,-w,C:/Users/Connor/Documents/Phys301/finalproject/KeyPad.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/Connor/Documents/Phys301/finalproject/toplevel.vhf,-w,C:/Users/Connor/Documents/Phys301/finalproject/toplevel.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/Connor/Documents/Phys301/finalproject/toplevel.vhf,-w,C:/Users/Connor/Documents/Phys301/finalproject/toplevel.sch

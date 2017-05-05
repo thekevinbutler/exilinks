@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../../Desktop/col_strobe.vhd -prj finalproject -o col_strobe.spl -module col_strobe -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e col_strobe.spl C:/Users/Connor/Documents/Phys301/finalproject/col_strobe.sym 

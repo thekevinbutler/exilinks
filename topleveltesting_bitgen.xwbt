@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Connor\Documents\Phys301\finalproject\topleveltesting.ncd
+OUTFILE=C:\Users\Connor\Documents\Phys301\finalproject\topleveltesting.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=C:\Users\Connor\Documents\Phys301\finalproject
+LICENSE=WebPack
+USER_INFO=174218040_0_0_110

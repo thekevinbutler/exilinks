@@ -1,0 +1,24 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "anO[3]" LOC = K14;
+NET "anO[2]" LOC = M13;
+NET "anO[1]" LOC = J12;
+NET "anO[0]" LOC = F12;
+NET "Col[3]" LOC = B7;
+NET "Col[2]" LOC = C5;
+NET "Col[0]" LOC = C6;
+NET "Col[1]" LOC = B6;
+NET "rowI[3]" LOC = B5;
+NET "rowI[2]" LOC = J3;
+NET "rowI[1]" LOC = A3;
+NET "rowI[0]" LOC = B2;
+NET "sseg[7]" LOC = N13;
+NET "sseg[6]" LOC = L14;
+NET "sseg[5]" LOC = H12;
+NET "sseg[4]" LOC = N14;
+NET "sseg[3]" LOC = N11;
+NET "sseg[2]" LOC = P12;
+NET "sseg[1]" LOC = L13;
+NET "sseg[0]" LOC = M12;
+NET "B8" LOC = B8;
