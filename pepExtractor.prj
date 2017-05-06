@@ -1,2 +1,1 @@
-work	"../../../Desktop/CRenc4bin.vhd"
-work	"../../../Desktop/keyCR4b.vhd"
+work	"Modules/sRAM32x8_ex_pgm_instr.vhd"

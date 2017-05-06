@@ -26,6 +26,12 @@
         <signal name="cl1" />
         <signal name="Col(3:0)" />
         <signal name="rowI(3:0)" />
+        <signal name="XLXN_27" />
+        <signal name="XLXN_32" />
+        <signal name="manuStepBtn" />
+        <signal name="manualSwitch" />
+        <signal name="hertzSwitch" />
+        <signal name="clk1m" />
         <port polarity="Output" name="anO(0)" />
         <port polarity="Output" name="anO(1)" />
         <port polarity="Output" name="anO(2)" />
@@ -34,6 +40,9 @@
         <port polarity="Input" name="B8" />
         <port polarity="BiDirectional" name="Col(3:0)" />
         <port polarity="Input" name="rowI(3:0)" />
+        <port polarity="Input" name="manuStepBtn" />
+        <port polarity="Input" name="manualSwitch" />
+        <port polarity="Input" name="hertzSwitch" />
         <blockdef name="DCM_50M">
             <timestamp>2017-4-25T17:45:18</timestamp>
             <rect width="256" x="64" y="-256" height="256" />
@@ -141,6 +150,35 @@
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
+        <blockdef name="ProgramCounter">
+            <timestamp>2017-5-5T23:9:5</timestamp>
+            <rect width="256" x="64" y="-192" height="192" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
+        <blockdef name="m4_1e">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="96" y1="-416" y2="-416" x1="0" />
+            <line x2="96" y1="-352" y2="-352" x1="0" />
+            <line x2="96" y1="-288" y2="-288" x1="0" />
+            <line x2="96" y1="-224" y2="-224" x1="0" />
+            <line x2="96" y1="-32" y2="-32" x1="0" />
+            <line x2="256" y1="-320" y2="-320" x1="320" />
+            <line x2="96" y1="-160" y2="-160" x1="0" />
+            <line x2="96" y1="-96" y2="-96" x1="0" />
+            <line x2="96" y1="-96" y2="-96" x1="176" />
+            <line x2="176" y1="-208" y2="-96" x1="176" />
+            <line x2="96" y1="-32" y2="-32" x1="224" />
+            <line x2="224" y1="-216" y2="-32" x1="224" />
+            <line x2="96" y1="-224" y2="-192" x1="256" />
+            <line x2="256" y1="-416" y2="-224" x1="256" />
+            <line x2="256" y1="-448" y2="-416" x1="96" />
+            <line x2="96" y1="-192" y2="-448" x1="96" />
+            <line x2="96" y1="-160" y2="-160" x1="128" />
+            <line x2="128" y1="-200" y2="-160" x1="128" />
+        </blockdef>
         <block symbolname="bin2BCD3en" name="XLXI_51">
             <blockpin signalname="cl1k" name="CLK" />
             <blockpin signalname="pUp" name="En" />
@@ -186,7 +224,7 @@
         <block symbolname="DCM_50M" name="XLXI_50">
             <blockpin signalname="B8" name="CLK" />
             <blockpin name="RST" />
-            <blockpin name="CLK1M" />
+            <blockpin signalname="clk1m" name="CLK1M" />
             <blockpin name="CLK10k" />
             <blockpin signalname="cl1k" name="CLK1k" />
             <blockpin signalname="cl1" name="CLK1" />
@@ -196,6 +234,22 @@
             <blockpin signalname="cl1k" name="ClkIn" />
             <blockpin signalname="Col(3:0)" name="Col(3:0)" />
             <blockpin signalname="Dout(7:0)" name="Dout(7:0)" />
+        </block>
+        <block symbolname="ProgramCounter" name="XLXI_112">
+            <blockpin signalname="XLXN_27" name="SysClkIn" />
+            <blockpin name="Q0" />
+            <blockpin name="Q1" />
+            <blockpin name="counterTick" />
+        </block>
+        <block symbolname="m4_1e" name="XLXI_114">
+            <blockpin signalname="cl1" name="D0" />
+            <blockpin signalname="clk1m" name="D1" />
+            <blockpin signalname="manuStepBtn" name="D2" />
+            <blockpin signalname="manuStepBtn" name="D3" />
+            <blockpin signalname="pUp" name="E" />
+            <blockpin signalname="hertzSwitch" name="S0" />
+            <blockpin signalname="manualSwitch" name="S1" />
+            <blockpin signalname="XLXN_27" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -351,5 +405,51 @@
         </instance>
         <instance x="2384" y="4240" name="XLXI_68" orien="R0">
         </instance>
+        <instance x="1120" y="2896" name="XLXI_112" orien="R0">
+        </instance>
+        <branch name="XLXN_27">
+            <wire x2="1104" y1="2736" y2="2736" x1="1088" />
+            <wire x2="1120" y1="2736" y2="2736" x1="1104" />
+        </branch>
+        <text style="fontsize:20;fontname:Arial" x="872" y="2640">1Hz</text>
+        <branch name="pUp">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="736" y="3024" type="branch" />
+            <wire x2="736" y1="3024" y2="3024" x1="720" />
+            <wire x2="768" y1="3024" y2="3024" x1="736" />
+        </branch>
+        <instance x="768" y="3056" name="XLXI_114" orien="R0" />
+        <text style="fontsize:20;fontname:Arial" x="868" y="2700">1M Hz</text>
+        <text style="fontsize:20;fontname:Arial" x="872" y="2796">manual</text>
+        <branch name="manuStepBtn">
+            <wire x2="720" y1="2800" y2="2800" x1="688" />
+            <wire x2="720" y1="2800" y2="2832" x1="720" />
+            <wire x2="768" y1="2832" y2="2832" x1="720" />
+            <wire x2="768" y1="2768" y2="2768" x1="720" />
+            <wire x2="720" y1="2768" y2="2800" x1="720" />
+        </branch>
+        <iomarker fontsize="28" x="688" y="2800" name="manuStepBtn" orien="R180" />
+        <branch name="manualSwitch">
+            <wire x2="768" y1="2960" y2="2960" x1="688" />
+        </branch>
+        <branch name="hertzSwitch">
+            <wire x2="768" y1="2896" y2="2896" x1="688" />
+        </branch>
+        <iomarker fontsize="28" x="688" y="2896" name="hertzSwitch" orien="R180" />
+        <iomarker fontsize="28" x="688" y="2960" name="manualSwitch" orien="R180" />
+        <branch name="cl1">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="752" y="2640" type="branch" />
+            <wire x2="752" y1="2640" y2="2640" x1="736" />
+            <wire x2="768" y1="2640" y2="2640" x1="752" />
+        </branch>
+        <branch name="clk1m">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="752" y="2704" type="branch" />
+            <wire x2="752" y1="2704" y2="2704" x1="720" />
+            <wire x2="768" y1="2704" y2="2704" x1="752" />
+        </branch>
+        <branch name="clk1m">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="720" y="3120" type="branch" />
+            <wire x2="720" y1="3120" y2="3120" x1="688" />
+            <wire x2="752" y1="3120" y2="3120" x1="720" />
+        </branch>
     </sheet>
 </drawing>
