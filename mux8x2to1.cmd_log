@@ -1,0 +1,7 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym mux8x2to1 D:/Users/Butle/Documents/exilinks/mux8x2to1.sch D:/Users/Butle/Documents/exilinks/mux8x2to1.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym mux8x2to1 D:/Users/Butle/Documents/exilinks/mux8x2to1.sch D:/Users/Butle/Documents/exilinks/mux8x2to1.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym mux8x2to1 D:/Users/Butle/Documents/exilinks/mux8x2to1.sch D:/Users/Butle/Documents/exilinks/mux8x2to1.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl mux8x2to1_drc.vhf -w D:/Users/Butle/Documents/exilinks/mux8x2to1.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym mux8x2to1 D:/Users/Butle/Documents/exilinks/mux8x2to1.sch D:/Users/Butle/Documents/exilinks/mux8x2to1.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym mux8x2to1 D:/Users/Butle/Documents/exilinks/mux8x2to1.sch D:/Users/Butle/Documents/exilinks/mux8x2to1.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym mux8x2to1 D:/Users/Butle/Documents/exilinks/mux8x2to1.sch D:/Users/Butle/Documents/exilinks/mux8x2to1.sym 

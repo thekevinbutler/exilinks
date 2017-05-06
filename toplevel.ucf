@@ -1,5 +1,4 @@
 
-# PlanAhead Generated physical constraints 
 
 NET "anO[3]" LOC = K14;
 NET "anO[2]" LOC = M13;
@@ -22,3 +21,17 @@ NET "sseg[2]" LOC = P12;
 NET "sseg[1]" LOC = L13;
 NET "sseg[0]" LOC = M12;
 NET "B8" LOC = B8;
+
+
+NET "hertzSwitch" LOC = N3;
+NET "manualSwitch" LOC = E2;
+
+
+NET "manuStepBtn" LOC = G12;
+
+
+
+# PlanAhead Generated physical constraints 
+
+NET "q0" LOC = P4;
+NET "q1" LOC = N4;

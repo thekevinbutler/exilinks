@@ -19,7 +19,6 @@
         <signal name="XLXN_13(3:0)" />
         <signal name="XLXN_14(3:0)" />
         <signal name="XLXN_15" />
-        <signal name="XLXN_16" />
         <signal name="XLXN_17(0:1)" />
         <signal name="XLXN_18" />
         <signal name="XLXN_19(3:0)" />

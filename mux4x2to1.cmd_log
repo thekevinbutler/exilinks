@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym mux4x2to1 D:/Users/Butle/Documents/exilinks/mux4x2to1.sch D:/Users/Butle/Documents/exilinks/mux4x2to1.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym mux4x2to1 D:/Users/Butle/Documents/exilinks/mux4x2to1.sch D:/Users/Butle/Documents/exilinks/mux4x2to1.sym 

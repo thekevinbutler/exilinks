@@ -12,3 +12,88 @@ WARNING:NetListWriters:306 - Signal bus XLXI_4/Mcompar_cnt1k_cmp_gt0000_lut<11 :
 Writing EDIF netlist file toplevel.edif ...
 ngc2edif: Total memory usage is 96208 kilobytes
 
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design toplevel.ngc ...
+WARNING:NetListWriters:298 - No output is written to toplevel.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus XLXI_50/Mcompar_cnt1_cmp_gt0000_lut<11 :
+   0> on block toplevel is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus XLXI_50/Mcompar_cnt1k_cmp_gt0000_lut<11
+   : 0> on block toplevel is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file toplevel.edif ...
+ngc2edif: Total memory usage is 77820 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design toplevel.ngc ...
+WARNING:NetListWriters:298 - No output is written to toplevel.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus XLXI_50/Mcompar_cnt1_cmp_gt0000_lut<11 :
+   0> on block toplevel is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus XLXI_50/Mcompar_cnt1k_cmp_gt0000_lut<11
+   : 0> on block toplevel is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file toplevel.edif ...
+ngc2edif: Total memory usage is 77172 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design toplevel.ngc ...
+WARNING:NetListWriters:298 - No output is written to toplevel.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus XLXI_50/Mcompar_cnt1_cmp_gt0000_lut<11 :
+   0> on block toplevel is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus XLXI_50/Mcompar_cnt1k_cmp_gt0000_lut<11
+   : 0> on block toplevel is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file toplevel.edif ...
+ngc2edif: Total memory usage is 77236 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design toplevel.ngc ...
+WARNING:NetListWriters:298 - No output is written to toplevel.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus XLXI_50/Mcompar_cnt1_cmp_gt0000_lut<11 :
+   0> on block toplevel is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus XLXI_50/Mcompar_cnt1k_cmp_gt0000_lut<11
+   : 0> on block toplevel is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file toplevel.edif ...
+ngc2edif: Total memory usage is 76724 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design toplevel.ngc ...
+WARNING:NetListWriters:298 - No output is written to toplevel.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus XLXI_50/Mcompar_cnt1_cmp_gt0000_lut<11 :
+   0> on block toplevel is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus XLXI_50/Mcompar_cnt1k_cmp_gt0000_lut<11
+   : 0> on block toplevel is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file toplevel.edif ...
+ngc2edif: Total memory usage is 76916 kilobytes
+

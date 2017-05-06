@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym InstructionMem D:/Users/Butle/Documents/exilinks/InstructionMem.sch D:/Users/Butle/Documents/exilinks/InstructionMem.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym InstructionMem D:/Users/Butle/Documents/exilinks/InstructionMem.sch D:/Users/Butle/Documents/exilinks/InstructionMem.sym 

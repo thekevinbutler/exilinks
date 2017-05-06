@@ -20,19 +20,13 @@
         <signal name="FDKeyI" />
         <signal name="FDKey" />
         <signal name="keyL" />
-        <signal name="Din(0)">
-        </signal>
-        <signal name="Din(1)">
-        </signal>
-        <signal name="Din(2)">
-        </signal>
-        <signal name="Din(3)">
-        </signal>
+        <signal name="Din(0)" />
+        <signal name="Din(1)" />
+        <signal name="Din(2)" />
+        <signal name="Din(3)" />
         <signal name="Din(3:0)" />
         <signal name="rowI(3:0)" />
-        <signal name="XLXN_38(3:0)" />
         <signal name="Col(3:0)" />
-        <signal name="XLXN_42(3:0)" />
         <signal name="ClkIn" />
         <signal name="Dout(7:0)" />
         <signal name="Dout(7)" />
@@ -400,10 +394,9 @@
         <bustap x2="384" y1="1424" y2="1328" x1="384" />
         <bustap x2="512" y1="1424" y2="1328" x1="512" />
         <branch name="Dout(1)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="512" y="1320" type="branch" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="512" y="1320" type="branch" />
             <wire x2="512" y1="1232" y2="1312" x1="512" />
-            <wire x2="512" y1="1312" y2="1320" x1="512" />
-            <wire x2="512" y1="1320" y2="1328" x1="512" />
+            <wire x2="512" y1="1312" y2="1328" x1="512" />
         </branch>
         <bustap x2="768" y1="1424" y2="1328" x1="768" />
         <branch name="Dout(2)">

@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : KeyPad.vhf
--- /___/   /\     Timestamp : 05/04/2017 11:31:01
+-- /___/   /\     Timestamp : 05/06/2017 03:49:49
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Connor/Documents/Phys301/finalproject/KeyPad.vhf -w C:/Users/Connor/Documents/Phys301/finalproject/KeyPad.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl D:/Users/Butle/Documents/exilinks/KeyPad.vhf -w D:/Users/Butle/Documents/exilinks/KeyPad.sch
 --Design Name: KeyPad
 --Device: spartan3e
 --Purpose:
@@ -153,9 +153,9 @@ architecture BEHAVIORAL of KeyPad is
    end component;
    attribute BOX_TYPE of PULLDOWN : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_69 : label is "XLXI_69_1";
-   attribute HU_SET of XLXI_70 : label is "XLXI_70_2";
-   attribute HU_SET of XLXI_110 : label is "XLXI_110_0";
+   attribute HU_SET of XLXI_69 : label is "XLXI_69_50";
+   attribute HU_SET of XLXI_70 : label is "XLXI_70_51";
+   attribute HU_SET of XLXI_110 : label is "XLXI_110_49";
 begin
    rowI_DUMMY(3 downto 0) <= rowI(3 downto 0);
    XLXI_67 : keyCR4b

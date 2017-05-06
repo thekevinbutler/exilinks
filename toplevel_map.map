@@ -9,7 +9,7 @@ Target Device  : xc3s100e
 Target Package : cp132
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Thu May 04 11:31:18 2017
+Mapped Date    : Sat May 06 04:16:26 2017
 
 Mapping design into LUTs...
 Running directed packing...
@@ -17,38 +17,461 @@ WARNING:Pack:249 - The following adjacent carry multiplexers occupy different
    slice components.  The resulting carry chain will have suboptimal timing.
    	XLXI_50/Mcompar_cnt1M_cmp_ge0000_cy<10>
    	XLXI_50/Mcount_cnt1M_cy<0>
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_11.  Tried
+   to combine two collections of symbols from different layers.  The alignment
+   requirements of the two layers conflict.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_20.  Tried
+   to combine two collections of symbols from different layers.  The alignment
+   requirements of the two layers conflict.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_14.  Tried
+   to combine two collections of symbols from different layers.  The alignment
+   requirements of the two layers conflict.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_17.  Tried
+   to combine two collections of symbols from different layers.  The alignment
+   requirements of the two layers conflict.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5.  Tried to
+   combine two collections of symbols from different layers.  The alignment
+   requirements of the two layers conflict.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5.  Tried to
+   combine two collections of symbols from different layers.  The alignment
+   requirements of the two layers conflict.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_8_f5.  Tried to
+   combine two collections of symbols from different layers.  The alignment
+   requirements of the two layers conflict.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5_0.  Tried to
+   combine two collections of symbols from different layers.  The alignment
+   requirements of the two layers conflict.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5_1.  Tried to
+   combine two collections of symbols from different layers.  The alignment
+   requirements of the two layers conflict.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5_2.  Tried to
+   combine two collections of symbols from different positions within the same
+   layer.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5_3.  Tried to
+   combine two collections of symbols from different layers.  The alignment
+   requirements of the two layers conflict.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5_4.  Tried to
+   combine two collections of symbols from different layers.  The alignment
+   requirements of the two layers conflict.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5_5.  Tried to
+   combine two collections of symbols from different layers.  The alignment
+   requirements of the two layers conflict.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5_6.  Tried to
+   combine two collections of symbols from different layers.  The alignment
+   requirements of the two layers conflict.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5_0.  Unable
+   to resolve the conflicts between two or more collections of symbols which
+   have restrictive placement or routing requirements.  The original symbols
+   are:
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5_0" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f51)
+   	LUT symbol "XLXI_124/XLXI_2/XLXI_1/I_36_8" (Output Signal =
+   XLXI_124/muxOut<0>)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f63)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f511)
+   	LUT symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_101_INV_0" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10)
+   Failure 1:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f7" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f7)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF7" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f73)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/MUXF5.I0"
+   (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/F5.I0)
+   There is more than one MUXF6.
+   Failure 2:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_2_f8" (Output Signal =
+   XLXI_124/XLXI_1/Q_mux0000<0>)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5)
+   	LUT symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_741_INV_0" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_74)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF5.I0" (Output Signal
+   = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/F5.I0)
+   There is more than one F5MUX.
+   Failure 3:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/MUXF6" (Output
+   Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/F6.I1)
+   There is more than one MUXF6.
+   Failure 4:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5_0" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f51)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f63)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f511)
+   	LUT symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_101_INV_0" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10)
+   	LUT symbol "XLXI_124/XLXI_2/XLXI_1/I_36_8" (Output Signal =
+   XLXI_124/muxOut<0>)
+   There is more than one MUXF6.
+     The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5_6.  Unable
+   to resolve the conflicts between two or more collections of symbols which
+   have restrictive placement or routing requirements.  The original symbols
+   are:
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5_6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f57)
+   	LUT symbol "XLXI_124/XLXI_2/XLXI_1/I_36_8" (Output Signal =
+   XLXI_124/muxOut<0>)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6_3" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f64)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f63)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f511)
+   	LUT symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_101_INV_0" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10)
+   Failure 1:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f7_1" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f72)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_1/MUXF5.I0" (Output Signal
+   = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_1/F5.I0)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF7" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f73)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/MUXF5.I0"
+   (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/F5.I0)
+   There is more than one MUXF6.
+   Failure 2:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_2_f8_1" (Output Signal =
+   XLXI_124/XLXI_1/Q_mux0000<2>)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_5" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f56)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF5.I0" (Output Signal
+   = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/F5.I0)
+   There is more than one F5MUX.
+   Failure 3:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_1/MUXF6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f62)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5_1" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f52)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/MUXF6" (Output
+   Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/F6.I1)
+   There is more than one MUXF6.
+   Failure 4:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6_3" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f64)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5_6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f57)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f63)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f511)
+   	LUT symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_101_INV_0" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10)
+   	LUT symbol "XLXI_124/XLXI_2/XLXI_1/I_36_8" (Output Signal =
+   XLXI_124/muxOut<0>)
+   There is more than one MUXF6.
+     The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5_7.  Tried to
+   combine two collections of symbols from different layers.  The alignment
+   requirements of the two layers conflict.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_0.  Tried to
+   combine two collections of symbols from different layers.  The alignment
+   requirements of the two layers conflict.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_1.  Unable
+   to resolve the conflicts between two or more collections of symbols which
+   have restrictive placement or routing requirements.  The original symbols
+   are:
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_1" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f52)
+   	LUT symbol "XLXI_124/XLXI_2/XLXI_1/I_36_8" (Output Signal =
+   XLXI_124/muxOut<0>)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f63)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f511)
+   	LUT symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_101_INV_0" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10)
+   Failure 1:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_0" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f51)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF7" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f73)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/MUXF5.I0"
+   (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/F5.I0)
+   There is more than one MUXF6.
+   Failure 2:  Unable to combine the following symbols into a single slice.
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_8_f5" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_8_f5)
+   	LUT symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_8_f51_INV_0" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_8_f53)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF5.I0" (Output Signal
+   = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/F5.I0)
+   There is more than one F5MUX.
+   Failure 3:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6_0" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f61)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5_1" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f52)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/MUXF6" (Output
+   Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/F6.I1)
+   There is more than one MUXF6.
+   Failure 4:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_1" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f52)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f63)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f511)
+   	LUT symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_101_INV_0" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10)
+   	LUT symbol "XLXI_124/XLXI_2/XLXI_1/I_36_8" (Output Signal =
+   XLXI_124/muxOut<0>)
+   There is more than one MUXF6.
+   Failure 5:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f7" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f7)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f7_2" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f73)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_2/MUXF5.I0" (Output Signal
+   = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_2/F5.I0)
+   There is more than one MUXF6.
+   Failure 6:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_2_f8" (Output Signal =
+   XLXI_124/XLXI_1/Q_mux0000<0>)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5)
+   	LUT symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_741_INV_0" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_74)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_2_f8_2" (Output Signal =
+   XLXI_124/XLXI_1/Q_mux0000<3>)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_8" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f59)
+   There is more than one MUXF6.
+   Failure 7:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_2/MUXF6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f63)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5_2" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f53)
+   There is more than one MUXF6.
+   Failure 8:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5_0" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f51)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6_5/MUXF6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f66)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6_5/MUXF5.I1" (Output Signal
+   = XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6_5/F5.I1)
+   There is more than one MUXF6  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_2.  Tried to
+   combine two collections of symbols from different layers.  The alignment
+   requirements of the two layers conflict.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_6.  Tried to
+   combine two collections of symbols from different layers.  The alignment
+   requirements of the two layers conflict.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_7.  Unable
+   to resolve the conflicts between two or more collections of symbols which
+   have restrictive placement or routing requirements.  The original symbols
+   are:
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_7" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f58)
+   	LUT symbol "XLXI_124/XLXI_2/XLXI_1/I_36_8" (Output Signal =
+   XLXI_124/muxOut<0>)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_1" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f62)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f63)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f511)
+   	LUT symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_101_INV_0" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10)
+   Failure 1:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_1" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f72)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f57)
+   	LUT symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_61_INV_0" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_6)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF7" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f73)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/MUXF5.I0"
+   (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/F5.I0)
+   There is more than one MUXF6.
+   Failure 2:  Unable to combine the following symbols into a single slice.
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_8_f5_1" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_8_f52)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF5.I0" (Output Signal
+   = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/F5.I0)
+   There is more than one F5MUX.
+   Failure 3:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6_4" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f65)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5_7" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f58)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/MUXF6" (Output
+   Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/F6.I1)
+   There is more than one MUXF6.
+   Failure 4:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_1" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f62)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_7" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f58)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f63)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f511)
+   	LUT symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_101_INV_0" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10)
+   	LUT symbol "XLXI_124/XLXI_2/XLXI_1/I_36_8" (Output Signal =
+   XLXI_124/muxOut<0>)
+   There is more than one MUXF6.
+   Failure 5:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f7_1" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f72)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_1/MUXF5.I0" (Output Signal
+   = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_1/F5.I0)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f7_2" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f73)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_2/MUXF5.I0" (Output Signal
+   = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_2/F5.I0)
+   There is more than one MUXF6.
+   Failure 6:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_2_f8_1" (Output Signal =
+   XLXI_124/XLXI_1/Q_mux0000<2>)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_5" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f56)
+   	LUT symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_51_INV_0" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_5)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_2_f8_2" (Output Signal =
+   XLXI_124/XLXI_1/Q_mux0000<3>)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_8" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f59)
+   There is more than one MUXF6.
+   Failure 7:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_1/MUXF6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f62)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5_1" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f52)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_2/MUXF6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f63)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5_2" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f53)
+   There is more than one MUXF6.
+   Failure 8:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6_3" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f64)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5_6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f57)
+   	MUXF6 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6_5/MUXF6" (Output Signal =
+   XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f66)
+   	MUXF5 symbol "XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6_5/MUXF5.I1" (Output Signal
+   = XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6_5/F5.I1)
+   There is more than one MUXF6  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_8.  Tried to
+   combine two collections of symbols from different positions within the same
+   layer.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_8_f5_0.  Tried to
+   combine two collections of symbols from different layers.  The alignment
+   requirements of the two layers conflict.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator XLXI_124/XLXI_2/XLXI_1/I_36_8 failed
+   to merge with F5 multiplexer XLXI_124/XLXI_1/Mmux_Q_mux0000_8_f5_1.  Tried to
+   combine two collections of symbols from different layers.  The alignment
+   requirements of the two layers conflict.  The design will exhibit suboptimal
+   timing.
 Running delay-based LUT packing...
 Running related packing...
 Updating timing models...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXN_27 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 
 Design Summary
 --------------
 
 Design Summary:
 Number of errors:      0
-Number of warnings:    1
+Number of warnings:   27
 Logic Utilization:
-  Number of Slice Flip Flops:           104 out of   1,920    5%
-  Number of 4 input LUTs:               157 out of   1,920    8%
+  Number of Slice Flip Flops:           134 out of   1,920    6%
+  Number of 4 input LUTs:               249 out of   1,920   12%
 Logic Distribution:
-  Number of occupied Slices:            129 out of     960   13%
-    Number of Slices containing only related logic:     129 out of     129 100%
-    Number of Slices containing unrelated logic:          0 out of     129   0%
+  Number of occupied Slices:            222 out of     960   23%
+    Number of Slices containing only related logic:     222 out of     222 100%
+    Number of Slices containing unrelated logic:          0 out of     222   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         222 out of   1,920   11%
-    Number used as logic:               157
-    Number used as a route-thru:         65
+  Total Number of 4 input LUTs:         377 out of   1,920   19%
+    Number used as logic:               249
+    Number used as a route-thru:        128
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 20 out of      83   24%
+  Number of bonded IOBs:                 26 out of      83   31%
   Number of BUFGMUXs:                     3 out of      24   12%
 
-Average Fanout of Non-Clock Nets:                2.22
+  Number of RPM macros:            6
+Average Fanout of Non-Clock Nets:                2.00
 
-Peak Memory Usage:  255 MB
-Total REAL time to MAP completion:  1 secs 
+Peak Memory Usage:  292 MB
+Total REAL time to MAP completion:  6 secs 
 Total CPU time to MAP completion:   1 secs 
 
 NOTES:

@@ -2,7 +2,7 @@
 Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
 -n 3 -fastpaths -xml toplevel.twx toplevel.ncd -o toplevel.twr toplevel.pcf
 -ucf toplevel.ucf
 
@@ -40,23 +40,90 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
+Clock hertzSwitch to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+q0          |   10.087(R)|XLXN_27           |   0.000|
+------------+------------+------------------+--------+
+
+Clock manuStepBtn to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+q0          |   10.689(R)|XLXN_27           |   0.000|
+------------+------------+------------------+--------+
+
+Clock manualSwitch to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+q0          |   10.504(R)|XLXN_27           |   0.000|
+------------+------------+------------------+--------+
+
 Clock to Setup on destination clock B8
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-B8             |   11.827|         |         |         |
+B8             |   11.853|         |         |         |
 ---------------+---------+---------+---------+---------+
 
+Clock to Setup on destination clock hertzSwitch
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+hertzSwitch    |    1.558|         |         |         |
+manuStepBtn    |    1.558|         |         |         |
+manualSwitch   |    1.558|         |         |         |
+---------------+---------+---------+---------+---------+
 
-Analysis completed Thu May 04 11:31:30 2017 
+Clock to Setup on destination clock manuStepBtn
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+hertzSwitch    |    1.558|         |         |         |
+manuStepBtn    |    1.558|         |         |         |
+manualSwitch   |    1.558|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock manualSwitch
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+hertzSwitch    |    1.558|         |         |         |
+manuStepBtn    |    1.558|         |         |         |
+manualSwitch   |    1.558|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+manualSwitch   |sseg<0>        |   15.801|
+manualSwitch   |sseg<1>        |   16.055|
+manualSwitch   |sseg<2>        |   16.314|
+manualSwitch   |sseg<3>        |   16.068|
+manualSwitch   |sseg<4>        |   16.385|
+manualSwitch   |sseg<5>        |   16.402|
+manualSwitch   |sseg<6>        |   15.798|
+---------------+---------------+---------+
+
+
+Analysis completed Sat May 06 04:16:51 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 175 MB
+Peak Memory Usage: 172 MB
 
 
 
