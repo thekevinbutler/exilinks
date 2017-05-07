@@ -1,1 +1,3 @@
 MODULE ProgramCounter
+	SUBMODULE mux8x2to1
+		INSTANCE XLXI_136

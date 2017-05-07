@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym RegisterGeneric D:/Users/Butle/Documents/exilinks/RegisterGeneric.sch D:/Users/Butle/Documents/exilinks/RegisterGeneric.sym 

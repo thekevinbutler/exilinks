@@ -7,3 +7,12 @@ sch2sym -intstyle ise -family spartan3e -w -refsym ProgramCounter D:/Users/Butle
 sch2sym -intstyle ise -family spartan3e -w -refsym ProgramCounter D:/Users/Butle/Documents/exilinks/ProgramCounter.sch D:/Users/Butle/Documents/exilinks/ProgramCounter.sym 
 sch2sym -intstyle ise -family spartan3e -w -refsym ProgramCounter D:/Users/Butle/Documents/exilinks/ProgramCounter.sch D:/Users/Butle/Documents/exilinks/ProgramCounter.sym 
 sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl ProgramCounter_drc.vhf -w D:/Users/Butle/Documents/exilinks/ProgramCounter.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym ProgramCounter D:/Users/Butle/Documents/exilinks/ProgramCounter.sch D:/Users/Butle/Documents/exilinks/ProgramCounter.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ProgramCounter D:/Users/Butle/Documents/exilinks/ProgramCounter.sch D:/Users/Butle/Documents/exilinks/ProgramCounter.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ProgramCounter D:/Users/Butle/Documents/exilinks/ProgramCounter.sch D:/Users/Butle/Documents/exilinks/ProgramCounter.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ProgramCounter D:/Users/Butle/Documents/exilinks/ProgramCounter.sch D:/Users/Butle/Documents/exilinks/ProgramCounter.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ProgramCounter D:/Users/Butle/Documents/exilinks/ProgramCounter.sch D:/Users/Butle/Documents/exilinks/ProgramCounter.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ProgramCounter D:/Users/Butle/Documents/exilinks/ProgramCounter.sch D:/Users/Butle/Documents/exilinks/ProgramCounter.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ProgramCounter D:/Users/Butle/Documents/exilinks/ProgramCounter.sch D:/Users/Butle/Documents/exilinks/ProgramCounter.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ProgramCounter D:/Users/Butle/Documents/exilinks/ProgramCounter.sch D:/Users/Butle/Documents/exilinks/ProgramCounter.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ProgramCounter D:/Users/Butle/Documents/exilinks/ProgramCounter.sch D:/Users/Butle/Documents/exilinks/ProgramCounter.sym 

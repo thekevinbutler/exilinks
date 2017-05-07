@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym DataMem D:/Users/Butle/Documents/exilinks/DataMem.sch D:/Users/Butle/Documents/exilinks/DataMem.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym DataMem D:/Users/Butle/Documents/exilinks/DataMem.sch D:/Users/Butle/Documents/exilinks/DataMem.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym DataMem D:/Users/Butle/Documents/exilinks/DataMem.sch D:/Users/Butle/Documents/exilinks/DataMem.sym 

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym InstructionDecode D:/Users/Butle/Documents/exilinks/InstructionDecode.sch D:/Users/Butle/Documents/exilinks/InstructionDecode.sym 

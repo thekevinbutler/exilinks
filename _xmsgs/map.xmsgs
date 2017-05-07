@@ -5,13 +5,13 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">XLXI_115/CEO</arg> has no load.
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">XLXI_123/XLXI_115/CEO</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">3</arg> more times for the following (max. 5 shown):
-<arg fmt="%s" index="3">XLXI_124/XLXI_2/XLXI_8/O,
-XLXI_124/XLXI_2/XLXI_7/O,
-XLXI_124/XLXI_2/XLXI_6/O</arg>
+<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">3</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">XLXI_123/XLXI_136/XLXI_8/O,
+XLXI_123/XLXI_136/XLXI_7/O,
+XLXI_123/XLXI_136/XLXI_6/O</arg>
 To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
 </msg>
 
@@ -26,252 +26,16 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 	<arg fmt="%s" index="2">XLXI_50/Mcount_cnt1M_cy&lt;0&gt;</arg>
 </msg>
 
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_11</arg>.  <arg fmt="%z" index="3">Tried to combine two collections of symbols from different layers.  The alignment requirements of the two layers conflict.</arg>  The design will exhibit suboptimal timing.
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">XLXN_112</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_20</arg>.  <arg fmt="%z" index="3">Tried to combine two collections of symbols from different layers.  The alignment requirements of the two layers conflict.</arg>  The design will exhibit suboptimal timing.
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">XLXI_123/XLXN_39</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_14</arg>.  <arg fmt="%z" index="3">Tried to combine two collections of symbols from different layers.  The alignment requirements of the two layers conflict.</arg>  The design will exhibit suboptimal timing.
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">XLXN_113</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_17</arg>.  <arg fmt="%z" index="3">Tried to combine two collections of symbols from different layers.  The alignment requirements of the two layers conflict.</arg>  The design will exhibit suboptimal timing.
-</msg>
-
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5</arg>.  <arg fmt="%z" index="3">Tried to combine two collections of symbols from different layers.  The alignment requirements of the two layers conflict.</arg>  The design will exhibit suboptimal timing.
-</msg>
-
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5</arg>.  <arg fmt="%z" index="3">Tried to combine two collections of symbols from different layers.  The alignment requirements of the two layers conflict.</arg>  The design will exhibit suboptimal timing.
-</msg>
-
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_8_f5</arg>.  <arg fmt="%z" index="3">Tried to combine two collections of symbols from different layers.  The alignment requirements of the two layers conflict.</arg>  The design will exhibit suboptimal timing.
-</msg>
-
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5_0</arg>.  <arg fmt="%z" index="3">Tried to combine two collections of symbols from different layers.  The alignment requirements of the two layers conflict.</arg>  The design will exhibit suboptimal timing.
-</msg>
-
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5_1</arg>.  <arg fmt="%z" index="3">Tried to combine two collections of symbols from different layers.  The alignment requirements of the two layers conflict.</arg>  The design will exhibit suboptimal timing.
-</msg>
-
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5_2</arg>.  <arg fmt="%z" index="3">Tried to combine two collections of symbols from different positions within the same layer.</arg>  The design will exhibit suboptimal timing.
-</msg>
-
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5_3</arg>.  <arg fmt="%z" index="3">Tried to combine two collections of symbols from different layers.  The alignment requirements of the two layers conflict.</arg>  The design will exhibit suboptimal timing.
-</msg>
-
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5_4</arg>.  <arg fmt="%z" index="3">Tried to combine two collections of symbols from different layers.  The alignment requirements of the two layers conflict.</arg>  The design will exhibit suboptimal timing.
-</msg>
-
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5_5</arg>.  <arg fmt="%z" index="3">Tried to combine two collections of symbols from different layers.  The alignment requirements of the two layers conflict.</arg>  The design will exhibit suboptimal timing.
-</msg>
-
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5_6</arg>.  <arg fmt="%z" index="3">Tried to combine two collections of symbols from different layers.  The alignment requirements of the two layers conflict.</arg>  The design will exhibit suboptimal timing.
-</msg>
-
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5_0</arg>.  <arg fmt="%z" index="3">Unable to resolve the conflicts between two or more collections of symbols which have restrictive placement or routing requirements.  The original symbols are:
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5_0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f51)
-	LUT symbol &quot;XLXI_124/XLXI_2/XLXI_1/I_36_8&quot; (Output Signal = XLXI_124/muxOut&lt;0&gt;)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f63)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f511)
-	LUT symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_101_INV_0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10)
-Failure 1:  Unable to combine the following symbols into a single slice.
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f7&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f7)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF7&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f73)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/MUXF5.I0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/F5.I0)
-There is more than one MUXF6.
-Failure 2:  Unable to combine the following symbols into a single slice.
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_2_f8&quot; (Output Signal = XLXI_124/XLXI_1/Q_mux0000&lt;0&gt;)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5)
-	LUT symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_741_INV_0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_74)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF5.I0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/F5.I0)
-There is more than one F5MUX.
-Failure 3:  Unable to combine the following symbols into a single slice.
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/MUXF6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/F6.I1)
-There is more than one MUXF6.
-Failure 4:  Unable to combine the following symbols into a single slice.
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5_0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f51)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f63)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f511)
-	LUT symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_101_INV_0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10)
-	LUT symbol &quot;XLXI_124/XLXI_2/XLXI_1/I_36_8&quot; (Output Signal = XLXI_124/muxOut&lt;0&gt;)
-There is more than one MUXF6.
-</arg>  The design will exhibit suboptimal timing.
-</msg>
-
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5_6</arg>.  <arg fmt="%z" index="3">Unable to resolve the conflicts between two or more collections of symbols which have restrictive placement or routing requirements.  The original symbols are:
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5_6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f57)
-	LUT symbol &quot;XLXI_124/XLXI_2/XLXI_1/I_36_8&quot; (Output Signal = XLXI_124/muxOut&lt;0&gt;)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6_3&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f64)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f63)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f511)
-	LUT symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_101_INV_0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10)
-Failure 1:  Unable to combine the following symbols into a single slice.
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f7_1&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f72)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_1/MUXF5.I0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_1/F5.I0)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF7&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f73)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/MUXF5.I0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/F5.I0)
-There is more than one MUXF6.
-Failure 2:  Unable to combine the following symbols into a single slice.
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_2_f8_1&quot; (Output Signal = XLXI_124/XLXI_1/Q_mux0000&lt;2&gt;)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_5&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f56)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF5.I0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/F5.I0)
-There is more than one F5MUX.
-Failure 3:  Unable to combine the following symbols into a single slice.
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_1/MUXF6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f62)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5_1&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f52)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/MUXF6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/F6.I1)
-There is more than one MUXF6.
-Failure 4:  Unable to combine the following symbols into a single slice.
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6_3&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f64)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5_6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f57)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f63)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f511)
-	LUT symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_101_INV_0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10)
-	LUT symbol &quot;XLXI_124/XLXI_2/XLXI_1/I_36_8&quot; (Output Signal = XLXI_124/muxOut&lt;0&gt;)
-There is more than one MUXF6.
-</arg>  The design will exhibit suboptimal timing.
-</msg>
-
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5_7</arg>.  <arg fmt="%z" index="3">Tried to combine two collections of symbols from different layers.  The alignment requirements of the two layers conflict.</arg>  The design will exhibit suboptimal timing.
-</msg>
-
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_0</arg>.  <arg fmt="%z" index="3">Tried to combine two collections of symbols from different layers.  The alignment requirements of the two layers conflict.</arg>  The design will exhibit suboptimal timing.
-</msg>
-
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_1</arg>.  <arg fmt="%z" index="3">Unable to resolve the conflicts between two or more collections of symbols which have restrictive placement or routing requirements.  The original symbols are:
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_1&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f52)
-	LUT symbol &quot;XLXI_124/XLXI_2/XLXI_1/I_36_8&quot; (Output Signal = XLXI_124/muxOut&lt;0&gt;)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f63)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f511)
-	LUT symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_101_INV_0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10)
-Failure 1:  Unable to combine the following symbols into a single slice.
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f51)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF7&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f73)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/MUXF5.I0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/F5.I0)
-There is more than one MUXF6.
-Failure 2:  Unable to combine the following symbols into a single slice.
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_8_f5&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_8_f5)
-	LUT symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_8_f51_INV_0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_8_f53)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF5.I0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/F5.I0)
-There is more than one F5MUX.
-Failure 3:  Unable to combine the following symbols into a single slice.
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6_0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f61)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5_1&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f52)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/MUXF6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/F6.I1)
-There is more than one MUXF6.
-Failure 4:  Unable to combine the following symbols into a single slice.
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_1&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f52)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f63)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f511)
-	LUT symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_101_INV_0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10)
-	LUT symbol &quot;XLXI_124/XLXI_2/XLXI_1/I_36_8&quot; (Output Signal = XLXI_124/muxOut&lt;0&gt;)
-There is more than one MUXF6.
-Failure 5:  Unable to combine the following symbols into a single slice.
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f7&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f7)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f7_2&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f73)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_2/MUXF5.I0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_2/F5.I0)
-There is more than one MUXF6.
-Failure 6:  Unable to combine the following symbols into a single slice.
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_2_f8&quot; (Output Signal = XLXI_124/XLXI_1/Q_mux0000&lt;0&gt;)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5)
-	LUT symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_741_INV_0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_74)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_2_f8_2&quot; (Output Signal = XLXI_124/XLXI_1/Q_mux0000&lt;3&gt;)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_8&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f59)
-There is more than one MUXF6.
-Failure 7:  Unable to combine the following symbols into a single slice.
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_2/MUXF6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f63)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5_2&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f53)
-There is more than one MUXF6.
-Failure 8:  Unable to combine the following symbols into a single slice.
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5_0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f51)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6_5/MUXF6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f66)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6_5/MUXF5.I1&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6_5/F5.I1)
-There is more than one MUXF6.</arg>  The design will exhibit suboptimal timing.
-</msg>
-
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_2</arg>.  <arg fmt="%z" index="3">Tried to combine two collections of symbols from different layers.  The alignment requirements of the two layers conflict.</arg>  The design will exhibit suboptimal timing.
-</msg>
-
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_6</arg>.  <arg fmt="%z" index="3">Tried to combine two collections of symbols from different layers.  The alignment requirements of the two layers conflict.</arg>  The design will exhibit suboptimal timing.
-</msg>
-
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_7</arg>.  <arg fmt="%z" index="3">Unable to resolve the conflicts between two or more collections of symbols which have restrictive placement or routing requirements.  The original symbols are:
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_7&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f58)
-	LUT symbol &quot;XLXI_124/XLXI_2/XLXI_1/I_36_8&quot; (Output Signal = XLXI_124/muxOut&lt;0&gt;)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_1&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f62)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f63)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f511)
-	LUT symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_101_INV_0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10)
-Failure 1:  Unable to combine the following symbols into a single slice.
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_1&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f72)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f57)
-	LUT symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_61_INV_0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_6)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF7&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f73)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/MUXF5.I0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/F5.I0)
-There is more than one MUXF6.
-Failure 2:  Unable to combine the following symbols into a single slice.
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_8_f5_1&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_8_f52)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF5.I0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/F5.I0)
-There is more than one F5MUX.
-Failure 3:  Unable to combine the following symbols into a single slice.
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6_4&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f65)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5_7&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f58)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/MUXF6.I1/MUXF6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7_2/F6.I1)
-There is more than one MUXF6.
-Failure 4:  Unable to combine the following symbols into a single slice.
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_1&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f62)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_7&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f58)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6_2/MUXF6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f63)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f511)
-	LUT symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_101_INV_0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_10)
-	LUT symbol &quot;XLXI_124/XLXI_2/XLXI_1/I_36_8&quot; (Output Signal = XLXI_124/muxOut&lt;0&gt;)
-There is more than one MUXF6.
-Failure 5:  Unable to combine the following symbols into a single slice.
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f7_1&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f72)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_1/MUXF5.I0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_1/F5.I0)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f7_2&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_3_f73)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_2/MUXF5.I0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_2/F5.I0)
-There is more than one MUXF6.
-Failure 6:  Unable to combine the following symbols into a single slice.
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_2_f8_1&quot; (Output Signal = XLXI_124/XLXI_1/Q_mux0000&lt;2&gt;)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_5&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f56)
-	LUT symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_51_INV_0&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_5)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_2_f8_2&quot; (Output Signal = XLXI_124/XLXI_1/Q_mux0000&lt;3&gt;)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_8&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f59)
-There is more than one MUXF6.
-Failure 7:  Unable to combine the following symbols into a single slice.
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_1/MUXF6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f62)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5_1&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f52)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f6_2/MUXF6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f63)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f5_2&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f53)
-There is more than one MUXF6.
-Failure 8:  Unable to combine the following symbols into a single slice.
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6_3&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f64)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f5_6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f57)
-	MUXF6 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6_5/MUXF6&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f66)
-	MUXF5 symbol &quot;XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6_5/MUXF5.I1&quot; (Output Signal = XLXI_124/XLXI_1/Mmux_Q_mux0000_5_f6_5/F5.I1)
-There is more than one MUXF6.</arg>  The design will exhibit suboptimal timing.
-</msg>
-
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_7_f5_8</arg>.  <arg fmt="%z" index="3">Tried to combine two collections of symbols from different positions within the same layer.</arg>  The design will exhibit suboptimal timing.
-</msg>
-
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_8_f5_0</arg>.  <arg fmt="%z" index="3">Tried to combine two collections of symbols from different layers.  The alignment requirements of the two layers conflict.</arg>  The design will exhibit suboptimal timing.
-</msg>
-
-<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">XLXI_124/XLXI_2/XLXI_1/I_36_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">XLXI_124/XLXI_1/Mmux_Q_mux0000_8_f5_1</arg>.  <arg fmt="%z" index="3">Tried to combine two collections of symbols from different layers.  The alignment requirements of the two layers conflict.</arg>  The design will exhibit suboptimal timing.
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">XLXN_111</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">XLXN_27</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.

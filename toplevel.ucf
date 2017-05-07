@@ -22,16 +22,36 @@ NET "sseg[1]" LOC = L13;
 NET "sseg[0]" LOC = M12;
 NET "B8" LOC = B8;
 
-
-NET "hertzSwitch" LOC = N3;
-NET "manualSwitch" LOC = E2;
-
-
-NET "manuStepBtn" LOC = G12;
+NET "q0" LOC = P4;
+NET "q1" LOC = N4;
 
 
+NET "DebugStep" LOC = M4;
+NET "HzMode" LOC = P11;
+NET "IncrementPC" LOC = C11;
+NET "ProgramMode" LOC = N3;
+
+
+NET "AddrLEDs[0]" LOC = M5;
+NET "AddrLEDs[1]" LOC = M11;
+NET "AddrLEDs[2]" LOC = P7;
+NET "AddrLEDs[3]" LOC = P6;
+
+
+NET "AddrLEDs[4]" LOC = N5;
+
+
+NET "AddrMode" LOC = E2;
+NET "DebugMode" LOC = L3;
+
+
+
+
+NET "InstrMode" LOC = F3;
+
+
+NET "DataMode" LOC = G3;
 
 # PlanAhead Generated physical constraints 
 
-NET "q0" LOC = P4;
-NET "q1" LOC = N4;
+NET "ShowC" LOC = A7;

@@ -40,28 +40,179 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
-Clock hertzSwitch to Pad
+Setup/Hold to clock DataMode
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+AddrMode    |    7.361(F)|    0.415(F)|DataState         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock DebugMode
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+AddrMode    |    0.075(R)|    2.684(R)|XLXI_123/XLXN_39  |   0.000|
+            |    5.622(F)|    2.588(F)|DataState         |   0.000|
+            |    6.527(F)|    1.647(F)|InstrState        |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock IncrementPC
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+AddrMode    |    1.664(R)|    0.698(R)|XLXI_123/XLXN_39  |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock InstrMode
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+AddrMode    |    7.156(F)|    0.861(F)|InstrState        |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock ProgramMode
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+AddrMode    |    1.222(R)|    3.938(R)|XLXI_123/XLXN_39  |   0.000|
+            |    5.972(F)|    3.842(F)|DataState         |   0.000|
+            |    5.867(F)|    2.901(F)|InstrState        |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock DataMode to Pad
 ------------+------------+------------------+--------+
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-q0          |   10.087(R)|XLXN_27           |   0.000|
+sseg<0>     |   22.223(F)|DataState         |   0.000|
+sseg<1>     |   22.053(F)|DataState         |   0.000|
+sseg<2>     |   22.036(F)|DataState         |   0.000|
+sseg<3>     |   22.903(F)|DataState         |   0.000|
+sseg<4>     |   22.563(F)|DataState         |   0.000|
+sseg<5>     |   22.786(F)|DataState         |   0.000|
+sseg<6>     |   22.269(F)|DataState         |   0.000|
 ------------+------------+------------------+--------+
 
-Clock manuStepBtn to Pad
+Clock DebugMode to Pad
 ------------+------------+------------------+--------+
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-q0          |   10.689(R)|XLXN_27           |   0.000|
+AddrLEDs<0> |   13.869(R)|XLXI_123/XLXN_39  |   0.000|
+AddrLEDs<1> |   15.685(R)|XLXI_123/XLXN_39  |   0.000|
+AddrLEDs<2> |   13.656(R)|XLXI_123/XLXN_39  |   0.000|
+AddrLEDs<3> |   13.390(R)|XLXI_123/XLXN_39  |   0.000|
+AddrLEDs<4> |   13.129(R)|XLXI_123/XLXN_39  |   0.000|
+q0          |   12.234(R)|XLXN_27           |   0.000|
+sseg<0>     |   24.396(F)|DataState         |   0.000|
+            |   23.299(F)|InstrState        |   0.000|
+            |   26.003(R)|XLXI_123/XLXN_39  |   0.000|
+sseg<1>     |   25.833(R)|XLXI_123/XLXN_39  |   0.000|
+            |   24.226(F)|DataState         |   0.000|
+            |   22.317(F)|InstrState        |   0.000|
+sseg<2>     |   24.209(F)|DataState         |   0.000|
+            |   22.538(F)|InstrState        |   0.000|
+            |   25.816(R)|XLXI_123/XLXN_39  |   0.000|
+sseg<3>     |   26.683(R)|XLXI_123/XLXN_39  |   0.000|
+            |   25.076(F)|DataState         |   0.000|
+            |   23.225(F)|InstrState        |   0.000|
+sseg<4>     |   24.736(F)|DataState         |   0.000|
+            |   23.634(F)|InstrState        |   0.000|
+            |   26.343(R)|XLXI_123/XLXN_39  |   0.000|
+sseg<5>     |   26.566(R)|XLXI_123/XLXN_39  |   0.000|
+            |   24.959(F)|DataState         |   0.000|
+            |   23.217(F)|InstrState        |   0.000|
+sseg<6>     |   24.442(F)|DataState         |   0.000|
+            |   22.660(F)|InstrState        |   0.000|
+            |   26.049(R)|XLXI_123/XLXN_39  |   0.000|
 ------------+------------+------------------+--------+
 
-Clock manualSwitch to Pad
+Clock DebugStep to Pad
 ------------+------------+------------------+--------+
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-q0          |   10.504(R)|XLXN_27           |   0.000|
+q0          |   10.407(R)|XLXN_27           |   0.000|
+------------+------------+------------------+--------+
+
+Clock HzMode to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+q0          |   10.747(R)|XLXN_27           |   0.000|
+------------+------------+------------------+--------+
+
+Clock IncrementPC to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+AddrLEDs<0> |   11.883(R)|XLXI_123/XLXN_39  |   0.000|
+AddrLEDs<1> |   13.699(R)|XLXI_123/XLXN_39  |   0.000|
+AddrLEDs<2> |   11.670(R)|XLXI_123/XLXN_39  |   0.000|
+AddrLEDs<3> |   11.404(R)|XLXI_123/XLXN_39  |   0.000|
+AddrLEDs<4> |   11.143(R)|XLXI_123/XLXN_39  |   0.000|
+sseg<0>     |   24.017(R)|XLXI_123/XLXN_39  |   0.000|
+sseg<1>     |   23.847(R)|XLXI_123/XLXN_39  |   0.000|
+sseg<2>     |   23.830(R)|XLXI_123/XLXN_39  |   0.000|
+sseg<3>     |   24.697(R)|XLXI_123/XLXN_39  |   0.000|
+sseg<4>     |   24.357(R)|XLXI_123/XLXN_39  |   0.000|
+sseg<5>     |   24.580(R)|XLXI_123/XLXN_39  |   0.000|
+sseg<6>     |   24.063(R)|XLXI_123/XLXN_39  |   0.000|
+------------+------------+------------------+--------+
+
+Clock InstrMode to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+sseg<0>     |   22.513(F)|InstrState        |   0.000|
+sseg<1>     |   21.531(F)|InstrState        |   0.000|
+sseg<2>     |   21.752(F)|InstrState        |   0.000|
+sseg<3>     |   22.439(F)|InstrState        |   0.000|
+sseg<4>     |   22.848(F)|InstrState        |   0.000|
+sseg<5>     |   22.431(F)|InstrState        |   0.000|
+sseg<6>     |   21.874(F)|InstrState        |   0.000|
+------------+------------+------------------+--------+
+
+Clock ProgramMode to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+AddrLEDs<0> |   15.123(R)|XLXI_123/XLXN_39  |   0.000|
+AddrLEDs<1> |   16.939(R)|XLXI_123/XLXN_39  |   0.000|
+AddrLEDs<2> |   14.910(R)|XLXI_123/XLXN_39  |   0.000|
+AddrLEDs<3> |   14.644(R)|XLXI_123/XLXN_39  |   0.000|
+AddrLEDs<4> |   14.383(R)|XLXI_123/XLXN_39  |   0.000|
+q0          |   13.488(R)|XLXN_27           |   0.000|
+sseg<0>     |   27.257(R)|XLXI_123/XLXN_39  |   0.000|
+            |   25.650(F)|DataState         |   0.000|
+            |   24.553(F)|InstrState        |   0.000|
+sseg<1>     |   27.087(R)|XLXI_123/XLXN_39  |   0.000|
+            |   25.480(F)|DataState         |   0.000|
+            |   23.571(F)|InstrState        |   0.000|
+sseg<2>     |   25.463(F)|DataState         |   0.000|
+            |   23.792(F)|InstrState        |   0.000|
+            |   27.070(R)|XLXI_123/XLXN_39  |   0.000|
+sseg<3>     |   26.330(F)|DataState         |   0.000|
+            |   24.479(F)|InstrState        |   0.000|
+            |   27.937(R)|XLXI_123/XLXN_39  |   0.000|
+sseg<4>     |   27.597(R)|XLXI_123/XLXN_39  |   0.000|
+            |   25.990(F)|DataState         |   0.000|
+            |   24.888(F)|InstrState        |   0.000|
+sseg<5>     |   27.820(R)|XLXI_123/XLXN_39  |   0.000|
+            |   26.213(F)|DataState         |   0.000|
+            |   24.471(F)|InstrState        |   0.000|
+sseg<6>     |   27.303(R)|XLXI_123/XLXN_39  |   0.000|
+            |   25.696(F)|DataState         |   0.000|
+            |   23.914(F)|InstrState        |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock B8
@@ -69,61 +220,157 @@ Clock to Setup on destination clock B8
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-B8             |   11.853|         |         |         |
+B8             |   12.212|         |         |         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock hertzSwitch
+Clock to Setup on destination clock DataMode
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-hertzSwitch    |    1.558|         |         |         |
-manuStepBtn    |    1.558|         |         |         |
-manualSwitch   |    1.558|         |         |         |
+DebugMode      |         |         |    9.564|    8.048|
+IncrementPC    |         |         |    9.564|         |
+ProgramMode    |         |         |    9.564|    9.302|
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock manuStepBtn
+Clock to Setup on destination clock DebugMode
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-hertzSwitch    |    1.558|         |         |         |
-manuStepBtn    |    1.558|         |         |         |
-manualSwitch   |    1.558|         |         |         |
+DebugMode      |    3.630|    0.762|    9.610|    7.214|
+DebugStep      |    1.560|         |         |         |
+HzMode         |    1.560|         |         |         |
+IncrementPC    |    3.630|         |    9.610|         |
+ProgramMode    |    3.630|    2.016|    9.610|    8.468|
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock manualSwitch
+Clock to Setup on destination clock DebugStep
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-hertzSwitch    |    1.558|         |         |         |
-manuStepBtn    |    1.558|         |         |         |
-manualSwitch   |    1.558|         |         |         |
+DebugMode      |    1.560|         |         |         |
+DebugStep      |    1.560|         |         |         |
+HzMode         |    1.560|         |         |         |
+ProgramMode    |    1.560|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock HzMode
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DebugMode      |    1.560|         |         |         |
+DebugStep      |    1.560|         |         |         |
+HzMode         |    1.560|         |         |         |
+ProgramMode    |    1.560|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock IncrementPC
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DebugMode      |    3.630|    2.351|         |         |
+IncrementPC    |    3.630|         |         |         |
+ProgramMode    |    3.630|    3.605|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock InstrMode
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DebugMode      |         |         |    9.610|    7.843|
+IncrementPC    |         |         |    9.610|         |
+ProgramMode    |         |         |    9.610|    9.097|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ProgramMode
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DebugMode      |    3.630|    1.909|    9.610|    6.659|
+DebugStep      |    1.560|         |         |         |
+HzMode         |    1.560|         |         |         |
+IncrementPC    |    3.630|         |    9.610|         |
+ProgramMode    |    3.630|    3.163|    9.610|    7.913|
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-manualSwitch   |sseg<0>        |   15.801|
-manualSwitch   |sseg<1>        |   16.055|
-manualSwitch   |sseg<2>        |   16.314|
-manualSwitch   |sseg<3>        |   16.068|
-manualSwitch   |sseg<4>        |   16.385|
-manualSwitch   |sseg<5>        |   16.402|
-manualSwitch   |sseg<6>        |   15.798|
+AddrMode       |AddrLEDs<0>    |   10.491|
+AddrMode       |AddrLEDs<1>    |   11.701|
+AddrMode       |AddrLEDs<2>    |   10.361|
+AddrMode       |AddrLEDs<3>    |   10.125|
+AddrMode       |AddrLEDs<4>    |   10.157|
+AddrMode       |sseg<0>        |   22.008|
+AddrMode       |sseg<1>        |   21.838|
+AddrMode       |sseg<2>        |   21.821|
+AddrMode       |sseg<3>        |   22.688|
+AddrMode       |sseg<4>        |   22.348|
+AddrMode       |sseg<5>        |   22.571|
+AddrMode       |sseg<6>        |   22.054|
+DataMode       |sseg<0>        |   14.658|
+DataMode       |sseg<1>        |   14.488|
+DataMode       |sseg<2>        |   14.471|
+DataMode       |sseg<3>        |   15.338|
+DataMode       |sseg<4>        |   14.998|
+DataMode       |sseg<5>        |   15.221|
+DataMode       |sseg<6>        |   14.704|
+DebugMode      |AddrLEDs<0>    |   11.178|
+DebugMode      |AddrLEDs<1>    |   12.388|
+DebugMode      |AddrLEDs<2>    |   11.048|
+DebugMode      |AddrLEDs<3>    |   10.812|
+DebugMode      |AddrLEDs<4>    |   10.844|
+DebugMode      |sseg<0>        |   22.695|
+DebugMode      |sseg<1>        |   22.525|
+DebugMode      |sseg<2>        |   22.508|
+DebugMode      |sseg<3>        |   23.375|
+DebugMode      |sseg<4>        |   23.035|
+DebugMode      |sseg<5>        |   23.258|
+DebugMode      |sseg<6>        |   22.741|
+InstrMode      |sseg<0>        |   15.422|
+InstrMode      |sseg<1>        |   14.992|
+InstrMode      |sseg<2>        |   14.975|
+InstrMode      |sseg<3>        |   15.842|
+InstrMode      |sseg<4>        |   15.757|
+InstrMode      |sseg<5>        |   15.725|
+InstrMode      |sseg<6>        |   15.208|
+ProgramMode    |AddrLEDs<0>    |   12.432|
+ProgramMode    |AddrLEDs<1>    |   13.642|
+ProgramMode    |AddrLEDs<2>    |   12.302|
+ProgramMode    |AddrLEDs<3>    |   12.066|
+ProgramMode    |AddrLEDs<4>    |   12.098|
+ProgramMode    |sseg<0>        |   23.949|
+ProgramMode    |sseg<1>        |   23.779|
+ProgramMode    |sseg<2>        |   23.762|
+ProgramMode    |sseg<3>        |   24.629|
+ProgramMode    |sseg<4>        |   24.289|
+ProgramMode    |sseg<5>        |   24.512|
+ProgramMode    |sseg<6>        |   23.995|
+ShowC          |sseg<0>        |   11.107|
+ShowC          |sseg<1>        |   10.679|
+ShowC          |sseg<2>        |   10.482|
+ShowC          |sseg<3>        |   11.594|
+ShowC          |sseg<4>        |   11.442|
+ShowC          |sseg<5>        |   11.422|
+ShowC          |sseg<6>        |   10.840|
 ---------------+---------------+---------+
 
 
-Analysis completed Sat May 06 04:16:51 2017 
+Analysis completed Sun May 07 13:14:03 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 172 MB
+Peak Memory Usage: 189 MB
 
 
 

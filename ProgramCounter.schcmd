@@ -1,0 +1,82 @@
+add instance and2b1 144 1472 R0 -sn=1
+select figure at 335 1442 8 -branches -sn=1
+select figure at 363 1447 8 -branches -sn=1
+select figure at 359 1457 8 -branches -sn=1
+delete selection -sn=1
+select figure at 292 1390 8 -branches -sn=1
+move instance at 144 1472 to 112 1456 R0 -keepConn -sn=1
+add autowire 368 1360 384 1456 8 -sn=1
+undo
+add autowire 368 1360 368 1456 8 -sn=1
+undo
+move instance at 112 1456 to 96 1456 R0 -keepConn -sn=1
+select figure at 533 1507 8 -branches -sn=1
+move instance at 384 1616 to 416 1616 R0 -keepConn -sn=1
+undo
+select figure at 201 1366 8 -wires -sn=1
+select figure at 765 1601 8 -wires -sn=1
+move wire at 768 1488 768 1776 to 816 1488 816 1776 -keepConn -sn=1
+select figure at 547 1479 8 -wires -sn=1
+move instance at 384 1616 to 416 1616 R0 -keepConn -sn=1
+select figure at 1119 1537 8 -wires -sn=1
+move instance at 1104 1648 to 992 1632 R270 -keepConn -sn=1
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+select figure at 1034 1585 8 -wires -sn=1
+select figure at 1120 1537 8 -wires -sn=1
+delete selection -sn=1
+select figure at 1120 1601 8 -wires -sn=1
+select figure at 1121 1675 8 -wires -sn=1
+select figure at 1121 1675 8 -wires -sn=1
+select figure at 1116 1662 8 -wires -sn=1
+select figure at 1121 1621 8 -wires -sn=1
+select figure at 1118 1634 8 -wires -sn=1
+select figure at 1121 1641 8 -wires -sn=1
+select figure at 1120 1647 8 -wires -sn=1
+select figure at 1119 1666 8 -wires -sn=1
+select figure at 1117 1755 8 -wires -sn=1
+select figure at 1120 1781 8 -wires -sn=1
+select figure at 1120 1781 8 -wires -sn=1
+select figure at 1120 1769 8 -wires -sn=1
+select figure at 1120 1772 8 -wires -sn=1
+select figure at 1121 1760 8 -wires -sn=1
+select figure at 1120 1589 8 -wires -sn=1
+move instance at 1104 1648 to 1088 1632 R270 -keepConn -sn=1
+select figure at 1106 1587 8 -wires -sn=1
+delete selection -sn=1
+select figure at 1120 1588 8 -wires -sn=1
+select figure at 1123 1585 8 -wires -sn=1
+delete selection -sn=1
+select figure at 1017 1567 8 -wires -sn=1
+BeginGroup
+add wire 1136 1584 1104 1584 -sn=1
+move instance at 1088 1632 to 1104 1648 R270 -keepConn -sn=1
+EndGroup
+select figure at 1138 1776 8 -wires -sn=1
+select figure at 1134 1776 8 -wires -sn=1
+select figure at 1116 1774 8 -wires -sn=1
+delete selection -sn=1
+add autowire 768 1776 1136 1776 8 -sn=1
+select figure at 714 1490 8 -wires -sn=1
+delete selection -sn=1
+add autowire 704 1488 768 1488 8 -sn=1
+add autowire 368 1360 384 1456 8 -sn=1
+undo
+add wire 368 1360 368 1456 -sn=1
+add wire 384 1456 368 1456 -sn=1
+add wire 112 1328 96 1328 -sn=1
+add wire 112 1392 96 1392 -sn=1
+name branch at 112 1328 8 incrementPC -sn=1
+name branch at 96 1328 8 incrementPC -sn=1
+name branch at 96 1392 8 PrgmMode -sn=1
+select figure at 107 1328 8 -wires -sn=1
+select figure at 95 1330 8 -wires -toggle -sn=1
+select figure at 96 1393 8 -wires -toggle -sn=1
+select figure at 25 1326 8 -wires -sn=1

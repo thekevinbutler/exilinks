@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym InputState D:/Users/Butle/Documents/exilinks/InputState.sch D:/Users/Butle/Documents/exilinks/InputState.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym InputState D:/Users/Butle/Documents/exilinks/InputState.sch D:/Users/Butle/Documents/exilinks/InputState.sym 

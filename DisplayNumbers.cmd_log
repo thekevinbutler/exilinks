@@ -1,2 +1,3 @@
 sch2sym -intstyle ise -family spartan3e -w -refsym DisplayNumbers D:/Users/Butle/Documents/exilinks/DisplayNumbers.sch D:/Users/Butle/Documents/exilinks/DisplayNumbers.sym 
 sch2sym -intstyle ise -family spartan3e -w -refsym DisplayNumbers D:/Users/Butle/Documents/exilinks/DisplayNumbers.sch D:/Users/Butle/Documents/exilinks/DisplayNumbers.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym DisplayNumbers D:/Users/Butle/Documents/exilinks/DisplayNumbers.sch D:/Users/Butle/Documents/exilinks/DisplayNumbers.sym 

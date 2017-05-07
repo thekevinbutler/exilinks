@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : mux8x2to1.vhf
--- /___/   /\     Timestamp : 05/06/2017 03:49:48
+-- /___/   /\     Timestamp : 05/07/2017 02:28:32
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -99,14 +99,14 @@ architecture BEHAVIORAL of mux8x2to1 is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_0";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_1";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_2";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_3";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_4";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_5";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_6";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_7";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_73";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_74";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_75";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_76";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_77";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_78";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_79";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_80";
 begin
    XLXI_1 : M2_1_MXILINX_mux8x2to1
       port map (D0=>A(0),

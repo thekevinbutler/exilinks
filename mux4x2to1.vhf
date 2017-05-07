@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : mux4x2to1.vhf
--- /___/   /\     Timestamp : 05/06/2017 03:49:48
+-- /___/   /\     Timestamp : 05/07/2017 02:28:33
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -99,10 +99,10 @@ architecture BEHAVIORAL of mux4x2to1 is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_8";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_9";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_10";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_11";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_89";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_90";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_91";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_92";
 begin
    XLXI_1 : M2_1_MXILINX_mux4x2to1
       port map (D0=>A(0),

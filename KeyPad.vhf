@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : KeyPad.vhf
--- /___/   /\     Timestamp : 05/06/2017 03:49:49
+-- /___/   /\     Timestamp : 05/07/2017 02:28:32
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -153,9 +153,9 @@ architecture BEHAVIORAL of KeyPad is
    end component;
    attribute BOX_TYPE of PULLDOWN : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_69 : label is "XLXI_69_50";
-   attribute HU_SET of XLXI_70 : label is "XLXI_70_51";
-   attribute HU_SET of XLXI_110 : label is "XLXI_110_49";
+   attribute HU_SET of XLXI_69 : label is "XLXI_69_71";
+   attribute HU_SET of XLXI_70 : label is "XLXI_70_72";
+   attribute HU_SET of XLXI_110 : label is "XLXI_110_70";
 begin
    rowI_DUMMY(3 downto 0) <= rowI(3 downto 0);
    XLXI_67 : keyCR4b

@@ -1,0 +1,3 @@
+MODULE InstructionDecode
+	SUBMODULE Demux1to16
+		INSTANCE XLXI_1
