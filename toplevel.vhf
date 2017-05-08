@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : toplevel.vhf
--- /___/   /\     Timestamp : 05/07/2017 13:13:34
+-- /___/   /\     Timestamp : 05/07/2017 18:29:49
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl D:/Users/Butle/Documents/exilinks/toplevel.vhf -w D:/Users/Butle/Documents/exilinks/toplevel.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf -w C:/Users/thekevinbutler/Documents/exilinks/toplevel.sch
 --Design Name: toplevel
 --Device: spartan3e
 --Purpose:
@@ -238,7 +238,7 @@ architecture BEHAVIORAL of RegisterGeneric_MUSER_toplevel is
    end component;
    attribute BOX_TYPE of PULLUP : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_70";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_0";
 begin
    XLXI_2 : FD8CE_MXILINX_toplevel
       port map (C=>Write,
@@ -644,14 +644,14 @@ architecture BEHAVIORAL of mux8x2to1_MUSER_toplevel is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_71";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_72";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_73";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_74";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_75";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_76";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_77";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_78";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_1";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_2";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_3";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_4";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_5";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_6";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_7";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_8";
 begin
    XLXI_1 : M2_1_MXILINX_toplevel
       port map (D0=>A(0),
@@ -898,10 +898,10 @@ architecture BEHAVIORAL of mux4x2to1_MUSER_toplevel is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_79";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_80";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_81";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_82";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_9";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_10";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_11";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_12";
 begin
    XLXI_1 : M2_1_MXILINX_toplevel
       port map (D0=>A(0),
@@ -1032,7 +1032,7 @@ architecture BEHAVIORAL of DisplayNumbers_MUSER_toplevel is
    end component;
    attribute BOX_TYPE of PULLDOWN : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_18 : label is "XLXI_18_83";
+   attribute HU_SET of XLXI_18 : label is "XLXI_18_13";
 begin
    XLXI_3 : bin2BCD3en
       port map (CLK=>ssdClock,
@@ -1321,7 +1321,7 @@ architecture BEHAVIORAL of FTCLEX_MXILINX_toplevel is
    end component;
    attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
    
-   attribute HU_SET of I_36_30 : label is "I_36_30_84";
+   attribute HU_SET of I_36_30 : label is "I_36_30_14";
    attribute RLOC of I_36_35 : label is "X0Y0";
 begin
    Q <= Q_DUMMY;
@@ -1523,22 +1523,22 @@ architecture BEHAVIORAL of CB8CLED_MXILINX_toplevel is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_92";
-   attribute HU_SET of I_Q1 : label is "I_Q1_91";
-   attribute HU_SET of I_Q2 : label is "I_Q2_90";
-   attribute HU_SET of I_Q3 : label is "I_Q3_89";
-   attribute HU_SET of I_Q4 : label is "I_Q4_88";
-   attribute HU_SET of I_Q5 : label is "I_Q5_87";
-   attribute HU_SET of I_Q6 : label is "I_Q6_86";
-   attribute HU_SET of I_Q7 : label is "I_Q7_85";
-   attribute HU_SET of I_TC : label is "I_TC_97";
-   attribute HU_SET of I_T1 : label is "I_T1_100";
-   attribute HU_SET of I_T2 : label is "I_T2_93";
-   attribute HU_SET of I_T3 : label is "I_T3_94";
-   attribute HU_SET of I_T4 : label is "I_T4_99";
-   attribute HU_SET of I_T5 : label is "I_T5_98";
-   attribute HU_SET of I_T6 : label is "I_T6_95";
-   attribute HU_SET of I_T7 : label is "I_T7_96";
+   attribute HU_SET of I_Q0 : label is "I_Q0_22";
+   attribute HU_SET of I_Q1 : label is "I_Q1_21";
+   attribute HU_SET of I_Q2 : label is "I_Q2_20";
+   attribute HU_SET of I_Q3 : label is "I_Q3_19";
+   attribute HU_SET of I_Q4 : label is "I_Q4_18";
+   attribute HU_SET of I_Q5 : label is "I_Q5_17";
+   attribute HU_SET of I_Q6 : label is "I_Q6_16";
+   attribute HU_SET of I_Q7 : label is "I_Q7_15";
+   attribute HU_SET of I_TC : label is "I_TC_27";
+   attribute HU_SET of I_T1 : label is "I_T1_30";
+   attribute HU_SET of I_T2 : label is "I_T2_23";
+   attribute HU_SET of I_T3 : label is "I_T3_24";
+   attribute HU_SET of I_T4 : label is "I_T4_29";
+   attribute HU_SET of I_T5 : label is "I_T5_28";
+   attribute HU_SET of I_T6 : label is "I_T6_25";
+   attribute HU_SET of I_T7 : label is "I_T7_26";
 begin
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    TC <= TC_DUMMY;
@@ -1861,10 +1861,10 @@ architecture BEHAVIORAL of ProgramCounter_MUSER_toplevel is
              DOut : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_115 : label is "XLXI_115_101";
-   attribute HU_SET of XLXI_123 : label is "XLXI_123_102";
-   attribute HU_SET of XLXI_124 : label is "XLXI_124_103";
-   attribute HU_SET of XLXI_128 : label is "XLXI_128_104";
+   attribute HU_SET of XLXI_115 : label is "XLXI_115_31";
+   attribute HU_SET of XLXI_123 : label is "XLXI_123_32";
+   attribute HU_SET of XLXI_124 : label is "XLXI_124_33";
+   attribute HU_SET of XLXI_128 : label is "XLXI_128_34";
 begin
    Q0 <= Q0_DUMMY;
    Q1 <= Q1_DUMMY;
@@ -2040,8 +2040,8 @@ architecture BEHAVIORAL of M4_1E_MXILINX_toplevel is
    end component;
    attribute BOX_TYPE of MUXF5 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_M01 : label is "I_M01_106";
-   attribute HU_SET of I_M23 : label is "I_M23_105";
+   attribute HU_SET of I_M01 : label is "I_M01_36";
+   attribute HU_SET of I_M23 : label is "I_M23_35";
 begin
    I_M01 : M2_1E_MXILINX_toplevel
       port map (D0=>D0,
@@ -2201,9 +2201,9 @@ architecture BEHAVIORAL of KeyPad_MUSER_toplevel is
    end component;
    attribute BOX_TYPE of PULLDOWN : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_69 : label is "XLXI_69_108";
-   attribute HU_SET of XLXI_70 : label is "XLXI_70_109";
-   attribute HU_SET of XLXI_110 : label is "XLXI_110_107";
+   attribute HU_SET of XLXI_69 : label is "XLXI_69_38";
+   attribute HU_SET of XLXI_70 : label is "XLXI_70_39";
+   attribute HU_SET of XLXI_110 : label is "XLXI_110_37";
 begin
    rowI_DUMMY(3 downto 0) <= rowI(3 downto 0);
    XLXI_67 : keyCR4b
@@ -2318,6 +2318,7 @@ architecture BEHAVIORAL of toplevel is
    signal DataState                   : std_logic;
    signal DebugState                  : std_logic;
    signal Dout                        : std_logic_vector (7 downto 0);
+   signal hexO                        : std_logic_vector (4 downto 0);
    signal InstrState                  : std_logic;
    signal Instruction                 : std_logic_vector (7 downto 0);
    signal InstructionOut              : std_logic_vector (7 downto 0);
@@ -2328,7 +2329,6 @@ architecture BEHAVIORAL of toplevel is
    signal RunState                    : std_logic;
    signal ShowCState                  : std_logic;
    signal XLXN_20                     : std_logic;
-   signal XLXN_26                     : std_logic_vector (3 downto 0);
    signal XLXN_27                     : std_logic;
    signal XLXN_59                     : std_logic_vector (7 downto 0);
    signal XLXN_94                     : std_logic;
@@ -2338,13 +2338,14 @@ architecture BEHAVIORAL of toplevel is
    signal XLXN_126                    : std_logic;
    signal XLXN_127                    : std_logic;
    signal XLXN_128                    : std_logic;
+   signal XLXN_129                    : std_logic;
    signal AddrLEDs_DUMMY              : std_logic_vector (4 downto 0);
    signal q0_DUMMY                    : std_logic;
    signal q1_DUMMY                    : std_logic;
    signal XLXI_123_resetPC_openSignal : std_logic;
    component SSD_1dig
       port ( dp_in : in    std_logic; 
-             hexD  : in    std_logic_vector (3 downto 0); 
+             hexD  : in    std_logic_vector (4 downto 0); 
              sseg  : out   std_logic_vector (7 downto 0));
    end component;
    
@@ -2478,14 +2479,14 @@ architecture BEHAVIORAL of toplevel is
              OShowC      : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_114 : label is "XLXI_114_110";
+   attribute HU_SET of XLXI_114 : label is "XLXI_114_40";
 begin
    AddrLEDs(4 downto 0) <= AddrLEDs_DUMMY(4 downto 0);
    q0 <= q0_DUMMY;
    q1 <= q1_DUMMY;
    XLXI_9 : SSD_1dig
       port map (dp_in=>XLXN_20,
-                hexD(3 downto 0)=>XLXN_26(3 downto 0),
+                hexD(4 downto 0)=>hexO(4 downto 0),
                 sseg(7 downto 0)=>sseg(7 downto 0));
    
    XLXI_50 : DCM_50M
@@ -2544,8 +2545,8 @@ begin
                 RegC(7 downto 0)=>COut(7 downto 0),
                 ssdClock=>cl1k,
                 anO(3 downto 0)=>anO(3 downto 0),
-                dpO=>XLXN_20,
-                hexO(3 downto 0)=>XLXN_26(3 downto 0));
+                dpO=>XLXN_129,
+                hexO(3 downto 0)=>hexO(3 downto 0));
    
    XLXI_127 : DataMem_MUSER_toplevel
       port map (AddrIn(4 downto 0)=>AddrLEDs_DUMMY(4 downto 0),
@@ -2633,6 +2634,12 @@ begin
                 OProgram=>ProgState,
                 ORun=>RunState,
                 OShowC=>ShowCState);
+   
+   XLXI_174 : PULLUP
+      port map (O=>XLXN_20);
+   
+   XLXI_176 : PULLUP
+      port map (O=>hexO(4));
    
 end BEHAVIORAL;
 

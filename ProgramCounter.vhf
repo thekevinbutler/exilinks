@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ProgramCounter.vhf
--- /___/   /\     Timestamp : 05/07/2017 13:13:32
+-- /___/   /\     Timestamp : 05/07/2017 15:01:03
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl D:/Users/Butle/Documents/exilinks/ProgramCounter.vhf -w D:/Users/Butle/Documents/exilinks/ProgramCounter.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/thekevinbutler/Documents/exilinks/ProgramCounter.vhf -w C:/Users/thekevinbutler/Documents/exilinks/ProgramCounter.sch
 --Design Name: ProgramCounter
 --Device: spartan3e
 --Purpose:
@@ -99,14 +99,14 @@ architecture BEHAVIORAL of mux8x2to1_MUSER_ProgramCounter is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_0";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_1";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_2";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_3";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_4";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_5";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_6";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_7";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_123";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_124";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_125";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_126";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_127";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_128";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_129";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_130";
 begin
    XLXI_1 : M2_1_MXILINX_ProgramCounter
       port map (D0=>A(0),
@@ -366,7 +366,7 @@ architecture BEHAVIORAL of FTCLEX_MXILINX_ProgramCounter is
    end component;
    attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
    
-   attribute HU_SET of I_36_30 : label is "I_36_30_8";
+   attribute HU_SET of I_36_30 : label is "I_36_30_131";
    attribute RLOC of I_36_35 : label is "X0Y0";
 begin
    Q <= Q_DUMMY;
@@ -568,22 +568,22 @@ architecture BEHAVIORAL of CB8CLED_MXILINX_ProgramCounter is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_16";
-   attribute HU_SET of I_Q1 : label is "I_Q1_15";
-   attribute HU_SET of I_Q2 : label is "I_Q2_14";
-   attribute HU_SET of I_Q3 : label is "I_Q3_13";
-   attribute HU_SET of I_Q4 : label is "I_Q4_12";
-   attribute HU_SET of I_Q5 : label is "I_Q5_11";
-   attribute HU_SET of I_Q6 : label is "I_Q6_10";
-   attribute HU_SET of I_Q7 : label is "I_Q7_9";
-   attribute HU_SET of I_TC : label is "I_TC_21";
-   attribute HU_SET of I_T1 : label is "I_T1_24";
-   attribute HU_SET of I_T2 : label is "I_T2_17";
-   attribute HU_SET of I_T3 : label is "I_T3_18";
-   attribute HU_SET of I_T4 : label is "I_T4_23";
-   attribute HU_SET of I_T5 : label is "I_T5_22";
-   attribute HU_SET of I_T6 : label is "I_T6_19";
-   attribute HU_SET of I_T7 : label is "I_T7_20";
+   attribute HU_SET of I_Q0 : label is "I_Q0_139";
+   attribute HU_SET of I_Q1 : label is "I_Q1_138";
+   attribute HU_SET of I_Q2 : label is "I_Q2_137";
+   attribute HU_SET of I_Q3 : label is "I_Q3_136";
+   attribute HU_SET of I_Q4 : label is "I_Q4_135";
+   attribute HU_SET of I_Q5 : label is "I_Q5_134";
+   attribute HU_SET of I_Q6 : label is "I_Q6_133";
+   attribute HU_SET of I_Q7 : label is "I_Q7_132";
+   attribute HU_SET of I_TC : label is "I_TC_144";
+   attribute HU_SET of I_T1 : label is "I_T1_147";
+   attribute HU_SET of I_T2 : label is "I_T2_140";
+   attribute HU_SET of I_T3 : label is "I_T3_141";
+   attribute HU_SET of I_T4 : label is "I_T4_146";
+   attribute HU_SET of I_T5 : label is "I_T5_145";
+   attribute HU_SET of I_T6 : label is "I_T6_142";
+   attribute HU_SET of I_T7 : label is "I_T7_143";
 begin
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    TC <= TC_DUMMY;
@@ -906,10 +906,10 @@ architecture BEHAVIORAL of ProgramCounter is
              DOut : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_115 : label is "XLXI_115_25";
-   attribute HU_SET of XLXI_123 : label is "XLXI_123_26";
-   attribute HU_SET of XLXI_124 : label is "XLXI_124_27";
-   attribute HU_SET of XLXI_128 : label is "XLXI_128_28";
+   attribute HU_SET of XLXI_115 : label is "XLXI_115_148";
+   attribute HU_SET of XLXI_123 : label is "XLXI_123_149";
+   attribute HU_SET of XLXI_124 : label is "XLXI_124_150";
+   attribute HU_SET of XLXI_128 : label is "XLXI_128_151";
 begin
    Q0 <= Q0_DUMMY;
    Q1 <= Q1_DUMMY;

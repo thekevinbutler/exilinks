@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : RegisterGeneric.vhf
--- /___/   /\     Timestamp : 05/07/2017 02:28:34
+-- /___/   /\     Timestamp : 05/07/2017 15:00:57
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl D:/Users/Butle/Documents/exilinks/RegisterGeneric.vhf -w D:/Users/Butle/Documents/exilinks/RegisterGeneric.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/thekevinbutler/Documents/exilinks/RegisterGeneric.vhf -w C:/Users/thekevinbutler/Documents/exilinks/RegisterGeneric.sch
 --Design Name: RegisterGeneric
 --Device: spartan3e
 --Purpose:
@@ -136,7 +136,7 @@ architecture BEHAVIORAL of RegisterGeneric is
    end component;
    attribute BOX_TYPE of PULLUP : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_114";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_93";
 begin
    XLXI_2 : FD8CE_MXILINX_RegisterGeneric
       port map (C=>Write,

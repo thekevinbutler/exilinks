@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : mux4x2to1.vhf
--- /___/   /\     Timestamp : 05/07/2017 02:28:33
+-- /___/   /\     Timestamp : 05/07/2017 15:00:57
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl D:/Users/Butle/Documents/exilinks/mux4x2to1.vhf -w D:/Users/Butle/Documents/exilinks/mux4x2to1.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/thekevinbutler/Documents/exilinks/mux4x2to1.vhf -w C:/Users/thekevinbutler/Documents/exilinks/mux4x2to1.sch
 --Design Name: mux4x2to1
 --Device: spartan3e
 --Purpose:

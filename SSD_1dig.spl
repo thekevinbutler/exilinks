@@ -1,0 +1,6 @@
+[Inputs]
+dp_in
+=hexD[4:0]=
+[Outputs]
+=sseg[7:0]=
+[BiDir]

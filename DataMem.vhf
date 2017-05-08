@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : DataMem.vhf
--- /___/   /\     Timestamp : 05/07/2017 02:28:32
+-- /___/   /\     Timestamp : 05/07/2017 15:01:18
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl D:/Users/Butle/Documents/exilinks/DataMem.vhf -w D:/Users/Butle/Documents/exilinks/DataMem.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/thekevinbutler/Documents/exilinks/DataMem.vhf -w C:/Users/thekevinbutler/Documents/exilinks/DataMem.sch
 --Design Name: DataMem
 --Device: spartan3e
 --Purpose:
@@ -99,14 +99,14 @@ architecture BEHAVIORAL of mux8x2to1_MUSER_DataMem is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_81";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_82";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_83";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_84";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_85";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_86";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_87";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_88";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_206";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_207";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_208";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_209";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_210";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_211";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_212";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_213";
 begin
    XLXI_1 : M2_1_MXILINX_DataMem
       port map (D0=>A(0),

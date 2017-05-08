@@ -5,17 +5,27 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">XLXI_123/XLXI_115/CEO</arg> has no load.
+<msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">XLXI_125/XLXI_18/O</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">3</arg> more times for the following (max. 5 shown):
-<arg fmt="%s" index="3">XLXI_123/XLXI_136/XLXI_8/O,
+<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">4</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">XLXI_123/XLXI_115/CEO,
+XLXI_123/XLXI_136/XLXI_8/O,
 XLXI_123/XLXI_136/XLXI_7/O,
 XLXI_123/XLXI_136/XLXI_6/O</arg>
 To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
 </msg>
 
 <msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">DataMode</arg> connected to top level port <arg fmt="%s" index="2">DataMode</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">InstrMode</arg> connected to top level port <arg fmt="%s" index="2">InstrMode</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">ShowC</arg> connected to top level port <arg fmt="%s" index="2">ShowC</arg> has been removed.
 </msg>
 
 <msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
@@ -26,16 +36,7 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 	<arg fmt="%s" index="2">XLXI_50/Mcount_cnt1M_cy&lt;0&gt;</arg>
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">XLXN_112</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">XLXI_123/XLXN_39</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">XLXN_113</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">XLXN_111</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">XLXN_27</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.

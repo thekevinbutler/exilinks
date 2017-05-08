@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : DisplayNumbers.vhf
--- /___/   /\     Timestamp : 05/07/2017 02:28:33
+-- /___/   /\     Timestamp : 05/07/2017 15:01:17
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl D:/Users/Butle/Documents/exilinks/DisplayNumbers.vhf -w D:/Users/Butle/Documents/exilinks/DisplayNumbers.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/thekevinbutler/Documents/exilinks/DisplayNumbers.vhf -w C:/Users/thekevinbutler/Documents/exilinks/DisplayNumbers.sch
 --Design Name: DisplayNumbers
 --Device: spartan3e
 --Purpose:
@@ -99,10 +99,10 @@ architecture BEHAVIORAL of mux4x2to1_MUSER_DisplayNumbers is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_101";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_102";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_103";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_104";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_193";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_194";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_195";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_196";
 begin
    XLXI_1 : M2_1_MXILINX_DisplayNumbers
       port map (D0=>A(0),
@@ -154,14 +154,14 @@ architecture BEHAVIORAL of mux8x2to1_MUSER_DisplayNumbers is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_105";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_106";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_107";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_108";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_109";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_110";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_111";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_112";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_197";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_198";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_199";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_200";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_201";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_202";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_203";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_204";
 begin
    XLXI_1 : M2_1_MXILINX_DisplayNumbers
       port map (D0=>A(0),
@@ -316,7 +316,7 @@ architecture BEHAVIORAL of DisplayNumbers is
    end component;
    attribute BOX_TYPE of PULLDOWN : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_18 : label is "XLXI_18_113";
+   attribute HU_SET of XLXI_18 : label is "XLXI_18_205";
 begin
    XLXI_3 : bin2BCD3en
       port map (CLK=>ssdClock,

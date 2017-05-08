@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun May 07 13:13:53 2017
+// Written by: Map P.20131013 on Sun May 07 18:31:51 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -7,8 +7,6 @@ COMP "B8" LOCATE = SITE "B8" LEVEL 1;
 COMP "q0" LOCATE = SITE "P4" LEVEL 1;
 COMP "q1" LOCATE = SITE "N4" LEVEL 1;
 COMP "AddrMode" LOCATE = SITE "E2" LEVEL 1;
-COMP "DataMode" LOCATE = SITE "G3" LEVEL 1;
-COMP "ShowC" LOCATE = SITE "A7" LEVEL 1;
 COMP "DebugMode" LOCATE = SITE "L3" LEVEL 1;
 COMP "DebugStep" LOCATE = SITE "M4" LEVEL 1;
 COMP "rowI<0>" LOCATE = SITE "B2" LEVEL 1;
@@ -34,7 +32,6 @@ COMP "anO<0>" LOCATE = SITE "F12" LEVEL 1;
 COMP "anO<1>" LOCATE = SITE "J12" LEVEL 1;
 COMP "anO<2>" LOCATE = SITE "M13" LEVEL 1;
 COMP "anO<3>" LOCATE = SITE "K14" LEVEL 1;
-COMP "InstrMode" LOCATE = SITE "F3" LEVEL 1;
 COMP "AddrLEDs<0>" LOCATE = SITE "M5" LEVEL 1;
 COMP "AddrLEDs<1>" LOCATE = SITE "M11" LEVEL 1;
 COMP "AddrLEDs<2>" LOCATE = SITE "P7" LEVEL 1;

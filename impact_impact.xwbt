@@ -1,8 +1,8 @@
 INTSTYLE=impact
-INFILE=D:\Users\Butle\Documents\exilinks\impact.xsl
-OUTFILE=D:\Users\Butle\Documents\exilinks\impact.xsl
+INFILE=C:\Users\thekevinbutler\Documents\exilinks\impact.xsl
+OUTFILE=C:\Users\thekevinbutler\Documents\exilinks\impact.xsl
 FAMILY=Multiple
 PART=Multiple
-WORKINGDIR=D:\Users\Butle\Documents\exilinks
+WORKINGDIR=C:\Users\thekevinbutler\Documents\exilinks
 LICENSE=iMPACT
 USER_INFO=iMPACT

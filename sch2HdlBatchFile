@@ -1,3 +1,1 @@
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,D:/Users/Butle/Documents/exilinks/ProgramCounter.vhf,-w,D:/Users/Butle/Documents/exilinks/ProgramCounter.sch
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,D:/Users/Butle/Documents/exilinks/toplevel.vhf,-w,D:/Users/Butle/Documents/exilinks/toplevel.sch
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,D:/Users/Butle/Documents/exilinks/toplevel.vhf,-w,D:/Users/Butle/Documents/exilinks/toplevel.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf,-w,C:/Users/thekevinbutler/Documents/exilinks/toplevel.sch
