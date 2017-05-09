@@ -9,7 +9,7 @@ Target Device  : xc3s100e
 Target Package : cp132
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Tue May 09 00:54:04 2017
+Mapped Date    : Tue May 09 01:54:07 2017
 
 Mapping design into LUTs...
 Running directed packing...
@@ -20,8 +20,8 @@ WARNING:Pack:249 - The following adjacent carry multiplexers occupy different
 Running delay-based LUT packing...
 Running related packing...
 Updating timing models...
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXN_27 is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ClockOut_OBUF is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net LDB is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to

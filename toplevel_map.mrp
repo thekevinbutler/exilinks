@@ -9,7 +9,7 @@ Target Device  : xc3s100e
 Target Package : cp132
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Tue May 09 00:54:04 2017
+Mapped Date    : Tue May 09 01:54:07 2017
 
 Design Summary
 --------------
@@ -83,8 +83,8 @@ WARNING:Pack:249 - The following adjacent carry multiplexers occupy different
    slice components.  The resulting carry chain will have suboptimal timing.
    	XLXI_50/Mcompar_cnt1M_cmp_ge0000_cy<10>
    	XLXI_50/Mcount_cnt1M_cy<0>
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXN_27 is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ClockOut_OBUF is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net LDB is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
@@ -123,7 +123,7 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-  58 block(s) removed
+  57 block(s) removed
   88 block(s) optimized away
   80 signal(s) removed
 
@@ -146,7 +146,6 @@ Loadless block "XLXI_139/XLXI_1/XLXI_12" (AND) removed.
 Loadless block "XLXI_139/XLXI_1/XLXI_13" (AND) removed.
 Loadless block "XLXI_139/XLXI_1/XLXI_14" (AND) removed.
 Loadless block "XLXI_154" (BUF) removed.
-Loadless block "XLXI_191/XLXI_9" (BUF) removed.
 The signal "XLXI_202/XLXI_3/A0" is sourceless and has been removed.
 The signal "XLXI_202/XLXI_3/A1" is sourceless and has been removed.
 The signal "XLXI_123/XLXI_115/CEO" is sourceless and has been removed.
@@ -413,6 +412,9 @@ Section 6 - IOB Properties
 | AddrLEDs<4>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | AddrMode                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 | B8                                 | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| ClkDiv0                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| ClkDiv1                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| ClockOut                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | Col<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | Col<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | Col<2>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
@@ -423,15 +425,12 @@ Section 6 - IOB Properties
 | HzMode                             | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 | IncrementPC                        | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 | InstrMode                          | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
-| Negative                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | ProgramMode                        | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 | ShowC                              | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 | anO<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | anO<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | anO<2>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | anO<3>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
-| q0                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
-| q1                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | rowI<0>                            | IBUF             | INPUT     | LVCMOS25             |       |          |      |              | PULLDOWN | 0 / 0    |
 | rowI<1>                            | IBUF             | INPUT     | LVCMOS25             |       |          |      |              | PULLDOWN | 0 / 0    |
 | rowI<2>                            | IBUF             | INPUT     | LVCMOS25             |       |          |      |              | PULLDOWN | 0 / 0    |
@@ -448,21 +447,21 @@ Section 6 - IOB Properties
 
 Section 7 - RPMs
 ----------------
-XLXI_123/XLXI_115/XLXI_115_I_Q0_85      
-XLXI_123/XLXI_115/XLXI_115_I_Q1_84      
-XLXI_123/XLXI_115/XLXI_115_I_Q2_83      
-XLXI_123/XLXI_115/XLXI_115_I_Q3_82      
-XLXI_123/XLXI_115/XLXI_115_I_Q4_81      
-XLXI_123/XLXI_115/XLXI_115_I_Q5_80      
-XLXI_123_XLXI_123_95                    
-XLXI_123_XLXI_124_96                    
-XLXI_191_XLXI_10_69                     
-XLXI_191_XLXI_11_70                     
-XLXI_191_XLXI_2_XLXI_10_68              
-XLXI_191_XLXI_31_XLXI_10_68             
-XLXI_191_XLXI_32_71                     
-XLXI_191_XLXI_3_XLXI_10_68              
-XLXI_202_XLXI_3_59                      
+XLXI_123/XLXI_115/XLXI_115_I_Q0_27      
+XLXI_123/XLXI_115/XLXI_115_I_Q1_26      
+XLXI_123/XLXI_115/XLXI_115_I_Q2_25      
+XLXI_123/XLXI_115/XLXI_115_I_Q3_24      
+XLXI_123/XLXI_115/XLXI_115_I_Q4_23      
+XLXI_123/XLXI_115/XLXI_115_I_Q5_22      
+XLXI_123_XLXI_123_37                    
+XLXI_123_XLXI_124_38                    
+XLXI_191_XLXI_10_11                     
+XLXI_191_XLXI_11_12                     
+XLXI_191_XLXI_2_XLXI_10_10              
+XLXI_191_XLXI_31_XLXI_10_10             
+XLXI_191_XLXI_32_13                     
+XLXI_191_XLXI_3_XLXI_10_10              
+XLXI_202_XLXI_3_9                       
 
 Section 8 - Guide Report
 ------------------------

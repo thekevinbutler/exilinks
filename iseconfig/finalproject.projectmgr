@@ -16,7 +16,10 @@
          <ClosedNode>/topProject C:|Users|Connor|Desktop|topProject.sch/XLXI_150 - KeypadShifter/XLXI_2 - keyCR4b - Behavioral</ClosedNode>
          <ClosedNode>/toplevel D:|Users|Butle|Documents|exilinks|toplevel.sch/XLXI_111 - KeyPad</ClosedNode>
          <ClosedNode>/toplevel D:|Users|Butle|Documents|exilinks|toplevel.sch/XLXI_123 - ProgramCounter</ClosedNode>
+         <ClosedNode>/toplevel D:|Users|Butle|Documents|exilinks|toplevel.sch/XLXI_124 - InstructionMem</ClosedNode>
          <ClosedNode>/toplevel D:|Users|Butle|Documents|exilinks|toplevel.sch/XLXI_125 - DisplayNumbers</ClosedNode>
+         <ClosedNode>/toplevel D:|Users|Butle|Documents|exilinks|toplevel.sch/XLXI_127 - DataMem</ClosedNode>
+         <ClosedNode>/toplevel D:|Users|Butle|Documents|exilinks|toplevel.sch/XLXI_139 - InstructionDecode</ClosedNode>
          <ClosedNode>/toplevel D:|Users|Butle|Documents|exilinks|toplevel.sch/XLXI_175 - addsub8 - Behavioral</ClosedNode>
          <ClosedNode>/toplevel D:|Users|Butle|Documents|exilinks|toplevel.sch/XLXI_178 - RegisterA</ClosedNode>
          <ClosedNode>/toplevel D:|Users|Butle|Documents|exilinks|toplevel.sch/XLXI_191 - AddSub_ALU/XLXI_1 - addsub8 - Behavioral</ClosedNode>
@@ -25,9 +28,9 @@
       <SelectedItems>
          <SelectedItem>toplevel (D:/Users/Butle/Documents/exilinks/toplevel.sch)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001fd000000020000000000000000000000000200000064ffffffff000000810000000300000002000001fd0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000173000000020000000000000000000000000200000064ffffffff000000810000000300000002000001730000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>toplevel (D:/Users/Butle/Documents/exilinks/toplevel.sch)</CurrentItem>
    </ItemView>
@@ -77,13 +80,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
       <ClosedNodes>

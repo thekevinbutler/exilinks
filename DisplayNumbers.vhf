@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : DisplayNumbers.vhf
--- /___/   /\     Timestamp : 05/09/2017 00:20:06
+-- /___/   /\     Timestamp : 05/09/2017 01:46:46
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -99,14 +99,14 @@ architecture BEHAVIORAL of mux8x2to1_MUSER_DisplayNumbers is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_46";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_47";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_48";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_49";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_50";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_51";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_52";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_53";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_0";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_1";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_2";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_3";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_4";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_5";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_6";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_7";
 begin
    XLXI_1 : M2_1_MXILINX_DisplayNumbers
       port map (D0=>A(0),
@@ -182,10 +182,10 @@ architecture BEHAVIORAL of mux4x2to1_MUSER_DisplayNumbers is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_54";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_55";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_56";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_57";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_8";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_9";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_10";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_11";
 begin
    XLXI_1 : M2_1_MXILINX_DisplayNumbers
       port map (D0=>A(0),
@@ -336,7 +336,7 @@ architecture BEHAVIORAL of DisplayNumbers is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_18 : label is "XLXI_18_58";
+   attribute HU_SET of XLXI_18 : label is "XLXI_18_12";
 begin
    XLXI_3 : bin2BCD3en
       port map (CLK=>ssdClock,

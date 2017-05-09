@@ -22,8 +22,8 @@ NET "sseg[1]" LOC = L13;
 NET "sseg[0]" LOC = M12;
 NET "B8" LOC = B8;
 
-NET "q0" LOC = P4;
-NET "q1" LOC = N4;
+NET "ClkDiv0" LOC = P4;
+NET "ClkDiv1" LOC = N4;
 
 
 NET "DebugStep" LOC = M4;
@@ -58,4 +58,4 @@ NET "SignMode" LOC = G1;
 
 # PlanAhead Generated physical constraints 
 
-NET "Negative" LOC = G1;
+NET "ClockOut" LOC = G1;

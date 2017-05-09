@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : AddSub_ALU.vhf
--- /___/   /\     Timestamp : 05/09/2017 00:53:39
+-- /___/   /\     Timestamp : 05/09/2017 01:47:56
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -1081,17 +1081,16 @@ entity AddSub_ALU is
 end AddSub_ALU;
 
 architecture BEHAVIORAL of AddSub_ALU is
-   attribute BOX_TYPE   : string ;
    attribute HU_SET     : string ;
+   attribute BOX_TYPE   : string ;
    signal COut                   : std_logic_vector (7 downto 0);
-   signal sel                    : std_logic_vector (1 downto 0);
    signal SignLatch              : std_logic;
    signal XLXN_3                 : std_logic_vector (7 downto 0);
    signal XLXN_4                 : std_logic_vector (7 downto 0);
    signal XLXN_6                 : std_logic;
    signal XLXN_10                : std_logic;
    signal XLXN_12                : std_logic;
-   signal XLXN_99                : std_logic;
+   signal XLXN_107               : std_logic;
    signal RegOut_DUMMY           : std_logic_vector (7 downto 0);
    signal XLXI_10_CLR_openSignal : std_logic;
    signal XLXI_11_CLR_openSignal : std_logic;
@@ -1100,12 +1099,6 @@ architecture BEHAVIORAL of AddSub_ALU is
              NumOut : out   std_logic_vector (7 downto 0); 
              Signed : in    std_logic);
    end component;
-   
-   component BUF
-      port ( I : in    std_logic; 
-             O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
    component FJKC_MXILINX_AddSub_ALU
       generic( INIT : bit :=  '0');
@@ -1154,10 +1147,6 @@ begin
                 Signed=>SignLatch,
                 NumOut(7 downto 0)=>XLXN_4(7 downto 0));
    
-   XLXI_9 : BUF
-      port map (I=>SignLatch,
-                O=>sel(1));
-   
    XLXI_10 : FJKC_MXILINX_AddSub_ALU
       port map (C=>Set,
                 CLR=>XLXI_10_CLR_openSignal,
@@ -1187,20 +1176,16 @@ begin
    
    XLXI_32 : ADSU8_MXILINX_AddSub_ALU
       port map (A(7 downto 0)=>XLXN_3(7 downto 0),
-                ADD=>sel(0),
+                ADD=>XLXN_107,
                 B(7 downto 0)=>XLXN_4(7 downto 0),
-                CI=>XLXN_99,
+                CI=>XLXN_6,
                 CO=>open,
                 OFL=>open,
                 S(7 downto 0)=>COut(7 downto 0));
    
-   XLXI_36 : INV
-      port map (I=>sel(0),
-                O=>XLXN_99);
-   
    XLXI_37 : INV
       port map (I=>XLXN_6,
-                O=>sel(0));
+                O=>XLXN_107);
    
    XLXI_38 : AND2
       port map (I0=>RegOut_DUMMY(7),

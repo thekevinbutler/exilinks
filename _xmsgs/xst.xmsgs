@@ -5,19 +5,19 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">3737</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK10k</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM_50M</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">3722</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK10k</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM_50M</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">3805</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">NOP</arg>&apos; of component &apos;<arg fmt="%s" index="4">InstructionDecode_MUSER_toplevel</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">3790</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">NOP</arg>&apos; of component &apos;<arg fmt="%s" index="4">InstructionDecode_MUSER_toplevel</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">3039</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB8CLED_MXILINX_toplevel</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">3024</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB8CLED_MXILINX_toplevel</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">3039</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB8CLED_MXILINX_toplevel</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">3024</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB8CLED_MXILINX_toplevel</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">2237</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">RBout</arg>&apos; of component &apos;<arg fmt="%s" index="4">bin2BCD3en</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">2222</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">RBout</arg>&apos; of component &apos;<arg fmt="%s" index="4">bin2BCD3en</arg>&apos;.
 </msg>
 
 <msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/Modules/bin2BCD3en.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: Mux is complete : default of case is discarded
@@ -29,28 +29,28 @@
 <msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">Dout3</arg>&gt; in unit &lt;<arg fmt="%s" index="2">bin2BCD3en</arg>&gt; has a constant value of <arg fmt="%s" index="3">0000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">1687</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Out11</arg>&apos; of component &apos;<arg fmt="%s" index="4">Demux1to16_MUSER_toplevel</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">1772</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Out11</arg>&apos; of component &apos;<arg fmt="%s" index="4">Demux1to16_MUSER_toplevel</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">1687</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Out10</arg>&apos; of component &apos;<arg fmt="%s" index="4">Demux1to16_MUSER_toplevel</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">1772</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Out10</arg>&apos; of component &apos;<arg fmt="%s" index="4">Demux1to16_MUSER_toplevel</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">1687</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Out13</arg>&apos; of component &apos;<arg fmt="%s" index="4">Demux1to16_MUSER_toplevel</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">1772</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Out13</arg>&apos; of component &apos;<arg fmt="%s" index="4">Demux1to16_MUSER_toplevel</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">1687</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Out12</arg>&apos; of component &apos;<arg fmt="%s" index="4">Demux1to16_MUSER_toplevel</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">1772</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Out12</arg>&apos; of component &apos;<arg fmt="%s" index="4">Demux1to16_MUSER_toplevel</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">1385</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CO</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADSU8_MXILINX_toplevel</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">1474</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CO</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADSU8_MXILINX_toplevel</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">1385</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADSU8_MXILINX_toplevel</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">1474</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADSU8_MXILINX_toplevel</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">851</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CO</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD8_MXILINX_toplevel</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">951</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CO</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD8_MXILINX_toplevel</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">851</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD8_MXILINX_toplevel</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/Users/Butle/Documents/exilinks/toplevel.vhf</arg>&quot; line <arg fmt="%d" index="2">951</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD8_MXILINX_toplevel</arg>&apos;.
 </msg>
 
 <msg type="info" file="Xst" num="738" delta="old" >HDL ADVISOR - <arg fmt="%d" index="1">256</arg> flip-flops were inferred for signal &lt;<arg fmt="%s" index="2">mem</arg>&gt;. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
@@ -83,16 +83,10 @@
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_13_dp_in_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">sel&lt;1&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_11_CLR_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_10_CLR_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">notq1</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_169_CLR_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
@@ -102,6 +96,9 @@
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">RunState</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">CD1Inv</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Dout2_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_3</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Dout2_3&gt; </arg>
