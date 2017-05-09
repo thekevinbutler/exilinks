@@ -1,614 +1,610 @@
 V3 308
-FL D:/Users/Butle/Documents/exilinks/AddSub_ALU.vhf 2017/05/08.23:00:22 P.20131013
-EN work/M2_1_MXILINX_AddSub_ALU 1494309705 \
+FL D:/Users/Butle/Documents/exilinks/AddSub_ALU.vhf 2017/05/09.00:53:40 P.20131013
+EN work/M2_1_MXILINX_AddSub_ALU 1494316501 \
       FL D:/Users/Butle/Documents/exilinks/AddSub_ALU.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1_MXILINX_AddSub_ALU/BEHAVIORAL 1494309706 \
+AR work/M2_1_MXILINX_AddSub_ALU/BEHAVIORAL 1494316502 \
       FL D:/Users/Butle/Documents/exilinks/AddSub_ALU.vhf \
-      EN work/M2_1_MXILINX_AddSub_ALU 1494309705 CP AND2B1 CP OR2 CP AND2
-EN work/mux8x2to1_MUSER_AddSub_ALU 1494309707 \
+      EN work/M2_1_MXILINX_AddSub_ALU 1494316501 CP AND2B1 CP OR2 CP AND2
+EN work/mux8x2to1_MUSER_AddSub_ALU 1494316503 \
       FL D:/Users/Butle/Documents/exilinks/AddSub_ALU.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/mux8x2to1_MUSER_AddSub_ALU/BEHAVIORAL 1494309708 \
+AR work/mux8x2to1_MUSER_AddSub_ALU/BEHAVIORAL 1494316504 \
       FL D:/Users/Butle/Documents/exilinks/AddSub_ALU.vhf \
-      EN work/mux8x2to1_MUSER_AddSub_ALU 1494309707 CP M2_1_MXILINX_AddSub_ALU
-EN work/ADD8_MXILINX_AddSub_ALU 1494309709 \
+      EN work/mux8x2to1_MUSER_AddSub_ALU 1494316503 CP M2_1_MXILINX_AddSub_ALU
+EN work/ADD8_MXILINX_AddSub_ALU 1494316505 \
       FL D:/Users/Butle/Documents/exilinks/AddSub_ALU.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/ADD8_MXILINX_AddSub_ALU/BEHAVIORAL 1494309710 \
+AR work/ADD8_MXILINX_AddSub_ALU/BEHAVIORAL 1494316506 \
       FL D:/Users/Butle/Documents/exilinks/AddSub_ALU.vhf \
-      EN work/ADD8_MXILINX_AddSub_ALU 1494309709 CP FMAP CP MUXCY_L CP MUXCY \
+      EN work/ADD8_MXILINX_AddSub_ALU 1494316505 CP FMAP CP MUXCY_L CP MUXCY \
       CP XORCY CP MUXCY_D CP XOR2
-EN work/TwosComp_MUSER_AddSub_ALU 1494309711 \
+EN work/TwosComp_MUSER_AddSub_ALU 1494316507 \
       FL D:/Users/Butle/Documents/exilinks/AddSub_ALU.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/TwosComp_MUSER_AddSub_ALU/BEHAVIORAL 1494309712 \
+AR work/TwosComp_MUSER_AddSub_ALU/BEHAVIORAL 1494316508 \
       FL D:/Users/Butle/Documents/exilinks/AddSub_ALU.vhf \
-      EN work/TwosComp_MUSER_AddSub_ALU 1494309711 CP INV \
+      EN work/TwosComp_MUSER_AddSub_ALU 1494316507 CP INV \
       CP ADD8_MXILINX_AddSub_ALU CP PULLUP CP BUF CP PULLDOWN \
       CP mux8x2to1_MUSER_AddSub_ALU CP AND2
-EN work/FJKC_MXILINX_AddSub_ALU 1494309713 \
+EN work/ADSU8_MXILINX_AddSub_ALU 1494316509 \
       FL D:/Users/Butle/Documents/exilinks/AddSub_ALU.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/FJKC_MXILINX_AddSub_ALU/BEHAVIORAL 1494309714 \
+AR work/ADSU8_MXILINX_AddSub_ALU/BEHAVIORAL 1494316510 \
       FL D:/Users/Butle/Documents/exilinks/AddSub_ALU.vhf \
-      EN work/FJKC_MXILINX_AddSub_ALU 1494309713 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
-      CP AND2B1
-EN work/AddSub_ALU 1494309715 \
+      EN work/ADSU8_MXILINX_AddSub_ALU 1494316509 CP FMAP CP XOR3 CP MUXCY_L \
+      CP MUXCY CP XORCY CP MUXCY_D CP INV CP XOR2
+EN work/FJKC_MXILINX_AddSub_ALU 1494316511 \
       FL D:/Users/Butle/Documents/exilinks/AddSub_ALU.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/AddSub_ALU/BEHAVIORAL 1494309716 \
-      FL D:/Users/Butle/Documents/exilinks/AddSub_ALU.vhf EN work/AddSub_ALU 1494309715 \
-      CP addsub8 CP TwosComp_MUSER_AddSub_ALU CP BUF CP FJKC_MXILINX_AddSub_ALU \
-      CP INV CP AND2 CP mux8x2to1_MUSER_AddSub_ALU CP OR2 CP PULLUP
+AR work/FJKC_MXILINX_AddSub_ALU/BEHAVIORAL 1494316512 \
+      FL D:/Users/Butle/Documents/exilinks/AddSub_ALU.vhf \
+      EN work/FJKC_MXILINX_AddSub_ALU 1494316511 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
+      CP AND2B1
+EN work/AddSub_ALU 1494316513 \
+      FL D:/Users/Butle/Documents/exilinks/AddSub_ALU.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/AddSub_ALU/BEHAVIORAL 1494316514 \
+      FL D:/Users/Butle/Documents/exilinks/AddSub_ALU.vhf EN work/AddSub_ALU 1494316513 \
+      CP TwosComp_MUSER_AddSub_ALU CP BUF CP FJKC_MXILINX_AddSub_ALU CP INV \
+      CP ADSU8_MXILINX_AddSub_ALU CP AND2
 FL D:/Users/Butle/Documents/exilinks/DataMem.vhf 2017/05/08.23:00:21 P.20131013
-EN work/M2_1_MXILINX_DataMem 1494309717 \
+EN work/M2_1_MXILINX_DataMem 1494316515 \
       FL D:/Users/Butle/Documents/exilinks/DataMem.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1_MXILINX_DataMem/BEHAVIORAL 1494309718 \
+AR work/M2_1_MXILINX_DataMem/BEHAVIORAL 1494316516 \
       FL D:/Users/Butle/Documents/exilinks/DataMem.vhf \
-      EN work/M2_1_MXILINX_DataMem 1494309717 CP AND2B1 CP OR2 CP AND2
-EN work/mux8x2to1_MUSER_DataMem 1494309719 \
+      EN work/M2_1_MXILINX_DataMem 1494316515 CP AND2B1 CP OR2 CP AND2
+EN work/mux8x2to1_MUSER_DataMem 1494316517 \
       FL D:/Users/Butle/Documents/exilinks/DataMem.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/mux8x2to1_MUSER_DataMem/BEHAVIORAL 1494309720 \
+AR work/mux8x2to1_MUSER_DataMem/BEHAVIORAL 1494316518 \
       FL D:/Users/Butle/Documents/exilinks/DataMem.vhf \
-      EN work/mux8x2to1_MUSER_DataMem 1494309719 CP M2_1_MXILINX_DataMem
-EN work/DataMem 1494309721 \
+      EN work/mux8x2to1_MUSER_DataMem 1494316517 CP M2_1_MXILINX_DataMem
+EN work/DataMem 1494316519 \
       FL D:/Users/Butle/Documents/exilinks/DataMem.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/DataMem/BEHAVIORAL 1494309722 \
-      FL D:/Users/Butle/Documents/exilinks/DataMem.vhf EN work/DataMem 1494309721 \
+AR work/DataMem/BEHAVIORAL 1494316520 \
+      FL D:/Users/Butle/Documents/exilinks/DataMem.vhf EN work/DataMem 1494316519 \
       CP sRAM32x8_ex_pgm_data CP PULLDOWN CP mux8x2to1_MUSER_DataMem CP INV
 FL D:/Users/Butle/Documents/exilinks/Demux1to16.vhf 2017/05/08.23:00:20 P.20131013
-EN work/Demux1to16 1494309783 FL D:/Users/Butle/Documents/exilinks/Demux1to16.vhf \
+EN work/Demux1to16 1494316577 FL D:/Users/Butle/Documents/exilinks/Demux1to16.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Demux1to16/BEHAVIORAL 1494309784 \
-      FL D:/Users/Butle/Documents/exilinks/Demux1to16.vhf EN work/Demux1to16 1494309783 \
+AR work/Demux1to16/BEHAVIORAL 1494316578 \
+      FL D:/Users/Butle/Documents/exilinks/Demux1to16.vhf EN work/Demux1to16 1494316577 \
       CP AND5 CP INV
-FL D:/Users/Butle/Documents/exilinks/DisplayNumbers.vhf 2017/05/08.23:00:20 P.20131013
-EN work/M2_1_MXILINX_DisplayNumbers 1494309723 \
+FL D:/Users/Butle/Documents/exilinks/DisplayNumbers.vhf 2017/05/09.00:20:07 P.20131013
+EN work/M2_1_MXILINX_DisplayNumbers 1494316521 \
       FL D:/Users/Butle/Documents/exilinks/DisplayNumbers.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1_MXILINX_DisplayNumbers/BEHAVIORAL 1494309724 \
+AR work/M2_1_MXILINX_DisplayNumbers/BEHAVIORAL 1494316522 \
       FL D:/Users/Butle/Documents/exilinks/DisplayNumbers.vhf \
-      EN work/M2_1_MXILINX_DisplayNumbers 1494309723 CP AND2B1 CP OR2 CP AND2
-EN work/mux8x2to1_MUSER_DisplayNumbers 1494309725 \
+      EN work/M2_1_MXILINX_DisplayNumbers 1494316521 CP AND2B1 CP OR2 CP AND2
+EN work/mux8x2to1_MUSER_DisplayNumbers 1494316523 \
       FL D:/Users/Butle/Documents/exilinks/DisplayNumbers.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/mux8x2to1_MUSER_DisplayNumbers/BEHAVIORAL 1494309726 \
+AR work/mux8x2to1_MUSER_DisplayNumbers/BEHAVIORAL 1494316524 \
       FL D:/Users/Butle/Documents/exilinks/DisplayNumbers.vhf \
-      EN work/mux8x2to1_MUSER_DisplayNumbers 1494309725 \
+      EN work/mux8x2to1_MUSER_DisplayNumbers 1494316523 \
       CP M2_1_MXILINX_DisplayNumbers
-EN work/ADD8_MXILINX_DisplayNumbers 1494309727 \
+EN work/mux4x2to1_MUSER_DisplayNumbers 1494316525 \
       FL D:/Users/Butle/Documents/exilinks/DisplayNumbers.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/ADD8_MXILINX_DisplayNumbers/BEHAVIORAL 1494309728 \
+AR work/mux4x2to1_MUSER_DisplayNumbers/BEHAVIORAL 1494316526 \
       FL D:/Users/Butle/Documents/exilinks/DisplayNumbers.vhf \
-      EN work/ADD8_MXILINX_DisplayNumbers 1494309727 CP FMAP CP MUXCY_L CP MUXCY \
-      CP XORCY CP MUXCY_D CP XOR2
-EN work/TwosComp_MUSER_DisplayNumbers 1494309729 \
-      FL D:/Users/Butle/Documents/exilinks/DisplayNumbers.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/TwosComp_MUSER_DisplayNumbers/BEHAVIORAL 1494309730 \
-      FL D:/Users/Butle/Documents/exilinks/DisplayNumbers.vhf \
-      EN work/TwosComp_MUSER_DisplayNumbers 1494309729 CP INV \
-      CP ADD8_MXILINX_DisplayNumbers CP PULLUP CP BUF CP PULLDOWN \
-      CP mux8x2to1_MUSER_DisplayNumbers CP AND2
-EN work/mux4x2to1_MUSER_DisplayNumbers 1494309731 \
-      FL D:/Users/Butle/Documents/exilinks/DisplayNumbers.vhf \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
-      PH unisim/VCOMPONENTS 1381692182
-AR work/mux4x2to1_MUSER_DisplayNumbers/BEHAVIORAL 1494309732 \
-      FL D:/Users/Butle/Documents/exilinks/DisplayNumbers.vhf \
-      EN work/mux4x2to1_MUSER_DisplayNumbers 1494309731 \
+      EN work/mux4x2to1_MUSER_DisplayNumbers 1494316525 \
       CP M2_1_MXILINX_DisplayNumbers
-EN work/DisplayNumbers 1494309733 \
+EN work/DisplayNumbers 1494316527 \
       FL D:/Users/Butle/Documents/exilinks/DisplayNumbers.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/DisplayNumbers/BEHAVIORAL 1494309734 \
+AR work/DisplayNumbers/BEHAVIORAL 1494316528 \
       FL D:/Users/Butle/Documents/exilinks/DisplayNumbers.vhf \
-      EN work/DisplayNumbers 1494309733 CP bin2BCD3en CP mux4SSD \
+      EN work/DisplayNumbers 1494316527 CP bin2BCD3en CP mux4SSD \
       CP mux8x2to1_MUSER_DisplayNumbers CP sel_strobeB CP PULLUP \
       CP mux4x2to1_MUSER_DisplayNumbers CP M2_1_MXILINX_DisplayNumbers CP PULLDOWN \
-      CP AND4 CP TwosComp_MUSER_DisplayNumbers
+      CP AND4 CP BUF
 FL D:/Users/Butle/Documents/exilinks/InputState.vhf 2017/05/08.23:00:21 P.20131013
-EN work/InputState 1494309735 FL D:/Users/Butle/Documents/exilinks/InputState.vhf \
+EN work/InputState 1494316529 FL D:/Users/Butle/Documents/exilinks/InputState.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/InputState/BEHAVIORAL 1494309736 \
-      FL D:/Users/Butle/Documents/exilinks/InputState.vhf EN work/InputState 1494309735 \
+AR work/InputState/BEHAVIORAL 1494316530 \
+      FL D:/Users/Butle/Documents/exilinks/InputState.vhf EN work/InputState 1494316529 \
       CP AND2 CP OR2 CP AND2B1 CP INV
 FL D:/Users/Butle/Documents/exilinks/InstructionDecode.vhf 2017/05/08.23:00:21 P.20131013
-EN work/Demux1to16_MUSER_InstructionDecode 1494309737 \
+EN work/Demux1to16_MUSER_InstructionDecode 1494316531 \
       FL D:/Users/Butle/Documents/exilinks/InstructionDecode.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/Demux1to16_MUSER_InstructionDecode/BEHAVIORAL 1494309738 \
+AR work/Demux1to16_MUSER_InstructionDecode/BEHAVIORAL 1494316532 \
       FL D:/Users/Butle/Documents/exilinks/InstructionDecode.vhf \
-      EN work/Demux1to16_MUSER_InstructionDecode 1494309737 CP AND5 CP INV
-EN work/InstructionDecode 1494309739 \
+      EN work/Demux1to16_MUSER_InstructionDecode 1494316531 CP AND5 CP INV
+EN work/InstructionDecode 1494316533 \
       FL D:/Users/Butle/Documents/exilinks/InstructionDecode.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/InstructionDecode/BEHAVIORAL 1494309740 \
+AR work/InstructionDecode/BEHAVIORAL 1494316534 \
       FL D:/Users/Butle/Documents/exilinks/InstructionDecode.vhf \
-      EN work/InstructionDecode 1494309739 CP Demux1to16_MUSER_InstructionDecode \
+      EN work/InstructionDecode 1494316533 CP Demux1to16_MUSER_InstructionDecode \
       CP AND4 CP AND2 CP OR2
 FL D:/Users/Butle/Documents/exilinks/InstructionMem.vhf 2017/05/08.23:00:23 P.20131013
-EN work/M2_1_MXILINX_InstructionMem 1494309741 \
+EN work/M2_1_MXILINX_InstructionMem 1494316535 \
       FL D:/Users/Butle/Documents/exilinks/InstructionMem.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1_MXILINX_InstructionMem/BEHAVIORAL 1494309742 \
+AR work/M2_1_MXILINX_InstructionMem/BEHAVIORAL 1494316536 \
       FL D:/Users/Butle/Documents/exilinks/InstructionMem.vhf \
-      EN work/M2_1_MXILINX_InstructionMem 1494309741 CP AND2B1 CP OR2 CP AND2
-EN work/mux8x2to1_MUSER_InstructionMem 1494309743 \
+      EN work/M2_1_MXILINX_InstructionMem 1494316535 CP AND2B1 CP OR2 CP AND2
+EN work/mux8x2to1_MUSER_InstructionMem 1494316537 \
       FL D:/Users/Butle/Documents/exilinks/InstructionMem.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/mux8x2to1_MUSER_InstructionMem/BEHAVIORAL 1494309744 \
+AR work/mux8x2to1_MUSER_InstructionMem/BEHAVIORAL 1494316538 \
       FL D:/Users/Butle/Documents/exilinks/InstructionMem.vhf \
-      EN work/mux8x2to1_MUSER_InstructionMem 1494309743 \
+      EN work/mux8x2to1_MUSER_InstructionMem 1494316537 \
       CP M2_1_MXILINX_InstructionMem
-EN work/InstructionMem 1494309745 \
+EN work/InstructionMem 1494316539 \
       FL D:/Users/Butle/Documents/exilinks/InstructionMem.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/InstructionMem/BEHAVIORAL 1494309746 \
+AR work/InstructionMem/BEHAVIORAL 1494316540 \
       FL D:/Users/Butle/Documents/exilinks/InstructionMem.vhf \
-      EN work/InstructionMem 1494309745 CP sRAM32x8_ex_pgm_instr CP PULLDOWN CP BUF \
+      EN work/InstructionMem 1494316539 CP sRAM32x8_ex_pgm_instr CP PULLDOWN CP BUF \
       CP mux8x2to1_MUSER_InstructionMem CP INV
 FL D:/Users/Butle/Documents/exilinks/KeyPad.vhf 2017/05/08.23:00:23 P.20131013
-EN work/FD4CE_MXILINX_KeyPad 1494309747 \
+EN work/FD4CE_MXILINX_KeyPad 1494316541 \
       FL D:/Users/Butle/Documents/exilinks/KeyPad.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/FD4CE_MXILINX_KeyPad/BEHAVIORAL 1494309748 \
+AR work/FD4CE_MXILINX_KeyPad/BEHAVIORAL 1494316542 \
       FL D:/Users/Butle/Documents/exilinks/KeyPad.vhf \
-      EN work/FD4CE_MXILINX_KeyPad 1494309747 CP FDCE
-EN work/KeyPad 1494309749 \
+      EN work/FD4CE_MXILINX_KeyPad 1494316541 CP FDCE
+EN work/KeyPad 1494316543 \
       FL D:/Users/Butle/Documents/exilinks/KeyPad.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/KeyPad/BEHAVIORAL 1494309750 \
-      FL D:/Users/Butle/Documents/exilinks/KeyPad.vhf EN work/KeyPad 1494309749 \
+AR work/KeyPad/BEHAVIORAL 1494316544 \
+      FL D:/Users/Butle/Documents/exilinks/KeyPad.vhf EN work/KeyPad 1494316543 \
       CP keyCR4b CP FD4CE_MXILINX_KeyPad CP FD CP INV CP PULLDOWN
 FL D:/Users/Butle/Documents/exilinks/Modules/addsub8.vhd 2017/05/06.20:31:43 P.20131013
-EN work/fulladd 1494309641 \
+EN work/fulladd 1494312143 \
       FL D:/Users/Butle/Documents/exilinks/Modules/addsub8.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/fulladd/minimalist 1494309642 \
-      FL D:/Users/Butle/Documents/exilinks/Modules/addsub8.vhd EN work/fulladd 1494309641
-EN work/IoD8 1494309643 \
+AR work/fulladd/minimalist 1494312144 \
+      FL D:/Users/Butle/Documents/exilinks/Modules/addsub8.vhd EN work/fulladd 1494312143
+EN work/IoD8 1494312145 \
       FL D:/Users/Butle/Documents/exilinks/Modules/addsub8.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/IoD8/corinthian 1494309644 \
-      FL D:/Users/Butle/Documents/exilinks/Modules/addsub8.vhd EN work/IoD8 1494309643
-EN work/FA8 1494309645 \
+AR work/IoD8/corinthian 1494312146 \
+      FL D:/Users/Butle/Documents/exilinks/Modules/addsub8.vhd EN work/IoD8 1494312145
+EN work/FA8 1494312147 \
       FL D:/Users/Butle/Documents/exilinks/Modules/addsub8.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/FA8/postmodern 1494309646 \
-      FL D:/Users/Butle/Documents/exilinks/Modules/addsub8.vhd EN work/FA8 1494309645 \
+AR work/FA8/postmodern 1494312148 \
+      FL D:/Users/Butle/Documents/exilinks/Modules/addsub8.vhd EN work/FA8 1494312147 \
       CP fulladd
-EN work/addsub8 1494309647 \
+EN work/addsub8 1494312149 \
       FL D:/Users/Butle/Documents/exilinks/Modules/addsub8.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/addsub8/Behavioral 1494309648 \
-      FL D:/Users/Butle/Documents/exilinks/Modules/addsub8.vhd EN work/addsub8 1494309647 \
+AR work/addsub8/Behavioral 1494312150 \
+      FL D:/Users/Butle/Documents/exilinks/Modules/addsub8.vhd EN work/addsub8 1494312149 \
       CP IoD8 CP FA8
 FL D:/Users/Butle/Documents/exilinks/Modules/bin2BCD3en.vhd 2017/05/05.21:12:25 P.20131013
-EN work/bin2BCD3en 1494309633 \
+EN work/bin2BCD3en 1494316435 \
       FL D:/Users/Butle/Documents/exilinks/Modules/bin2BCD3en.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/bin2BCD3en/Behavioral 1494309634 \
+AR work/bin2BCD3en/Behavioral 1494316436 \
       FL D:/Users/Butle/Documents/exilinks/Modules/bin2BCD3en.vhd \
-      EN work/bin2BCD3en 1494309633
+      EN work/bin2BCD3en 1494316435
 FL D:/Users/Butle/Documents/exilinks/Modules/CRenc4bin.vhd 2017/05/05.21:12:25 P.20131013
-EN work/CRenc4bin 1494309627 \
+EN work/CRenc4bin 1494316429 \
       FL D:/Users/Butle/Documents/exilinks/Modules/CRenc4bin.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/CRenc4bin/Behavioral 1494309628 \
+AR work/CRenc4bin/Behavioral 1494316430 \
       FL D:/Users/Butle/Documents/exilinks/Modules/CRenc4bin.vhd \
-      EN work/CRenc4bin 1494309627
+      EN work/CRenc4bin 1494316429
 FL D:/Users/Butle/Documents/exilinks/Modules/DCM_50M.vhd 2017/05/05.21:12:25 P.20131013
-EN work/DCM_50M 1494309651 \
+EN work/DCM_50M 1494316445 \
       FL D:/Users/Butle/Documents/exilinks/Modules/DCM_50M.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/DCM_50M/Behavioral 1494309652 \
-      FL D:/Users/Butle/Documents/exilinks/Modules/DCM_50M.vhd EN work/DCM_50M 1494309651
+AR work/DCM_50M/Behavioral 1494316446 \
+      FL D:/Users/Butle/Documents/exilinks/Modules/DCM_50M.vhd EN work/DCM_50M 1494316445
 FL D:/Users/Butle/Documents/exilinks/Modules/keyCR4b.vhd 2017/05/05.21:12:25 P.20131013
-EN work/keyCR4b 1494309629 \
+EN work/keyCR4b 1494316431 \
       FL D:/Users/Butle/Documents/exilinks/Modules/keyCR4b.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/keyCR4b/Behavioral 1494309630 \
-      FL D:/Users/Butle/Documents/exilinks/Modules/keyCR4b.vhd EN work/keyCR4b 1494309629 \
+AR work/keyCR4b/Behavioral 1494316432 \
+      FL D:/Users/Butle/Documents/exilinks/Modules/keyCR4b.vhd EN work/keyCR4b 1494316431 \
       CP CRenc4bin
 FL D:/Users/Butle/Documents/exilinks/Modules/mux4SSD.vhd 2017/05/05.21:12:25 P.20131013
-EN work/mux4SSD 1494309635 \
+EN work/mux4SSD 1494316437 \
       FL D:/Users/Butle/Documents/exilinks/Modules/mux4SSD.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/mux4SSD/Behavioral 1494309636 \
-      FL D:/Users/Butle/Documents/exilinks/Modules/mux4SSD.vhd EN work/mux4SSD 1494309635
+AR work/mux4SSD/Behavioral 1494316438 \
+      FL D:/Users/Butle/Documents/exilinks/Modules/mux4SSD.vhd EN work/mux4SSD 1494316437
 FL D:/Users/Butle/Documents/exilinks/Modules/sel_strobeB.vhd 2017/05/05.21:12:25 P.20131013
-EN work/sel_strobeB 1494309637 \
+EN work/sel_strobeB 1494316439 \
       FL D:/Users/Butle/Documents/exilinks/Modules/sel_strobeB.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/sel_strobeB/Behavioral 1494309638 \
+AR work/sel_strobeB/Behavioral 1494316440 \
       FL D:/Users/Butle/Documents/exilinks/Modules/sel_strobeB.vhd \
-      EN work/sel_strobeB 1494309637
+      EN work/sel_strobeB 1494316439
 FL D:/Users/Butle/Documents/exilinks/Modules/sRAM32x8_ex_pgm_data.vhd 2017/05/08.22:16:06 P.20131013
-EN work/sRAM32x8_ex_pgm_data 1494309639 \
+EN work/sRAM32x8_ex_pgm_data 1494316441 \
       FL D:/Users/Butle/Documents/exilinks/Modules/sRAM32x8_ex_pgm_data.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/sRAM32x8_ex_pgm_data/Behavioral 1494309640 \
+AR work/sRAM32x8_ex_pgm_data/Behavioral 1494316442 \
       FL D:/Users/Butle/Documents/exilinks/Modules/sRAM32x8_ex_pgm_data.vhd \
-      EN work/sRAM32x8_ex_pgm_data 1494309639
+      EN work/sRAM32x8_ex_pgm_data 1494316441
 FL D:/Users/Butle/Documents/exilinks/Modules/sRAM32x8_ex_pgm_instr.vhd 2017/05/08.22:14:13 P.20131013
-EN work/sRAM32x8_ex_pgm_instr 1494309631 \
+EN work/sRAM32x8_ex_pgm_instr 1494316433 \
       FL D:/Users/Butle/Documents/exilinks/Modules/sRAM32x8_ex_pgm_instr.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/sRAM32x8_ex_pgm_instr/Behavioral 1494309632 \
+AR work/sRAM32x8_ex_pgm_instr/Behavioral 1494316434 \
       FL D:/Users/Butle/Documents/exilinks/Modules/sRAM32x8_ex_pgm_instr.vhd \
-      EN work/sRAM32x8_ex_pgm_instr 1494309631
+      EN work/sRAM32x8_ex_pgm_instr 1494316433
 FL D:/Users/Butle/Documents/exilinks/Modules/SSD_1dig.vhd 2017/05/08.16:31:22 P.20131013
-EN work/SSD_1dig 1494309649 \
+EN work/SSD_1dig 1494316443 \
       FL D:/Users/Butle/Documents/exilinks/Modules/SSD_1dig.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/SSD_1dig/Behavioral 1494309650 \
-      FL D:/Users/Butle/Documents/exilinks/Modules/SSD_1dig.vhd EN work/SSD_1dig 1494309649
+AR work/SSD_1dig/Behavioral 1494316444 \
+      FL D:/Users/Butle/Documents/exilinks/Modules/SSD_1dig.vhd EN work/SSD_1dig 1494316443
 FL D:/Users/Butle/Documents/exilinks/mux4x2to1.vhf 2017/05/08.23:00:21 P.20131013
-EN work/M2_1_MXILINX_mux4x2to1 1494309785 \
+EN work/M2_1_MXILINX_mux4x2to1 1494316579 \
       FL D:/Users/Butle/Documents/exilinks/mux4x2to1.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1_MXILINX_mux4x2to1/BEHAVIORAL 1494309786 \
+AR work/M2_1_MXILINX_mux4x2to1/BEHAVIORAL 1494316580 \
       FL D:/Users/Butle/Documents/exilinks/mux4x2to1.vhf \
-      EN work/M2_1_MXILINX_mux4x2to1 1494309785 CP AND2B1 CP OR2 CP AND2
-EN work/mux4x2to1 1494309787 \
+      EN work/M2_1_MXILINX_mux4x2to1 1494316579 CP AND2B1 CP OR2 CP AND2
+EN work/mux4x2to1 1494316581 \
       FL D:/Users/Butle/Documents/exilinks/mux4x2to1.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/mux4x2to1/BEHAVIORAL 1494309788 \
-      FL D:/Users/Butle/Documents/exilinks/mux4x2to1.vhf EN work/mux4x2to1 1494309787 \
+AR work/mux4x2to1/BEHAVIORAL 1494316582 \
+      FL D:/Users/Butle/Documents/exilinks/mux4x2to1.vhf EN work/mux4x2to1 1494316581 \
       CP M2_1_MXILINX_mux4x2to1
 FL D:/Users/Butle/Documents/exilinks/mux8x2to1.vhf 2017/05/08.23:00:21 P.20131013
-EN work/M2_1_MXILINX_mux8x2to1 1494309801 \
+EN work/M2_1_MXILINX_mux8x2to1 1494316595 \
       FL D:/Users/Butle/Documents/exilinks/mux8x2to1.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1_MXILINX_mux8x2to1/BEHAVIORAL 1494309802 \
+AR work/M2_1_MXILINX_mux8x2to1/BEHAVIORAL 1494316596 \
       FL D:/Users/Butle/Documents/exilinks/mux8x2to1.vhf \
-      EN work/M2_1_MXILINX_mux8x2to1 1494309801 CP AND2B1 CP OR2 CP AND2
-EN work/mux8x2to1 1494309803 \
+      EN work/M2_1_MXILINX_mux8x2to1 1494316595 CP AND2B1 CP OR2 CP AND2
+EN work/mux8x2to1 1494316597 \
       FL D:/Users/Butle/Documents/exilinks/mux8x2to1.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/mux8x2to1/BEHAVIORAL 1494309804 \
-      FL D:/Users/Butle/Documents/exilinks/mux8x2to1.vhf EN work/mux8x2to1 1494309803 \
+AR work/mux8x2to1/BEHAVIORAL 1494316598 \
+      FL D:/Users/Butle/Documents/exilinks/mux8x2to1.vhf EN work/mux8x2to1 1494316597 \
       CP M2_1_MXILINX_mux8x2to1
 FL D:/Users/Butle/Documents/exilinks/ProgramCounter.vhf 2017/05/08.23:00:16 P.20131013
-EN work/M2_1_MXILINX_ProgramCounter 1494309751 \
+EN work/M2_1_MXILINX_ProgramCounter 1494316545 \
       FL D:/Users/Butle/Documents/exilinks/ProgramCounter.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1_MXILINX_ProgramCounter/BEHAVIORAL 1494309752 \
+AR work/M2_1_MXILINX_ProgramCounter/BEHAVIORAL 1494316546 \
       FL D:/Users/Butle/Documents/exilinks/ProgramCounter.vhf \
-      EN work/M2_1_MXILINX_ProgramCounter 1494309751 CP AND2B1 CP OR2 CP AND2
-EN work/mux8x2to1_MUSER_ProgramCounter 1494309753 \
+      EN work/M2_1_MXILINX_ProgramCounter 1494316545 CP AND2B1 CP OR2 CP AND2
+EN work/mux8x2to1_MUSER_ProgramCounter 1494316547 \
       FL D:/Users/Butle/Documents/exilinks/ProgramCounter.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/mux8x2to1_MUSER_ProgramCounter/BEHAVIORAL 1494309754 \
+AR work/mux8x2to1_MUSER_ProgramCounter/BEHAVIORAL 1494316548 \
       FL D:/Users/Butle/Documents/exilinks/ProgramCounter.vhf \
-      EN work/mux8x2to1_MUSER_ProgramCounter 1494309753 \
+      EN work/mux8x2to1_MUSER_ProgramCounter 1494316547 \
       CP M2_1_MXILINX_ProgramCounter
-EN work/FJKC_MXILINX_ProgramCounter 1494309755 \
+EN work/FJKC_MXILINX_ProgramCounter 1494316549 \
       FL D:/Users/Butle/Documents/exilinks/ProgramCounter.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FJKC_MXILINX_ProgramCounter/BEHAVIORAL 1494309756 \
+AR work/FJKC_MXILINX_ProgramCounter/BEHAVIORAL 1494316550 \
       FL D:/Users/Butle/Documents/exilinks/ProgramCounter.vhf \
-      EN work/FJKC_MXILINX_ProgramCounter 1494309755 CP FDC CP AND3B2 CP AND3B1 \
+      EN work/FJKC_MXILINX_ProgramCounter 1494316549 CP FDC CP AND3B2 CP AND3B1 \
       CP OR3 CP AND2B1
-EN work/M2_1B1_MXILINX_ProgramCounter 1494309757 \
+EN work/M2_1B1_MXILINX_ProgramCounter 1494316551 \
       FL D:/Users/Butle/Documents/exilinks/ProgramCounter.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1B1_MXILINX_ProgramCounter/BEHAVIORAL 1494309758 \
+AR work/M2_1B1_MXILINX_ProgramCounter/BEHAVIORAL 1494316552 \
       FL D:/Users/Butle/Documents/exilinks/ProgramCounter.vhf \
-      EN work/M2_1B1_MXILINX_ProgramCounter 1494309757 CP AND2B2 CP OR2 CP AND2
-EN work/FTCLEX_MXILINX_ProgramCounter 1494309759 \
+      EN work/M2_1B1_MXILINX_ProgramCounter 1494316551 CP AND2B2 CP OR2 CP AND2
+EN work/FTCLEX_MXILINX_ProgramCounter 1494316553 \
       FL D:/Users/Butle/Documents/exilinks/ProgramCounter.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FTCLEX_MXILINX_ProgramCounter/BEHAVIORAL 1494309760 \
+AR work/FTCLEX_MXILINX_ProgramCounter/BEHAVIORAL 1494316554 \
       FL D:/Users/Butle/Documents/exilinks/ProgramCounter.vhf \
-      EN work/FTCLEX_MXILINX_ProgramCounter 1494309759 \
+      EN work/FTCLEX_MXILINX_ProgramCounter 1494316553 \
       CP M2_1_MXILINX_ProgramCounter CP XOR2 CP FDCE
-EN work/CB8CLED_MXILINX_ProgramCounter 1494309761 \
+EN work/CB8CLED_MXILINX_ProgramCounter 1494316555 \
       FL D:/Users/Butle/Documents/exilinks/ProgramCounter.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/CB8CLED_MXILINX_ProgramCounter/BEHAVIORAL 1494309762 \
+AR work/CB8CLED_MXILINX_ProgramCounter/BEHAVIORAL 1494316556 \
       FL D:/Users/Butle/Documents/exilinks/ProgramCounter.vhf \
-      EN work/CB8CLED_MXILINX_ProgramCounter 1494309761 \
+      EN work/CB8CLED_MXILINX_ProgramCounter 1494316555 \
       CP FTCLEX_MXILINX_ProgramCounter CP M2_1_MXILINX_ProgramCounter \
       CP M2_1B1_MXILINX_ProgramCounter CP AND5 CP AND4 CP AND4B3 CP AND2B2 CP VCC \
       CP AND2B1 CP AND3 CP AND3B2 CP AND3B3 CP AND4B4 CP AND2 CP AND5B4 CP OR2
-EN work/ProgramCounter 1494309763 \
+EN work/ProgramCounter 1494316557 \
       FL D:/Users/Butle/Documents/exilinks/ProgramCounter.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/ProgramCounter/BEHAVIORAL 1494309764 \
+AR work/ProgramCounter/BEHAVIORAL 1494316558 \
       FL D:/Users/Butle/Documents/exilinks/ProgramCounter.vhf \
-      EN work/ProgramCounter 1494309763 CP INV CP CB8CLED_MXILINX_ProgramCounter \
+      EN work/ProgramCounter 1494316557 CP INV CP CB8CLED_MXILINX_ProgramCounter \
       CP FJKC_MXILINX_ProgramCounter CP PULLUP CP M2_1_MXILINX_ProgramCounter \
       CP AND2B1 CP mux8x2to1_MUSER_ProgramCounter CP FD CP OR3
 FL D:/Users/Butle/Documents/exilinks/RegisterA.vhf 2017/05/08.23:00:23 P.20131013
-EN work/M2_1_MXILINX_RegisterA 1494309765 \
+EN work/M2_1_MXILINX_RegisterA 1494316559 \
       FL D:/Users/Butle/Documents/exilinks/RegisterA.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1_MXILINX_RegisterA/BEHAVIORAL 1494309766 \
+AR work/M2_1_MXILINX_RegisterA/BEHAVIORAL 1494316560 \
       FL D:/Users/Butle/Documents/exilinks/RegisterA.vhf \
-      EN work/M2_1_MXILINX_RegisterA 1494309765 CP AND2B1 CP OR2 CP AND2
-EN work/mux8x2to1_MUSER_RegisterA 1494309767 \
+      EN work/M2_1_MXILINX_RegisterA 1494316559 CP AND2B1 CP OR2 CP AND2
+EN work/mux8x2to1_MUSER_RegisterA 1494316561 \
       FL D:/Users/Butle/Documents/exilinks/RegisterA.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/mux8x2to1_MUSER_RegisterA/BEHAVIORAL 1494309768 \
+AR work/mux8x2to1_MUSER_RegisterA/BEHAVIORAL 1494316562 \
       FL D:/Users/Butle/Documents/exilinks/RegisterA.vhf \
-      EN work/mux8x2to1_MUSER_RegisterA 1494309767 CP M2_1_MXILINX_RegisterA
-EN work/FD8CE_MXILINX_RegisterA 1494309769 \
+      EN work/mux8x2to1_MUSER_RegisterA 1494316561 CP M2_1_MXILINX_RegisterA
+EN work/FD8CE_MXILINX_RegisterA 1494316563 \
       FL D:/Users/Butle/Documents/exilinks/RegisterA.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/FD8CE_MXILINX_RegisterA/BEHAVIORAL 1494309770 \
+AR work/FD8CE_MXILINX_RegisterA/BEHAVIORAL 1494316564 \
       FL D:/Users/Butle/Documents/exilinks/RegisterA.vhf \
-      EN work/FD8CE_MXILINX_RegisterA 1494309769 CP FDCE
-EN work/RegisterGeneric_MUSER_RegisterA 1494309771 \
+      EN work/FD8CE_MXILINX_RegisterA 1494316563 CP FDCE
+EN work/RegisterGeneric_MUSER_RegisterA 1494316565 \
       FL D:/Users/Butle/Documents/exilinks/RegisterA.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/RegisterGeneric_MUSER_RegisterA/BEHAVIORAL 1494309772 \
+AR work/RegisterGeneric_MUSER_RegisterA/BEHAVIORAL 1494316566 \
       FL D:/Users/Butle/Documents/exilinks/RegisterA.vhf \
-      EN work/RegisterGeneric_MUSER_RegisterA 1494309771 \
+      EN work/RegisterGeneric_MUSER_RegisterA 1494316565 \
       CP FD8CE_MXILINX_RegisterA CP PULLUP
-EN work/RegisterA 1494309773 \
+EN work/RegisterA 1494316567 \
       FL D:/Users/Butle/Documents/exilinks/RegisterA.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/RegisterA/BEHAVIORAL 1494309774 \
-      FL D:/Users/Butle/Documents/exilinks/RegisterA.vhf EN work/RegisterA 1494309773 \
+AR work/RegisterA/BEHAVIORAL 1494316568 \
+      FL D:/Users/Butle/Documents/exilinks/RegisterA.vhf EN work/RegisterA 1494316567 \
       CP RegisterGeneric_MUSER_RegisterA CP mux8x2to1_MUSER_RegisterA
 FL D:/Users/Butle/Documents/exilinks/RegisterC.vhf 2017/05/08.23:00:22 P.20131013
-EN work/FJKC_MXILINX_RegisterC 1494309775 \
+EN work/FJKC_MXILINX_RegisterC 1494316569 \
       FL D:/Users/Butle/Documents/exilinks/RegisterC.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/FJKC_MXILINX_RegisterC/BEHAVIORAL 1494309776 \
+AR work/FJKC_MXILINX_RegisterC/BEHAVIORAL 1494316570 \
       FL D:/Users/Butle/Documents/exilinks/RegisterC.vhf \
-      EN work/FJKC_MXILINX_RegisterC 1494309775 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
+      EN work/FJKC_MXILINX_RegisterC 1494316569 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
       CP AND2B1
-EN work/FD8CE_MXILINX_RegisterC 1494309777 \
+EN work/FD8CE_MXILINX_RegisterC 1494316571 \
       FL D:/Users/Butle/Documents/exilinks/RegisterC.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/FD8CE_MXILINX_RegisterC/BEHAVIORAL 1494309778 \
+AR work/FD8CE_MXILINX_RegisterC/BEHAVIORAL 1494316572 \
       FL D:/Users/Butle/Documents/exilinks/RegisterC.vhf \
-      EN work/FD8CE_MXILINX_RegisterC 1494309777 CP FDCE
-EN work/RegisterGeneric_MUSER_RegisterC 1494309779 \
+      EN work/FD8CE_MXILINX_RegisterC 1494316571 CP FDCE
+EN work/RegisterGeneric_MUSER_RegisterC 1494316573 \
       FL D:/Users/Butle/Documents/exilinks/RegisterC.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/RegisterGeneric_MUSER_RegisterC/BEHAVIORAL 1494309780 \
+AR work/RegisterGeneric_MUSER_RegisterC/BEHAVIORAL 1494316574 \
       FL D:/Users/Butle/Documents/exilinks/RegisterC.vhf \
-      EN work/RegisterGeneric_MUSER_RegisterC 1494309779 \
+      EN work/RegisterGeneric_MUSER_RegisterC 1494316573 \
       CP FD8CE_MXILINX_RegisterC CP PULLUP
-EN work/RegisterC 1494309781 \
+EN work/RegisterC 1494316575 \
       FL D:/Users/Butle/Documents/exilinks/RegisterC.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/RegisterC/BEHAVIORAL 1494309782 \
-      FL D:/Users/Butle/Documents/exilinks/RegisterC.vhf EN work/RegisterC 1494309781 \
+AR work/RegisterC/BEHAVIORAL 1494316576 \
+      FL D:/Users/Butle/Documents/exilinks/RegisterC.vhf EN work/RegisterC 1494316575 \
       CP RegisterGeneric_MUSER_RegisterC CP FJKC_MXILINX_RegisterC CP INV
 FL D:/Users/Butle/Documents/exilinks/RegisterGeneric.vhf 2017/05/08.23:00:20 P.20131013
-EN work/FD8CE_MXILINX_RegisterGeneric 1494309789 \
+EN work/FD8CE_MXILINX_RegisterGeneric 1494316583 \
       FL D:/Users/Butle/Documents/exilinks/RegisterGeneric.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FD8CE_MXILINX_RegisterGeneric/BEHAVIORAL 1494309790 \
+AR work/FD8CE_MXILINX_RegisterGeneric/BEHAVIORAL 1494316584 \
       FL D:/Users/Butle/Documents/exilinks/RegisterGeneric.vhf \
-      EN work/FD8CE_MXILINX_RegisterGeneric 1494309789 CP FDCE
-EN work/RegisterGeneric 1494309791 \
+      EN work/FD8CE_MXILINX_RegisterGeneric 1494316583 CP FDCE
+EN work/RegisterGeneric 1494316585 \
       FL D:/Users/Butle/Documents/exilinks/RegisterGeneric.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/RegisterGeneric/BEHAVIORAL 1494309792 \
+AR work/RegisterGeneric/BEHAVIORAL 1494316586 \
       FL D:/Users/Butle/Documents/exilinks/RegisterGeneric.vhf \
-      EN work/RegisterGeneric 1494309791 CP FD8CE_MXILINX_RegisterGeneric \
+      EN work/RegisterGeneric 1494316585 CP FD8CE_MXILINX_RegisterGeneric \
       CP PULLUP
-FL D:/Users/Butle/Documents/exilinks/toplevel.vhf 2017/05/08.23:00:19 P.20131013
-EN work/FD8CE_MXILINX_toplevel 1494309653 \
+FL D:/Users/Butle/Documents/exilinks/toplevel.vhf 2017/05/09.00:53:46 P.20131013
+EN work/FD8CE_MXILINX_toplevel 1494316447 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/FD8CE_MXILINX_toplevel/BEHAVIORAL 1494309654 \
+AR work/FD8CE_MXILINX_toplevel/BEHAVIORAL 1494316448 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/FD8CE_MXILINX_toplevel 1494309653 CP FDCE
-EN work/RegisterGeneric_MUSER_toplevel 1494309655 \
+      EN work/FD8CE_MXILINX_toplevel 1494316447 CP FDCE
+EN work/RegisterGeneric_MUSER_toplevel 1494316449 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/RegisterGeneric_MUSER_toplevel/BEHAVIORAL 1494309656 \
+AR work/RegisterGeneric_MUSER_toplevel/BEHAVIORAL 1494316450 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/RegisterGeneric_MUSER_toplevel 1494309655 CP FD8CE_MXILINX_toplevel \
+      EN work/RegisterGeneric_MUSER_toplevel 1494316449 CP FD8CE_MXILINX_toplevel \
       CP PULLUP
-EN work/FJKC_MXILINX_toplevel 1494309657 \
+EN work/FJKC_MXILINX_toplevel 1494316451 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/FJKC_MXILINX_toplevel/BEHAVIORAL 1494309658 \
+AR work/FJKC_MXILINX_toplevel/BEHAVIORAL 1494316452 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/FJKC_MXILINX_toplevel 1494309657 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
+      EN work/FJKC_MXILINX_toplevel 1494316451 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
       CP AND2B1
-EN work/RegisterC_MUSER_toplevel 1494309659 \
+EN work/RegisterC_MUSER_toplevel 1494316453 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/RegisterC_MUSER_toplevel/BEHAVIORAL 1494309660 \
+AR work/RegisterC_MUSER_toplevel/BEHAVIORAL 1494316454 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/RegisterC_MUSER_toplevel 1494309659 \
+      EN work/RegisterC_MUSER_toplevel 1494316453 \
       CP RegisterGeneric_MUSER_toplevel CP FJKC_MXILINX_toplevel CP INV
-EN work/M2_1_MXILINX_toplevel 1494309661 \
+EN work/M2_1_MXILINX_toplevel 1494316455 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1_MXILINX_toplevel/BEHAVIORAL 1494309662 \
+AR work/M2_1_MXILINX_toplevel/BEHAVIORAL 1494316456 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/M2_1_MXILINX_toplevel 1494309661 CP AND2B1 CP OR2 CP AND2
-EN work/mux8x2to1_MUSER_toplevel 1494309663 \
+      EN work/M2_1_MXILINX_toplevel 1494316455 CP AND2B1 CP OR2 CP AND2
+EN work/mux8x2to1_MUSER_toplevel 1494316457 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/mux8x2to1_MUSER_toplevel/BEHAVIORAL 1494309664 \
+AR work/mux8x2to1_MUSER_toplevel/BEHAVIORAL 1494316458 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/mux8x2to1_MUSER_toplevel 1494309663 CP M2_1_MXILINX_toplevel
-EN work/ADD8_MXILINX_toplevel 1494309665 \
+      EN work/mux8x2to1_MUSER_toplevel 1494316457 CP M2_1_MXILINX_toplevel
+EN work/ADD8_MXILINX_toplevel 1494316459 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/ADD8_MXILINX_toplevel/BEHAVIORAL 1494309666 \
+AR work/ADD8_MXILINX_toplevel/BEHAVIORAL 1494316460 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/ADD8_MXILINX_toplevel 1494309665 CP FMAP CP MUXCY_L CP MUXCY CP XORCY \
+      EN work/ADD8_MXILINX_toplevel 1494316459 CP FMAP CP MUXCY_L CP MUXCY CP XORCY \
       CP MUXCY_D CP XOR2
-EN work/TwosComp_MUSER_toplevel 1494309667 \
+EN work/TwosComp_MUSER_toplevel 1494316461 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/TwosComp_MUSER_toplevel/BEHAVIORAL 1494309668 \
+AR work/TwosComp_MUSER_toplevel/BEHAVIORAL 1494316462 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/TwosComp_MUSER_toplevel 1494309667 CP INV CP ADD8_MXILINX_toplevel \
+      EN work/TwosComp_MUSER_toplevel 1494316461 CP INV CP ADD8_MXILINX_toplevel \
       CP PULLUP CP BUF CP PULLDOWN CP mux8x2to1_MUSER_toplevel CP AND2
-EN work/AddSub_ALU_MUSER_toplevel 1494309669 \
+EN work/ADSU8_MXILINX_toplevel 1494316463 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/AddSub_ALU_MUSER_toplevel/BEHAVIORAL 1494309670 \
+AR work/ADSU8_MXILINX_toplevel/BEHAVIORAL 1494316464 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/AddSub_ALU_MUSER_toplevel 1494309669 CP addsub8 \
-      CP TwosComp_MUSER_toplevel CP BUF CP FJKC_MXILINX_toplevel CP INV CP AND2 \
-      CP mux8x2to1_MUSER_toplevel CP OR2 CP PULLUP
-EN work/Demux1to16_MUSER_toplevel 1494309671 \
+      EN work/ADSU8_MXILINX_toplevel 1494316463 CP FMAP CP XOR3 CP MUXCY_L CP MUXCY \
+      CP XORCY CP MUXCY_D CP INV CP XOR2
+EN work/AddSub_ALU_MUSER_toplevel 1494316465 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/Demux1to16_MUSER_toplevel/BEHAVIORAL 1494309672 \
+AR work/AddSub_ALU_MUSER_toplevel/BEHAVIORAL 1494316466 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/Demux1to16_MUSER_toplevel 1494309671 CP AND5 CP INV
-EN work/InstructionDecode_MUSER_toplevel 1494309673 \
+      EN work/AddSub_ALU_MUSER_toplevel 1494316465 CP TwosComp_MUSER_toplevel \
+      CP BUF CP FJKC_MXILINX_toplevel CP INV CP ADSU8_MXILINX_toplevel CP AND2
+EN work/Demux1to16_MUSER_toplevel 1494316467 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/InstructionDecode_MUSER_toplevel/BEHAVIORAL 1494309674 \
+AR work/Demux1to16_MUSER_toplevel/BEHAVIORAL 1494316468 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/InstructionDecode_MUSER_toplevel 1494309673 \
+      EN work/Demux1to16_MUSER_toplevel 1494316467 CP AND5 CP INV
+EN work/InstructionDecode_MUSER_toplevel 1494316469 \
+      FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/InstructionDecode_MUSER_toplevel/BEHAVIORAL 1494316470 \
+      FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
+      EN work/InstructionDecode_MUSER_toplevel 1494316469 \
       CP Demux1to16_MUSER_toplevel CP AND4 CP AND2 CP OR2
-EN work/RegisterA_MUSER_toplevel 1494309675 \
+EN work/RegisterA_MUSER_toplevel 1494316471 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/RegisterA_MUSER_toplevel/BEHAVIORAL 1494309676 \
+AR work/RegisterA_MUSER_toplevel/BEHAVIORAL 1494316472 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/RegisterA_MUSER_toplevel 1494309675 \
+      EN work/RegisterA_MUSER_toplevel 1494316471 \
       CP RegisterGeneric_MUSER_toplevel CP mux8x2to1_MUSER_toplevel
-EN work/InputState_MUSER_toplevel 1494309677 \
+EN work/InputState_MUSER_toplevel 1494316473 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/InputState_MUSER_toplevel/BEHAVIORAL 1494309678 \
+AR work/InputState_MUSER_toplevel/BEHAVIORAL 1494316474 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/InputState_MUSER_toplevel 1494309677 CP AND2 CP OR2 CP AND2B1 CP INV
-EN work/DataMem_MUSER_toplevel 1494309679 \
+      EN work/InputState_MUSER_toplevel 1494316473 CP AND2 CP OR2 CP AND2B1 CP INV
+EN work/DataMem_MUSER_toplevel 1494316475 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/DataMem_MUSER_toplevel/BEHAVIORAL 1494309680 \
+AR work/DataMem_MUSER_toplevel/BEHAVIORAL 1494316476 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/DataMem_MUSER_toplevel 1494309679 CP sRAM32x8_ex_pgm_data \
+      EN work/DataMem_MUSER_toplevel 1494316475 CP sRAM32x8_ex_pgm_data \
       CP PULLDOWN CP mux8x2to1_MUSER_toplevel CP INV
-EN work/InstructionMem_MUSER_toplevel 1494309681 \
+EN work/InstructionMem_MUSER_toplevel 1494316477 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/InstructionMem_MUSER_toplevel/BEHAVIORAL 1494309682 \
+AR work/InstructionMem_MUSER_toplevel/BEHAVIORAL 1494316478 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/InstructionMem_MUSER_toplevel 1494309681 CP sRAM32x8_ex_pgm_instr \
+      EN work/InstructionMem_MUSER_toplevel 1494316477 CP sRAM32x8_ex_pgm_instr \
       CP PULLDOWN CP BUF CP mux8x2to1_MUSER_toplevel CP INV
-EN work/mux4x2to1_MUSER_toplevel 1494309683 \
+EN work/mux4x2to1_MUSER_toplevel 1494316479 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/mux4x2to1_MUSER_toplevel/BEHAVIORAL 1494309684 \
+AR work/mux4x2to1_MUSER_toplevel/BEHAVIORAL 1494316480 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/mux4x2to1_MUSER_toplevel 1494309683 CP M2_1_MXILINX_toplevel
-EN work/DisplayNumbers_MUSER_toplevel 1494309685 \
+      EN work/mux4x2to1_MUSER_toplevel 1494316479 CP M2_1_MXILINX_toplevel
+EN work/DisplayNumbers_MUSER_toplevel 1494316481 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/DisplayNumbers_MUSER_toplevel/BEHAVIORAL 1494309686 \
+AR work/DisplayNumbers_MUSER_toplevel/BEHAVIORAL 1494316482 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/DisplayNumbers_MUSER_toplevel 1494309685 CP bin2BCD3en CP mux4SSD \
+      EN work/DisplayNumbers_MUSER_toplevel 1494316481 CP bin2BCD3en CP mux4SSD \
       CP mux8x2to1_MUSER_toplevel CP sel_strobeB CP PULLUP \
       CP mux4x2to1_MUSER_toplevel CP M2_1_MXILINX_toplevel CP PULLDOWN CP AND4 \
-      CP TwosComp_MUSER_toplevel
-EN work/M2_1B1_MXILINX_toplevel 1494309687 \
+      CP BUF
+EN work/M2_1B1_MXILINX_toplevel 1494316483 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1B1_MXILINX_toplevel/BEHAVIORAL 1494309688 \
+AR work/M2_1B1_MXILINX_toplevel/BEHAVIORAL 1494316484 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/M2_1B1_MXILINX_toplevel 1494309687 CP AND2B2 CP OR2 CP AND2
-EN work/FTCLEX_MXILINX_toplevel 1494309689 \
+      EN work/M2_1B1_MXILINX_toplevel 1494316483 CP AND2B2 CP OR2 CP AND2
+EN work/FTCLEX_MXILINX_toplevel 1494316485 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/FTCLEX_MXILINX_toplevel/BEHAVIORAL 1494309690 \
+AR work/FTCLEX_MXILINX_toplevel/BEHAVIORAL 1494316486 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/FTCLEX_MXILINX_toplevel 1494309689 CP M2_1_MXILINX_toplevel CP XOR2 \
+      EN work/FTCLEX_MXILINX_toplevel 1494316485 CP M2_1_MXILINX_toplevel CP XOR2 \
       CP FDCE
-EN work/CB8CLED_MXILINX_toplevel 1494309691 \
+EN work/CB8CLED_MXILINX_toplevel 1494316487 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/CB8CLED_MXILINX_toplevel/BEHAVIORAL 1494309692 \
+AR work/CB8CLED_MXILINX_toplevel/BEHAVIORAL 1494316488 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/CB8CLED_MXILINX_toplevel 1494309691 CP FTCLEX_MXILINX_toplevel \
+      EN work/CB8CLED_MXILINX_toplevel 1494316487 CP FTCLEX_MXILINX_toplevel \
       CP M2_1_MXILINX_toplevel CP M2_1B1_MXILINX_toplevel CP AND5 CP AND4 CP AND4B3 \
       CP AND2B2 CP VCC CP AND2B1 CP AND3 CP AND3B2 CP AND3B3 CP AND4B4 CP AND2 CP AND5B4 \
       CP OR2
-EN work/ProgramCounter_MUSER_toplevel 1494309693 \
+EN work/ProgramCounter_MUSER_toplevel 1494316489 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/ProgramCounter_MUSER_toplevel/BEHAVIORAL 1494309694 \
+AR work/ProgramCounter_MUSER_toplevel/BEHAVIORAL 1494316490 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/ProgramCounter_MUSER_toplevel 1494309693 CP INV \
+      EN work/ProgramCounter_MUSER_toplevel 1494316489 CP INV \
       CP CB8CLED_MXILINX_toplevel CP FJKC_MXILINX_toplevel CP PULLUP \
       CP M2_1_MXILINX_toplevel CP AND2B1 CP mux8x2to1_MUSER_toplevel CP FD CP OR3
-EN work/M2_1E_MXILINX_toplevel 1494309695 \
+EN work/M2_1E_MXILINX_toplevel 1494316491 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1E_MXILINX_toplevel/BEHAVIORAL 1494309696 \
+AR work/M2_1E_MXILINX_toplevel/BEHAVIORAL 1494316492 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/M2_1E_MXILINX_toplevel 1494309695 CP AND3 CP AND3B1 CP OR2
-EN work/M4_1E_MXILINX_toplevel 1494309697 \
+      EN work/M2_1E_MXILINX_toplevel 1494316491 CP AND3 CP AND3B1 CP OR2
+EN work/M4_1E_MXILINX_toplevel 1494316493 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/M4_1E_MXILINX_toplevel/BEHAVIORAL 1494309698 \
+AR work/M4_1E_MXILINX_toplevel/BEHAVIORAL 1494316494 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/M4_1E_MXILINX_toplevel 1494309697 CP M2_1E_MXILINX_toplevel CP MUXF5
-EN work/FD4CE_MXILINX_toplevel 1494309699 \
+      EN work/M4_1E_MXILINX_toplevel 1494316493 CP M2_1E_MXILINX_toplevel CP MUXF5
+EN work/FD4CE_MXILINX_toplevel 1494316495 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/FD4CE_MXILINX_toplevel/BEHAVIORAL 1494309700 \
+AR work/FD4CE_MXILINX_toplevel/BEHAVIORAL 1494316496 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/FD4CE_MXILINX_toplevel 1494309699 CP FDCE
-EN work/KeyPad_MUSER_toplevel 1494309701 \
+      EN work/FD4CE_MXILINX_toplevel 1494316495 CP FDCE
+EN work/KeyPad_MUSER_toplevel 1494316497 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/KeyPad_MUSER_toplevel/BEHAVIORAL 1494309702 \
+AR work/KeyPad_MUSER_toplevel/BEHAVIORAL 1494316498 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf \
-      EN work/KeyPad_MUSER_toplevel 1494309701 CP keyCR4b \
+      EN work/KeyPad_MUSER_toplevel 1494316497 CP keyCR4b \
       CP FD4CE_MXILINX_toplevel CP FD CP INV CP PULLDOWN
-EN work/toplevel 1494309703 \
+EN work/toplevel 1494316499 \
       FL D:/Users/Butle/Documents/exilinks/toplevel.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/toplevel/BEHAVIORAL 1494309704 \
-      FL D:/Users/Butle/Documents/exilinks/toplevel.vhf EN work/toplevel 1494309703 \
+AR work/toplevel/BEHAVIORAL 1494316500 \
+      FL D:/Users/Butle/Documents/exilinks/toplevel.vhf EN work/toplevel 1494316499 \
       CP SSD_1dig CP DCM_50M CP PULLUP CP KeyPad_MUSER_toplevel \
       CP M4_1E_MXILINX_toplevel CP ProgramCounter_MUSER_toplevel \
       CP InstructionMem_MUSER_toplevel CP DisplayNumbers_MUSER_toplevel \
@@ -617,29 +613,29 @@ AR work/toplevel/BEHAVIORAL 1494309704 \
       CP RegisterA_MUSER_toplevel CP OR2 CP AND2 CP AddSub_ALU_MUSER_toplevel \
       CP AND3 CP OR4 CP RegisterC_MUSER_toplevel
 FL D:/Users/Butle/Documents/exilinks/TwosComp.vhf 2017/05/08.23:00:21 P.20131013
-EN work/M2_1_MXILINX_TwosComp 1494309793 \
+EN work/M2_1_MXILINX_TwosComp 1494316587 \
       FL D:/Users/Butle/Documents/exilinks/TwosComp.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/M2_1_MXILINX_TwosComp/BEHAVIORAL 1494309794 \
+AR work/M2_1_MXILINX_TwosComp/BEHAVIORAL 1494316588 \
       FL D:/Users/Butle/Documents/exilinks/TwosComp.vhf \
-      EN work/M2_1_MXILINX_TwosComp 1494309793 CP AND2B1 CP OR2 CP AND2
-EN work/mux8x2to1_MUSER_TwosComp 1494309795 \
+      EN work/M2_1_MXILINX_TwosComp 1494316587 CP AND2B1 CP OR2 CP AND2
+EN work/mux8x2to1_MUSER_TwosComp 1494316589 \
       FL D:/Users/Butle/Documents/exilinks/TwosComp.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/mux8x2to1_MUSER_TwosComp/BEHAVIORAL 1494309796 \
+AR work/mux8x2to1_MUSER_TwosComp/BEHAVIORAL 1494316590 \
       FL D:/Users/Butle/Documents/exilinks/TwosComp.vhf \
-      EN work/mux8x2to1_MUSER_TwosComp 1494309795 CP M2_1_MXILINX_TwosComp
-EN work/ADD8_MXILINX_TwosComp 1494309797 \
+      EN work/mux8x2to1_MUSER_TwosComp 1494316589 CP M2_1_MXILINX_TwosComp
+EN work/ADD8_MXILINX_TwosComp 1494316591 \
       FL D:/Users/Butle/Documents/exilinks/TwosComp.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/ADD8_MXILINX_TwosComp/BEHAVIORAL 1494309798 \
+AR work/ADD8_MXILINX_TwosComp/BEHAVIORAL 1494316592 \
       FL D:/Users/Butle/Documents/exilinks/TwosComp.vhf \
-      EN work/ADD8_MXILINX_TwosComp 1494309797 CP FMAP CP MUXCY_L CP MUXCY CP XORCY \
+      EN work/ADD8_MXILINX_TwosComp 1494316591 CP FMAP CP MUXCY_L CP MUXCY CP XORCY \
       CP MUXCY_D CP XOR2
-EN work/TwosComp 1494309799 \
+EN work/TwosComp 1494316593 \
       FL D:/Users/Butle/Documents/exilinks/TwosComp.vhf PB ieee/std_logic_1164 1381692176 \
       PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/TwosComp/BEHAVIORAL 1494309800 \
-      FL D:/Users/Butle/Documents/exilinks/TwosComp.vhf EN work/TwosComp 1494309799 \
+AR work/TwosComp/BEHAVIORAL 1494316594 \
+      FL D:/Users/Butle/Documents/exilinks/TwosComp.vhf EN work/TwosComp 1494316593 \
       CP INV CP ADD8_MXILINX_TwosComp CP PULLUP CP BUF CP PULLDOWN \
       CP mux8x2to1_MUSER_TwosComp CP AND2

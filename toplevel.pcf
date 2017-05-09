@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon May 08 23:00:47 2017
+// Written by: Map P.20131013 on Tue May 09 00:54:05 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -8,8 +8,8 @@ COMP "q0" LOCATE = SITE "P4" LEVEL 1;
 COMP "q1" LOCATE = SITE "N4" LEVEL 1;
 COMP "AddrMode" LOCATE = SITE "E2" LEVEL 1;
 COMP "DataMode" LOCATE = SITE "G3" LEVEL 1;
-COMP "DebugNeg" LOCATE = SITE "G1" LEVEL 1;
 COMP "ShowC" LOCATE = SITE "A7" LEVEL 1;
+COMP "Negative" LOCATE = SITE "G1" LEVEL 1;
 COMP "DebugMode" LOCATE = SITE "L3" LEVEL 1;
 COMP "DebugStep" LOCATE = SITE "M4" LEVEL 1;
 COMP "rowI<0>" LOCATE = SITE "B2" LEVEL 1;

@@ -24,9 +24,6 @@ WARNING:ConstraintSystem - A target design object for the Locate constraint
 Done...
 
 Checking expanded design ...
-WARNING:NgdBuild:457 - logical net 'XLXI_191/buffedRes<7>' has active driver(s):
-    'O' pin on block 'XLXI_191/XLXI_26_7' ( BUF )
-    and pullup XLXI_191/XLXI_28
 
 Partition Implementation Status
 -------------------------------
@@ -37,12 +34,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:   3
+  Number of warnings:   2
 
 Total memory usage is 190312 kilobytes
 
 Writing NGD file "toplevel.ngd" ...
-Total REAL time to NGDBUILD completion:  3 sec
-Total CPU time to NGDBUILD completion:   3 sec
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
 
 Writing NGDBUILD log file "toplevel.bld"...

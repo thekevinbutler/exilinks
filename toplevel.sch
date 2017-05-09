@@ -71,7 +71,6 @@
         <signal name="XLXN_266" />
         <signal name="XLXN_293" />
         <signal name="CSigned" />
-        <signal name="DebugNeg" />
         <port polarity="Input" name="B8" />
         <port polarity="BiDirectional" name="Col(3:0)" />
         <port polarity="Input" name="rowI(3:0)" />
@@ -89,7 +88,7 @@
         <port polarity="Input" name="InstrMode" />
         <port polarity="Input" name="ShowC" />
         <port polarity="Output" name="sseg(7:0)" />
-        <port polarity="Output" name="DebugNeg" />
+        <port polarity="Output" name="Negative" />
         <blockdef name="DCM_50M">
             <timestamp>2017-4-25T17:45:18</timestamp>
             <rect width="256" x="64" y="-256" height="256" />
@@ -189,7 +188,7 @@
             <rect width="336" x="64" y="-320" height="384" />
         </blockdef>
         <blockdef name="DisplayNumbers">
-            <timestamp>2017-5-9T5:57:14</timestamp>
+            <timestamp>2017-5-9T7:19:50</timestamp>
             <line x2="0" y1="96" y2="96" x1="64" />
             <line x2="384" y1="96" y2="96" x1="320" />
             <line x2="384" y1="32" y2="32" x1="320" />
@@ -329,8 +328,9 @@
             <line x2="64" y1="-48" y2="-144" x1="64" />
         </blockdef>
         <blockdef name="AddSub_ALU">
-            <timestamp>2017-5-9T5:25:33</timestamp>
-            <line x2="384" y1="160" y2="160" x1="320" />
+            <timestamp>2017-5-9T7:53:14</timestamp>
+            <rect width="64" x="320" y="212" height="24" />
+            <line x2="384" y1="224" y2="224" x1="320" />
             <line x2="384" y1="96" y2="96" x1="320" />
             <line x2="0" y1="32" y2="32" x1="64" />
             <rect width="64" x="0" y="-236" height="24" />
@@ -339,9 +339,7 @@
             <line x2="0" y1="-160" y2="-160" x1="64" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
-            <rect width="64" x="320" y="-236" height="24" />
-            <line x2="384" y1="-224" y2="-224" x1="320" />
-            <rect width="256" x="64" y="-256" height="512" />
+            <rect width="256" x="64" y="-256" height="576" />
         </blockdef>
         <blockdef name="and3">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -534,8 +532,7 @@
             <blockpin signalname="MathMode" name="AddSub" />
             <blockpin signalname="SignMode" name="Signed" />
             <blockpin signalname="XLXN_266" name="Set" />
-            <blockpin signalname="ALURes(7:0)" name="ResOut(7:0)" />
-            <blockpin signalname="DebugNeg" name="Negative" />
+            <blockpin signalname="ALURes(7:0)" name="RegOut(7:0)" />
             <blockpin signalname="Negative" name="signNeg" />
         </block>
         <block symbolname="and3" name="XLXI_195">
@@ -1017,10 +1014,6 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5328" y="2832" type="branch" />
             <wire x2="5392" y1="2832" y2="2832" x1="5328" />
         </branch>
-        <branch name="ALURes(7:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5872" y="2640" type="branch" />
-            <wire x2="5872" y1="2640" y2="2640" x1="5776" />
-        </branch>
         <branch name="XLXN_266">
             <wire x2="5344" y1="2928" y2="2928" x1="5328" />
             <wire x2="5344" y1="2896" y2="2928" x1="5344" />
@@ -1099,12 +1092,12 @@
             <wire x2="3680" y1="3504" y2="3504" x1="2960" />
         </branch>
         <branch name="Negative">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5888" y="2960" type="branch" />
             <wire x2="5888" y1="2960" y2="2960" x1="5776" />
         </branch>
-        <branch name="DebugNeg">
-            <wire x2="5856" y1="3024" y2="3024" x1="5776" />
+        <branch name="ALURes(7:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5872" y="3088" type="branch" />
+            <wire x2="5872" y1="3088" y2="3088" x1="5776" />
         </branch>
-        <iomarker fontsize="28" x="5856" y="3024" name="DebugNeg" orien="R0" />
+        <iomarker fontsize="28" x="5888" y="2960" name="Negative" orien="R0" />
     </sheet>
 </drawing>

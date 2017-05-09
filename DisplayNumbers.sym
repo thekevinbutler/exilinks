@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="DisplayNumbers">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2017-5-9T5:57:14</timestamp>
+    <timestamp>2017-5-9T7:19:50</timestamp>
     <pin polarity="Input" x="0" y="-480" name="RegA(7:0)" />
     <pin polarity="Input" x="0" y="-416" name="RegB(7:0)" />
     <pin polarity="Input" x="0" y="-352" name="RegC(7:0)" />

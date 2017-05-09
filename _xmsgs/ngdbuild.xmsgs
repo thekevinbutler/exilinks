@@ -5,15 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;SignMode&quot; LOC = G1;&gt; [toplevel.ucf(57)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;SignMode&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+<msg type="warning" file="ConstraintSystem" num="119" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;SignMode&quot; LOC = G1;&gt; [toplevel.ucf(57)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;SignMode&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
 </msg>
 
 <msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;SignMode&quot; LOC = G1;&gt; [toplevel.ucf(57)]&apos; could not be found and so the Locate constraint will be removed.
-</msg>
-
-<msg type="warning" file="NgdBuild" num="457" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">XLXI_191/buffedRes&lt;7&gt;</arg>&apos; has active driver(s):
- <arg fmt="%s" index="3">&apos;O&apos; pin on block &apos;XLXI_191/XLXI_26_7&apos; ( BUF )
-</arg> and pullup <arg fmt="%s" index="4">XLXI_191/XLXI_28</arg>
 </msg>
 
 </messages>
