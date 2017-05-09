@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : RegisterGeneric.vhf
--- /___/   /\     Timestamp : 05/07/2017 15:00:57
+-- /___/   /\     Timestamp : 05/08/2017 23:00:20
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/thekevinbutler/Documents/exilinks/RegisterGeneric.vhf -w C:/Users/thekevinbutler/Documents/exilinks/RegisterGeneric.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl D:/Users/Butle/Documents/exilinks/RegisterGeneric.vhf -w D:/Users/Butle/Documents/exilinks/RegisterGeneric.sch
 --Design Name: RegisterGeneric
 --Device: spartan3e
 --Purpose:
@@ -113,7 +113,8 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity RegisterGeneric is
-   port ( DataIn  : in    std_logic_vector (7 downto 0); 
+   port ( CLR     : in    std_logic; 
+          DataIn  : in    std_logic_vector (7 downto 0); 
           Write   : in    std_logic; 
           DataOut : out   std_logic_vector (7 downto 0));
 end RegisterGeneric;
@@ -121,8 +122,7 @@ end RegisterGeneric;
 architecture BEHAVIORAL of RegisterGeneric is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
-   signal XLXN_4                : std_logic;
-   signal XLXI_2_CLR_openSignal : std_logic;
+   signal XLXN_4  : std_logic;
    component FD8CE_MXILINX_RegisterGeneric
       port ( C   : in    std_logic; 
              CE  : in    std_logic; 
@@ -136,12 +136,12 @@ architecture BEHAVIORAL of RegisterGeneric is
    end component;
    attribute BOX_TYPE of PULLUP : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_93";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_88";
 begin
    XLXI_2 : FD8CE_MXILINX_RegisterGeneric
       port map (C=>Write,
                 CE=>XLXN_4,
-                CLR=>XLXI_2_CLR_openSignal,
+                CLR=>CLR,
                 D(7 downto 0)=>DataIn(7 downto 0),
                 Q(7 downto 0)=>DataOut(7 downto 0));
    

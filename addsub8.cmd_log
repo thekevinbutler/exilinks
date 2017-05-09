@@ -1,2 +1,4 @@
 vhdtdtfi -lib work Modules/addsub8.vhd -prj finalproject -o addsub8.spl -module addsub8 -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
 spl2sym -intstyle ise -family spartan3e -w addsub8.spl D:/Users/Butle/Documents/exilinks/addsub8.sym 
+vhdtdtfi -lib work Modules/addsub8.vhd -prj finalproject -o addsub8.spl -module addsub8 -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w addsub8.spl D:/Users/Butle/Documents/exilinks/addsub8.sym 

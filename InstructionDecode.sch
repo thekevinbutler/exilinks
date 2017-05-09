@@ -7,7 +7,7 @@
     </attr>
     <netlist>
         <signal name="Instruction(7:0)" />
-        <signal name="XLXN_4" />
+        <signal name="Tick" />
         <signal name="Instruction(3:0)" />
         <signal name="NOP" />
         <signal name="LDA" />
@@ -28,7 +28,10 @@
         <signal name="XLXN_27" />
         <signal name="HLT" />
         <signal name="RST" />
+        <signal name="SignMode" />
+        <signal name="MathMode" />
         <port polarity="Input" name="Instruction(7:0)" />
+        <port polarity="Input" name="Tick" />
         <port polarity="Output" name="NOP" />
         <port polarity="Output" name="LDA" />
         <port polarity="Output" name="LDB" />
@@ -41,8 +44,10 @@
         <port polarity="Output" name="SUBU" />
         <port polarity="Output" name="HLT" />
         <port polarity="Output" name="RST" />
+        <port polarity="Output" name="SignMode" />
+        <port polarity="Output" name="MathMode" />
         <blockdef name="Demux1to16">
-            <timestamp>2017-5-7T8:53:39</timestamp>
+            <timestamp>2017-5-9T4:21:39</timestamp>
             <rect width="256" x="64" y="-1024" height="1024" />
             <rect width="64" x="0" y="-1004" height="24" />
             <line x2="0" y1="-992" y2="-992" x1="64" />
@@ -63,23 +68,6 @@
             <line x2="384" y1="-96" y2="-96" x1="320" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
             <line x2="384" y1="-736" y2="-736" x1="320" />
-        </blockdef>
-        <blockdef name="pullup">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="64" y1="-108" y2="-128" x1="64" />
-            <line x2="64" y1="-104" y2="-108" x1="80" />
-            <line x2="80" y1="-88" y2="-104" x1="48" />
-            <line x2="48" y1="-72" y2="-88" x1="80" />
-            <line x2="80" y1="-56" y2="-72" x1="48" />
-            <line x2="48" y1="-48" y2="-56" x1="64" />
-            <line x2="64" y1="-32" y2="-48" x1="64" />
-            <line x2="64" y1="-56" y2="-48" x1="48" />
-            <line x2="48" y1="-72" y2="-56" x1="80" />
-            <line x2="80" y1="-88" y2="-72" x1="48" />
-            <line x2="48" y1="-104" y2="-88" x1="80" />
-            <line x2="80" y1="-108" y2="-104" x1="64" />
-            <line x2="64" y1="0" y2="-32" x1="64" />
-            <line x2="32" y1="-128" y2="-128" x1="96" />
         </blockdef>
         <blockdef name="and4">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -103,28 +91,36 @@
             <line x2="144" y1="-144" y2="-144" x1="64" />
             <line x2="64" y1="-48" y2="-144" x1="64" />
         </blockdef>
+        <blockdef name="or2">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-64" y2="-64" x1="0" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="192" y1="-96" y2="-96" x1="256" />
+            <arc ex="192" ey="-96" sx="112" sy="-48" r="88" cx="116" cy="-136" />
+            <arc ex="48" ey="-144" sx="48" sy="-48" r="56" cx="16" cy="-96" />
+            <line x2="48" y1="-144" y2="-144" x1="112" />
+            <arc ex="112" ey="-144" sx="192" sy="-96" r="88" cx="116" cy="-56" />
+            <line x2="48" y1="-48" y2="-48" x1="112" />
+        </blockdef>
         <block symbolname="Demux1to16" name="XLXI_1">
             <blockpin signalname="Instruction(3:0)" name="Sel(3:0)" />
-            <blockpin signalname="XLXN_4" name="DIn" />
+            <blockpin signalname="Tick" name="DIn" />
             <blockpin signalname="NOP" name="Out0" />
             <blockpin signalname="LDA" name="Out1" />
             <blockpin signalname="LDB" name="Out2" />
             <blockpin signalname="ADD" name="Out3" />
-            <blockpin signalname="SUB" name="Out4" />
-            <blockpin signalname="LDC" name="Out5" />
-            <blockpin signalname="LAC" name="Out6" />
             <blockpin signalname="CLR" name="Out7" />
-            <blockpin signalname="ADDU" name="Out8" />
-            <blockpin signalname="SUBU" name="Out9" />
-            <blockpin name="Out10" />
+            <blockpin signalname="LAC" name="Out6" />
+            <blockpin signalname="LDC" name="Out5" />
+            <blockpin signalname="SUB" name="Out4" />
             <blockpin name="Out11" />
-            <blockpin name="Out12" />
-            <blockpin name="Out13" />
-            <blockpin signalname="XLXN_25" name="Out14" />
+            <blockpin name="Out10" />
+            <blockpin signalname="SUBU" name="Out9" />
+            <blockpin signalname="ADDU" name="Out8" />
             <blockpin signalname="XLXN_24" name="Out15" />
-        </block>
-        <block symbolname="pullup" name="XLXI_2">
-            <blockpin signalname="XLXN_4" name="O" />
+            <blockpin signalname="XLXN_25" name="Out14" />
+            <blockpin name="Out13" />
+            <blockpin name="Out12" />
         </block>
         <block symbolname="and4" name="XLXI_3">
             <blockpin signalname="Instruction(4)" name="I0" />
@@ -143,6 +139,16 @@
             <blockpin signalname="XLXN_27" name="I1" />
             <blockpin signalname="HLT" name="O" />
         </block>
+        <block symbolname="or2" name="XLXI_6">
+            <blockpin signalname="SUB" name="I0" />
+            <blockpin signalname="ADD" name="I1" />
+            <blockpin signalname="SignMode" name="O" />
+        </block>
+        <block symbolname="or2" name="XLXI_7">
+            <blockpin signalname="SUBU" name="I0" />
+            <blockpin signalname="SUB" name="I1" />
+            <blockpin signalname="MathMode" name="O" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
         <instance x="1392" y="1520" name="XLXI_1" orien="R0">
@@ -151,10 +157,9 @@
         <branch name="Instruction(7:0)">
             <wire x2="336" y1="80" y2="80" x1="240" />
         </branch>
-        <branch name="XLXN_4">
-            <wire x2="1392" y1="1488" y2="1488" x1="1360" />
+        <branch name="Tick">
+            <wire x2="1392" y1="1488" y2="1488" x1="1280" />
         </branch>
-        <instance x="1360" y="1552" name="XLXI_2" orien="R270" />
         <branch name="Instruction(3:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1344" y="528" type="branch" />
             <wire x2="1392" y1="528" y2="528" x1="1344" />
@@ -196,8 +201,7 @@
         </branch>
         <branch name="Instruction(6)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1488" y="1728" type="branch" />
-            <wire x2="1504" y1="1728" y2="1728" x1="1488" />
-            <wire x2="1520" y1="1728" y2="1728" x1="1504" />
+            <wire x2="1520" y1="1728" y2="1728" x1="1488" />
         </branch>
         <branch name="Instruction(5)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1488" y="1792" type="branch" />
@@ -223,8 +227,7 @@
             <wire x2="1888" y1="1552" y2="1760" x1="1888" />
         </branch>
         <branch name="HLT">
-            <wire x2="2288" y1="1392" y2="1392" x1="2240" />
-            <wire x2="2304" y1="1392" y2="1392" x1="2288" />
+            <wire x2="2304" y1="1392" y2="1392" x1="2240" />
         </branch>
         <branch name="RST">
             <wire x2="2304" y1="1520" y2="1520" x1="2240" />
@@ -241,5 +244,32 @@
         <iomarker fontsize="28" x="1840" y="1104" name="SUBU" orien="R0" />
         <iomarker fontsize="28" x="2304" y="1392" name="HLT" orien="R0" />
         <iomarker fontsize="28" x="2304" y="1520" name="RST" orien="R0" />
+        <iomarker fontsize="28" x="1280" y="1488" name="Tick" orien="R180" />
+        <branch name="ADD">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1824" y="2112" type="branch" />
+            <wire x2="1936" y1="2112" y2="2112" x1="1824" />
+        </branch>
+        <instance x="1936" y="2240" name="XLXI_6" orien="R0" />
+        <branch name="SUB">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1824" y="2176" type="branch" />
+            <wire x2="1936" y1="2176" y2="2176" x1="1824" />
+        </branch>
+        <branch name="SignMode">
+            <wire x2="2336" y1="2144" y2="2144" x1="2192" />
+        </branch>
+        <iomarker fontsize="28" x="2336" y="2144" name="SignMode" orien="R0" />
+        <branch name="SUB">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1824" y="2352" type="branch" />
+            <wire x2="1936" y1="2352" y2="2352" x1="1824" />
+        </branch>
+        <branch name="SUBU">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1824" y="2416" type="branch" />
+            <wire x2="1936" y1="2416" y2="2416" x1="1824" />
+        </branch>
+        <branch name="MathMode">
+            <wire x2="2336" y1="2384" y2="2384" x1="2192" />
+        </branch>
+        <instance x="1936" y="2480" name="XLXI_7" orien="R0" />
+        <iomarker fontsize="28" x="2336" y="2384" name="MathMode" orien="R0" />
     </sheet>
 </drawing>

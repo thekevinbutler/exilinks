@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym TwosComp D:/Users/Butle/Documents/exilinks/TwosComp.sch D:/Users/Butle/Documents/exilinks/TwosComp.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym TwosComp D:/Users/Butle/Documents/exilinks/TwosComp.sch D:/Users/Butle/Documents/exilinks/TwosComp.sym 

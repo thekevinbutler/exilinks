@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="DisplayNumbers">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2017-5-6T20:10:34</timestamp>
+    <timestamp>2017-5-9T5:57:14</timestamp>
     <pin polarity="Input" x="0" y="-480" name="RegA(7:0)" />
     <pin polarity="Input" x="0" y="-416" name="RegB(7:0)" />
     <pin polarity="Input" x="0" y="-352" name="RegC(7:0)" />
@@ -10,9 +10,11 @@
     <pin polarity="Input" x="0" y="-160" name="debug" />
     <pin polarity="Input" x="0" y="-96" name="ssdClock" />
     <pin polarity="Input" x="0" y="-32" name="displayC" />
+    <pin polarity="Input" x="0" y="96" name="Signed" />
     <pin polarity="Output" x="384" y="-480" name="anO(3:0)" />
     <pin polarity="Output" x="384" y="-32" name="hexO(3:0)" />
     <pin polarity="Output" x="384" y="32" name="dpO" />
+    <pin polarity="Output" x="384" y="96" name="SignDigit" />
     <graph>
         <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-520" type="symbol" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-480" type="pin RegA(7:0)" />
@@ -23,9 +25,13 @@
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin debug" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin ssdClock" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin displayC" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="96" type="pin Signed" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-480" type="pin anO(3:0)" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-32" type="pin hexO(3:0)" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="32" type="pin dpO" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="96" type="pin SignDigit" />
+        <line x2="0" y1="96" y2="96" x1="64" />
+        <line x2="384" y1="96" y2="96" x1="320" />
         <line x2="384" y1="32" y2="32" x1="320" />
         <rect width="64" x="0" y="-492" height="24" />
         <line x2="0" y1="-480" y2="-480" x1="64" />
@@ -44,6 +50,6 @@
         <line x2="384" y1="-480" y2="-480" x1="320" />
         <rect width="64" x="320" y="-44" height="24" />
         <line x2="384" y1="-32" y2="-32" x1="320" />
-        <rect width="256" x="64" y="-512" height="576" />
+        <rect width="256" x="64" y="-512" height="640" />
     </graph>
 </symbol>

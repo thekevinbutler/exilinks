@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : InputState.vhf
--- /___/   /\     Timestamp : 05/07/2017 15:00:59
+-- /___/   /\     Timestamp : 05/08/2017 23:00:21
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/thekevinbutler/Documents/exilinks/InputState.vhf -w C:/Users/thekevinbutler/Documents/exilinks/InputState.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl D:/Users/Butle/Documents/exilinks/InputState.vhf -w D:/Users/Butle/Documents/exilinks/InputState.sch
 --Design Name: InputState
 --Device: spartan3e
 --Purpose:

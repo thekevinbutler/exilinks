@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym RegisterC D:/Users/Butle/Documents/exilinks/RegisterC.sch D:/Users/Butle/Documents/exilinks/RegisterC.sym 

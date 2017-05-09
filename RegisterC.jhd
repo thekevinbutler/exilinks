@@ -1,0 +1,3 @@
+MODULE RegisterC
+	SUBMODULE RegisterGeneric
+		INSTANCE XLXI_1

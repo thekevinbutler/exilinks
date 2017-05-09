@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym RegisterA D:/Users/Butle/Documents/exilinks/RegisterA.sch D:/Users/Butle/Documents/exilinks/RegisterA.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym RegisterA D:/Users/Butle/Documents/exilinks/RegisterA.sch D:/Users/Butle/Documents/exilinks/RegisterA.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym RegisterA D:/Users/Butle/Documents/exilinks/RegisterA.sch D:/Users/Butle/Documents/exilinks/RegisterA.sym 

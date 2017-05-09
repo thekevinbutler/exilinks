@@ -14,7 +14,6 @@
         <signal name="QOut(7:0)" />
         <signal name="XLXN_6" />
         <signal name="QOut(5)" />
-        <signal name="resetPC" />
         <signal name="XLXN_17" />
         <signal name="XLXN_18" />
         <signal name="PrgmMode" />
@@ -27,16 +26,21 @@
         <signal name="XLXN_39" />
         <signal name="XLXN_41" />
         <signal name="XLXN_42" />
+        <signal name="XLXN_45" />
+        <signal name="HLT" />
+        <signal name="resetPC" />
+        <signal name="XLXN_51" />
         <port polarity="Output" name="Q0" />
         <port polarity="Input" name="SysClkIn" />
         <port polarity="Output" name="Q1" />
-        <port polarity="Input" name="resetPC" />
         <port polarity="Input" name="PrgmMode" />
         <port polarity="Input" name="ManualInc" />
         <port polarity="Input" name="DebugMode" />
         <port polarity="Input" name="OverridePC(7:0)" />
         <port polarity="Input" name="OverrideMode" />
         <port polarity="Output" name="PCOut(7:0)" />
+        <port polarity="Input" name="HLT" />
+        <port polarity="Input" name="resetPC" />
         <blockdef name="inv">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-32" y2="-32" x1="0" />
@@ -81,17 +85,6 @@
             <line x2="80" y1="-108" y2="-104" x1="64" />
             <line x2="64" y1="0" y2="-32" x1="64" />
             <line x2="32" y1="-128" y2="-128" x1="96" />
-        </blockdef>
-        <blockdef name="or2">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="64" y1="-64" y2="-64" x1="0" />
-            <line x2="64" y1="-128" y2="-128" x1="0" />
-            <line x2="192" y1="-96" y2="-96" x1="256" />
-            <arc ex="192" ey="-96" sx="112" sy="-48" r="88" cx="116" cy="-136" />
-            <arc ex="48" ey="-144" sx="48" sy="-48" r="56" cx="16" cy="-96" />
-            <line x2="48" y1="-144" y2="-144" x1="112" />
-            <arc ex="112" ey="-144" sx="192" sy="-96" r="88" cx="116" cy="-56" />
-            <line x2="48" y1="-48" y2="-48" x1="112" />
         </blockdef>
         <blockdef name="fjkc">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -141,6 +134,29 @@
             <line x2="0" y1="160" y2="160" x1="64" />
             <rect width="256" x="64" y="-256" height="576" />
         </blockdef>
+        <blockdef name="fd">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <rect width="256" x="64" y="-320" height="256" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="64" y1="-256" y2="-256" x1="0" />
+            <line x2="320" y1="-256" y2="-256" x1="384" />
+            <line x2="64" y1="-128" y2="-144" x1="80" />
+            <line x2="80" y1="-112" y2="-128" x1="64" />
+        </blockdef>
+        <blockdef name="or3">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="48" y1="-64" y2="-64" x1="0" />
+            <line x2="72" y1="-128" y2="-128" x1="0" />
+            <line x2="48" y1="-192" y2="-192" x1="0" />
+            <line x2="192" y1="-128" y2="-128" x1="256" />
+            <arc ex="192" ey="-128" sx="112" sy="-80" r="88" cx="116" cy="-168" />
+            <arc ex="48" ey="-176" sx="48" sy="-80" r="56" cx="16" cy="-128" />
+            <line x2="48" y1="-64" y2="-80" x1="48" />
+            <line x2="48" y1="-192" y2="-176" x1="48" />
+            <line x2="48" y1="-80" y2="-80" x1="112" />
+            <arc ex="112" ey="-176" sx="192" sy="-128" r="88" cx="116" cy="-88" />
+            <line x2="48" y1="-176" y2="-176" x1="112" />
+        </blockdef>
         <block symbolname="inv" name="XLXI_5">
             <blockpin signalname="Q0" name="I" />
             <blockpin signalname="notQ0" name="O" />
@@ -159,11 +175,6 @@
             <blockpin name="CEO" />
             <blockpin signalname="QOut(7:0)" name="Q(7:0)" />
             <blockpin name="TC" />
-        </block>
-        <block symbolname="or2" name="XLXI_119">
-            <blockpin signalname="QOut(5)" name="I0" />
-            <blockpin signalname="resetPC" name="I1" />
-            <blockpin signalname="XLXN_6" name="O" />
         </block>
         <block symbolname="fjkc" name="XLXI_123">
             <blockpin signalname="SysClkIn" name="C" />
@@ -208,6 +219,21 @@
         <block symbolname="pullup" name="XLXI_140">
             <blockpin signalname="XLXN_42" name="O" />
         </block>
+        <block symbolname="fd" name="XLXI_141">
+            <blockpin signalname="HLT" name="C" />
+            <blockpin signalname="XLXN_45" name="D" />
+            <blockpin signalname="XLXN_51" name="Q" />
+        </block>
+        <block symbolname="inv" name="XLXI_142">
+            <blockpin signalname="XLXN_51" name="I" />
+            <blockpin signalname="XLXN_45" name="O" />
+        </block>
+        <block symbolname="or3" name="XLXI_143">
+            <blockpin signalname="QOut(5)" name="I0" />
+            <blockpin signalname="XLXN_51" name="I1" />
+            <blockpin signalname="resetPC" name="I2" />
+            <blockpin signalname="XLXN_6" name="O" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
         <branch name="SysClkIn">
@@ -236,17 +262,13 @@
         <branch name="XLXN_6">
             <wire x2="1136" y1="1872" y2="1872" x1="1104" />
         </branch>
-        <instance x="848" y="1968" name="XLXI_119" orien="R0" />
         <branch name="QOut(5)">
             <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1584" y="1680" type="branch" />
-            <wire x2="848" y1="1904" y2="1904" x1="768" />
-            <wire x2="768" y1="1904" y2="2000" x1="768" />
-            <wire x2="1584" y1="2000" y2="2000" x1="768" />
+            <wire x2="768" y1="1936" y2="2048" x1="768" />
+            <wire x2="1584" y1="2048" y2="2048" x1="768" />
+            <wire x2="848" y1="1936" y2="1936" x1="768" />
             <wire x2="1584" y1="1552" y2="1680" x1="1584" />
-            <wire x2="1584" y1="1680" y2="2000" x1="1584" />
-        </branch>
-        <branch name="resetPC">
-            <wire x2="848" y1="1840" y2="1840" x1="752" />
+            <wire x2="1584" y1="1680" y2="2048" x1="1584" />
         </branch>
         <instance x="1552" y="800" name="XLXI_124" orien="R0" />
         <branch name="notQ0">
@@ -328,7 +350,6 @@
             <wire x2="832" y1="1328" y2="1648" x1="832" />
             <wire x2="1136" y1="1648" y2="1648" x1="832" />
         </branch>
-        <iomarker fontsize="28" x="752" y="1840" name="resetPC" orien="R180" />
         <instance x="1984" y="1424" name="XLXI_136" orien="R0">
         </instance>
         <branch name="OverrideMode">
@@ -358,5 +379,28 @@
             <wire x2="1136" y1="1712" y2="1712" x1="1104" />
         </branch>
         <instance x="1104" y="1776" name="XLXI_140" orien="R270" />
+        <instance x="304" y="2512" name="XLXI_141" orien="R0" />
+        <instance x="592" y="2064" name="XLXI_142" orien="R180" />
+        <branch name="XLXN_45">
+            <wire x2="288" y1="2096" y2="2256" x1="288" />
+            <wire x2="304" y1="2256" y2="2256" x1="288" />
+            <wire x2="368" y1="2096" y2="2096" x1="288" />
+        </branch>
+        <branch name="HLT">
+            <wire x2="304" y1="2384" y2="2384" x1="240" />
+        </branch>
+        <iomarker fontsize="28" x="240" y="2384" name="HLT" orien="R180" />
+        <instance x="848" y="2000" name="XLXI_143" orien="R0" />
+        <branch name="resetPC">
+            <wire x2="848" y1="1808" y2="1808" x1="752" />
+        </branch>
+        <iomarker fontsize="28" x="752" y="1808" name="resetPC" orien="R180" />
+        <branch name="XLXN_51">
+            <wire x2="704" y1="2096" y2="2096" x1="592" />
+            <wire x2="704" y1="2096" y2="2256" x1="704" />
+            <wire x2="704" y1="2256" y2="2256" x1="688" />
+            <wire x2="848" y1="1872" y2="1872" x1="704" />
+            <wire x2="704" y1="1872" y2="2096" x1="704" />
+        </branch>
     </sheet>
 </drawing>

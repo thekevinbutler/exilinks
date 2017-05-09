@@ -1,0 +1,5 @@
+MODULE RegisterA
+	SUBMODULE RegisterGeneric
+		INSTANCE XLXI_1
+	SUBMODULE mux8x2to1
+		INSTANCE XLXI_2

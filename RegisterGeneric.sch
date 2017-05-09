@@ -10,9 +10,11 @@
         <signal name="DataOut(7:0)" />
         <signal name="XLXN_4" />
         <signal name="Write" />
+        <signal name="CLR" />
         <port polarity="Input" name="DataIn(7:0)" />
         <port polarity="Output" name="DataOut(7:0)" />
         <port polarity="Input" name="Write" />
+        <port polarity="Input" name="CLR" />
         <blockdef name="fd8ce">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-128" y2="-128" x1="0" />
@@ -48,7 +50,7 @@
         <block symbolname="fd8ce" name="XLXI_2">
             <blockpin signalname="Write" name="C" />
             <blockpin signalname="XLXN_4" name="CE" />
-            <blockpin name="CLR" />
+            <blockpin signalname="CLR" name="CLR" />
             <blockpin signalname="DataIn(7:0)" name="D(7:0)" />
             <blockpin signalname="DataOut(7:0)" name="Q(7:0)" />
         </block>
@@ -74,5 +76,9 @@
             <wire x2="1520" y1="1328" y2="1328" x1="1152" />
         </branch>
         <iomarker fontsize="28" x="1152" y="1328" name="Write" orien="R180" />
+        <branch name="CLR">
+            <wire x2="1520" y1="1424" y2="1424" x1="1328" />
+        </branch>
+        <iomarker fontsize="28" x="1328" y="1424" name="CLR" orien="R180" />
     </sheet>
 </drawing>

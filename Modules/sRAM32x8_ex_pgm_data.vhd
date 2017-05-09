@@ -43,10 +43,19 @@ begin
 			type ram_array is array (0 to 31) of
 				std_logic_vector(7 downto 0);
 			variable mem: ram_array	:= 
---			          NOP    CLR    LDA    LDB    ADDU   LDC    LAC    SUBU   
-				(x"00", x"00", x"07", x"06", x"00", x"00", x"04", x"F3",
+--			     NOP    CLR    LDA    LDB    ADDU   LDC    LAC    SUBU   
+--				(x"00", x"00", x"07", x"06", x"00", x"00", x"04", x"F3",
 --				  LDB    LDC    LAC    LDB    ADD    LDC    LAC    SUB
-				 x"05", x"00", x"00", x"8D", x"12", x"8D", x"8D", x"00", 
+--				 x"05", x"00", x"00", x"8D", x"12", x"8D", x"8D", x"00", 
+--				  LDC    HLT    ---    ---    ---    ---    ---    ---
+--				 x"22", x"00", x"00", x"99", x"33", X"00", X"00", X"00", 
+--				  ---    ---    ---    ---    ---    ---    ---    --- 
+--				 x"9D", x"00", x"88", x"00", x"6C", x"00", x"00", x"00");
+
+--			     NOP    CLR    LDA    LDB    ADDU   LDC    LAC    SUBU   
+				(x"00", x"00", x"00", x"07", x"06", x"00", x"00", x"00",
+--				  LDB    LDC    LAC    LDB    ADD    LDC    LAC    SUB
+				 x"05", x"00", x"00", x"00", x"8D", x"00", x"8D", x"00", 
 --				  LDC    HLT    ---    ---    ---    ---    ---    ---
 				 x"22", x"00", x"00", x"99", x"33", X"00", X"00", X"00", 
 --				  ---    ---    ---    ---    ---    ---    ---    --- 

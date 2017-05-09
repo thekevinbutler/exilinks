@@ -1,1 +1,16 @@
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf,-w,C:/Users/thekevinbutler/Documents/exilinks/toplevel.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,D:/Users/Butle/Documents/exilinks/ProgramCounter.vhf,-w,D:/Users/Butle/Documents/exilinks/ProgramCounter.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,D:/Users/Butle/Documents/exilinks/toplevel.vhf,-w,D:/Users/Butle/Documents/exilinks/toplevel.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,D:/Users/Butle/Documents/exilinks/DisplayNumbers.vhf,-w,D:/Users/Butle/Documents/exilinks/DisplayNumbers.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,D:/Users/Butle/Documents/exilinks/Demux1to16.vhf,-w,D:/Users/Butle/Documents/exilinks/Demux1to16.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,D:/Users/Butle/Documents/exilinks/RegisterGeneric.vhf,-w,D:/Users/Butle/Documents/exilinks/RegisterGeneric.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,D:/Users/Butle/Documents/exilinks/TwosComp.vhf,-w,D:/Users/Butle/Documents/exilinks/TwosComp.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,D:/Users/Butle/Documents/exilinks/mux4x2to1.vhf,-w,D:/Users/Butle/Documents/exilinks/mux4x2to1.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,D:/Users/Butle/Documents/exilinks/DataMem.vhf,-w,D:/Users/Butle/Documents/exilinks/DataMem.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,D:/Users/Butle/Documents/exilinks/mux8x2to1.vhf,-w,D:/Users/Butle/Documents/exilinks/mux8x2to1.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,D:/Users/Butle/Documents/exilinks/InstructionDecode.vhf,-w,D:/Users/Butle/Documents/exilinks/InstructionDecode.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,D:/Users/Butle/Documents/exilinks/InputState.vhf,-w,D:/Users/Butle/Documents/exilinks/InputState.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,D:/Users/Butle/Documents/exilinks/RegisterC.vhf,-w,D:/Users/Butle/Documents/exilinks/RegisterC.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,D:/Users/Butle/Documents/exilinks/AddSub_ALU.vhf,-w,D:/Users/Butle/Documents/exilinks/AddSub_ALU.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,D:/Users/Butle/Documents/exilinks/RegisterA.vhf,-w,D:/Users/Butle/Documents/exilinks/RegisterA.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,D:/Users/Butle/Documents/exilinks/InstructionMem.vhf,-w,D:/Users/Butle/Documents/exilinks/InstructionMem.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,D:/Users/Butle/Documents/exilinks/KeyPad.vhf,-w,D:/Users/Butle/Documents/exilinks/KeyPad.sch

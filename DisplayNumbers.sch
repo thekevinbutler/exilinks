@@ -17,7 +17,7 @@
         <signal name="rightSSDs(7:4)" />
         <signal name="rightSSDs(3:0)" />
         <signal name="ssdClock" />
-        <signal name="XLXN_29(0:1)" />
+        <signal name="position(0:1)" />
         <signal name="XLXN_31(3:0)" />
         <signal name="XLXN_32(3:0)" />
         <signal name="XLXN_33(3:0)" />
@@ -37,6 +37,11 @@
         <signal name="leftSSDs(7:0)" />
         <signal name="rightSSDs(7:0)" />
         <signal name="dpO" />
+        <signal name="position(0)" />
+        <signal name="position(1)" />
+        <signal name="Signed" />
+        <signal name="SignDigit" />
+        <signal name="XLXN_70(7:0)" />
         <port polarity="Input" name="RegA(7:0)" />
         <port polarity="Input" name="RegB(7:0)" />
         <port polarity="Input" name="RegC(7:0)" />
@@ -48,6 +53,8 @@
         <port polarity="Output" name="hexO(3:0)" />
         <port polarity="Input" name="displayC" />
         <port polarity="Output" name="dpO" />
+        <port polarity="Input" name="Signed" />
+        <port polarity="Output" name="SignDigit" />
         <blockdef name="mux8x2to1">
             <timestamp>2017-5-6T10:51:43</timestamp>
             <line x2="0" y1="288" y2="288" x1="64" />
@@ -161,10 +168,31 @@
             <line x2="48" y1="-48" y2="-56" x1="64" />
             <line x2="64" y1="-32" y2="-48" x1="64" />
         </blockdef>
+        <blockdef name="and4">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-112" y2="-112" x1="144" />
+            <arc ex="144" ey="-208" sx="144" sy="-112" r="48" cx="144" cy="-160" />
+            <line x2="144" y1="-208" y2="-208" x1="64" />
+            <line x2="64" y1="-64" y2="-256" x1="64" />
+            <line x2="192" y1="-160" y2="-160" x1="256" />
+            <line x2="64" y1="-256" y2="-256" x1="0" />
+            <line x2="64" y1="-192" y2="-192" x1="0" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="64" y1="-64" y2="-64" x1="0" />
+        </blockdef>
+        <blockdef name="TwosComp">
+            <timestamp>2017-5-8T10:29:11</timestamp>
+            <line x2="0" y1="32" y2="32" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="320" y="-44" height="24" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+            <rect width="256" x="64" y="-64" height="128" />
+        </blockdef>
         <block symbolname="bin2BCD3en" name="XLXI_3">
             <blockpin signalname="ssdClock" name="CLK" />
             <blockpin signalname="XLXN_62" name="En" />
-            <blockpin signalname="RegC(7:0)" name="Din(7:0)" />
+            <blockpin signalname="XLXN_70(7:0)" name="Din(7:0)" />
             <blockpin signalname="XLXN_31(3:0)" name="Dout3(3:0)" />
             <blockpin signalname="XLXN_32(3:0)" name="Dout2(3:0)" />
             <blockpin signalname="XLXN_33(3:0)" name="Dout1(3:0)" />
@@ -177,7 +205,7 @@
             <blockpin signalname="leftSSDs(3:0)" name="hexC(3:0)" />
             <blockpin signalname="rightSSDs(7:4)" name="hexB(3:0)" />
             <blockpin signalname="rightSSDs(3:0)" name="hexA(3:0)" />
-            <blockpin signalname="XLXN_29(0:1)" name="sel(0:1)" />
+            <blockpin signalname="position(0:1)" name="sel(0:1)" />
             <blockpin name="dp_in(3:0)" />
             <blockpin signalname="XLXN_52" name="dpO" />
             <blockpin signalname="XLXN_58(3:0)" name="anO(3:0)" />
@@ -197,7 +225,7 @@
         </block>
         <block symbolname="sel_strobeB" name="XLXI_12">
             <blockpin signalname="ssdClock" name="clk" />
-            <blockpin signalname="XLXN_29(0:1)" name="sel(0:1)" />
+            <blockpin signalname="position(0:1)" name="sel(0:1)" />
         </block>
         <block symbolname="mux4SSD" name="XLXI_13">
             <blockpin signalname="XLXN_37" name="rb_in" />
@@ -205,7 +233,7 @@
             <blockpin signalname="XLXN_32(3:0)" name="hexC(3:0)" />
             <blockpin signalname="XLXN_33(3:0)" name="hexB(3:0)" />
             <blockpin signalname="XLXN_34(3:0)" name="hexA(3:0)" />
-            <blockpin signalname="XLXN_29(0:1)" name="sel(0:1)" />
+            <blockpin signalname="position(0:1)" name="sel(0:1)" />
             <blockpin name="dp_in(3:0)" />
             <blockpin signalname="XLXN_59" name="dpO" />
             <blockpin signalname="XLXN_45(3:0)" name="anO(3:0)" />
@@ -237,6 +265,18 @@
         </block>
         <block symbolname="pulldown" name="XLXI_21">
             <blockpin signalname="XLXN_62" name="O" />
+        </block>
+        <block symbolname="and4" name="XLXI_26">
+            <blockpin signalname="displayC" name="I0" />
+            <blockpin signalname="Signed" name="I1" />
+            <blockpin signalname="position(1)" name="I2" />
+            <blockpin signalname="position(0)" name="I3" />
+            <blockpin signalname="SignDigit" name="O" />
+        </block>
+        <block symbolname="TwosComp" name="XLXI_31">
+            <blockpin signalname="RegC(7:0)" name="NumIn(7:0)" />
+            <blockpin signalname="XLXN_70(7:0)" name="NumOut(7:0)" />
+            <blockpin signalname="Signed" name="Signed" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -331,17 +371,16 @@
         <branch name="XLXN_34(3:0)">
             <wire x2="2368" y1="1184" y2="1184" x1="2240" />
         </branch>
-        <branch name="RegC(7:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1792" y="1248" type="branch" />
-            <wire x2="1792" y1="1248" y2="1248" x1="1760" />
-            <wire x2="1856" y1="1248" y2="1248" x1="1792" />
-        </branch>
         <instance x="2304" y="896" name="XLXI_14" orien="R0" />
         <instance x="2304" y="256" name="XLXI_15" orien="R0" />
-        <branch name="XLXN_29(0:1)">
+        <branch name="position(0:1)">
+            <attrtext style="alignment:SOFT-VRIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="1856" type="branch" />
             <wire x2="2320" y1="608" y2="608" x1="2208" />
             <wire x2="2320" y1="608" y2="1248" x1="2320" />
             <wire x2="2368" y1="1248" y2="1248" x1="2320" />
+            <wire x2="2320" y1="1248" y2="1600" x1="2320" />
+            <wire x2="2320" y1="1600" y2="1664" x1="2320" />
+            <wire x2="2320" y1="1664" y2="1856" x1="2320" />
             <wire x2="2368" y1="608" y2="608" x1="2320" />
         </branch>
         <branch name="XLXN_37">
@@ -429,13 +468,11 @@
             <wire x2="2896" y1="688" y2="688" x1="2864" />
         </branch>
         <branch name="anO(3:0)">
-            <wire x2="3296" y1="688" y2="688" x1="3280" />
-            <wire x2="3312" y1="688" y2="688" x1="3296" />
+            <wire x2="3312" y1="688" y2="688" x1="3280" />
         </branch>
         <iomarker fontsize="28" x="3312" y="688" name="anO(3:0)" orien="R0" />
         <branch name="hexO(3:0)">
-            <wire x2="3296" y1="944" y2="944" x1="3280" />
-            <wire x2="3312" y1="944" y2="944" x1="3296" />
+            <wire x2="3312" y1="944" y2="944" x1="3280" />
         </branch>
         <iomarker fontsize="28" x="3312" y="944" name="hexO(3:0)" orien="R0" />
         <branch name="debug">
@@ -452,5 +489,45 @@
             <wire x2="3360" y1="176" y2="176" x1="3328" />
         </branch>
         <iomarker fontsize="28" x="3360" y="176" name="dpO" orien="R0" />
+        <branch name="position(0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2496" y="1600" type="branch" />
+            <wire x2="2496" y1="1600" y2="1600" x1="2416" />
+            <wire x2="2624" y1="1600" y2="1600" x1="2496" />
+        </branch>
+        <branch name="position(1)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2496" y="1664" type="branch" />
+            <wire x2="2496" y1="1664" y2="1664" x1="2416" />
+            <wire x2="2624" y1="1664" y2="1664" x1="2496" />
+        </branch>
+        <branch name="Signed">
+            <wire x2="2624" y1="1728" y2="1728" x1="2576" />
+        </branch>
+        <bustap x2="2416" y1="1600" y2="1600" x1="2320" />
+        <bustap x2="2416" y1="1664" y2="1664" x1="2320" />
+        <iomarker fontsize="28" x="2576" y="1728" name="Signed" orien="R180" />
+        <instance x="2624" y="1856" name="XLXI_26" orien="R0" />
+        <branch name="SignDigit">
+            <wire x2="2992" y1="1696" y2="1696" x1="2880" />
+        </branch>
+        <iomarker fontsize="28" x="2992" y="1696" name="SignDigit" orien="R0" />
+        <branch name="displayC">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2576" y="1792" type="branch" />
+            <wire x2="2624" y1="1792" y2="1792" x1="2576" />
+        </branch>
+        <branch name="XLXN_70(7:0)">
+            <wire x2="1760" y1="2064" y2="2064" x1="1680" />
+            <wire x2="1760" y1="1248" y2="2064" x1="1760" />
+            <wire x2="1856" y1="1248" y2="1248" x1="1760" />
+        </branch>
+        <instance x="1296" y="2096" name="XLXI_31" orien="R0">
+        </instance>
+        <branch name="RegC(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1184" y="2064" type="branch" />
+            <wire x2="1296" y1="2064" y2="2064" x1="1184" />
+        </branch>
+        <branch name="Signed">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1184" y="2128" type="branch" />
+            <wire x2="1296" y1="2128" y2="2128" x1="1184" />
+        </branch>
     </sheet>
 </drawing>
