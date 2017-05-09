@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : InstructionMem.vhf
--- /___/   /\     Timestamp : 05/08/2017 23:00:23
+-- /___/   /\     Timestamp : 05/09/2017 09:56:36
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl D:/Users/Butle/Documents/exilinks/InstructionMem.vhf -w D:/Users/Butle/Documents/exilinks/InstructionMem.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/thekevinbutler/Documents/exilinks/InstructionMem.vhf -w C:/Users/thekevinbutler/Documents/exilinks/InstructionMem.sch
 --Design Name: InstructionMem
 --Device: spartan3e
 --Purpose:
@@ -99,14 +99,14 @@ architecture BEHAVIORAL of mux8x2to1_MUSER_InstructionMem is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_140";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_141";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_142";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_143";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_144";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_145";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_146";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_147";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_0";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_1";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_2";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_3";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_4";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_5";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_6";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_7";
 begin
    XLXI_1 : M2_1_MXILINX_InstructionMem
       port map (D0=>A(0),

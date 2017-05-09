@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TwosComp.vhf
--- /___/   /\     Timestamp : 05/08/2017 23:00:20
+-- /___/   /\     Timestamp : 05/09/2017 09:57:23
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl D:/Users/Butle/Documents/exilinks/TwosComp.vhf -w D:/Users/Butle/Documents/exilinks/TwosComp.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/thekevinbutler/Documents/exilinks/TwosComp.vhf -w C:/Users/thekevinbutler/Documents/exilinks/TwosComp.sch
 --Design Name: TwosComp
 --Device: spartan3e
 --Purpose:
@@ -99,14 +99,14 @@ architecture BEHAVIORAL of mux8x2to1_MUSER_TwosComp is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_89";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_90";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_91";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_92";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_93";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_94";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_95";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_96";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_3";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_4";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_5";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_6";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_7";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_8";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_9";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_10";
 begin
    XLXI_1 : M2_1_MXILINX_TwosComp
       port map (D0=>A(0),
@@ -521,7 +521,7 @@ architecture BEHAVIORAL of TwosComp is
    end component;
    attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_10 : label is "XLXI_10_97";
+   attribute HU_SET of XLXI_10 : label is "XLXI_10_11";
 begin
    XLXI_1 : INV
       port map (I=>NumIn(6),

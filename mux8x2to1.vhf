@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : mux8x2to1.vhf
--- /___/   /\     Timestamp : 05/08/2017 23:00:21
+-- /___/   /\     Timestamp : 05/09/2017 09:56:37
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl D:/Users/Butle/Documents/exilinks/mux8x2to1.vhf -w D:/Users/Butle/Documents/exilinks/mux8x2to1.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/thekevinbutler/Documents/exilinks/mux8x2to1.vhf -w C:/Users/thekevinbutler/Documents/exilinks/mux8x2to1.sch
 --Design Name: mux8x2to1
 --Device: spartan3e
 --Purpose:
@@ -99,14 +99,14 @@ architecture BEHAVIORAL of mux8x2to1 is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_110";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_111";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_112";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_113";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_114";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_115";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_116";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_117";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_8";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_9";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_10";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_11";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_12";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_13";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_14";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_15";
 begin
    XLXI_1 : M2_1_MXILINX_mux8x2to1
       port map (D0=>A(0),

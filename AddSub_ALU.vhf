@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : AddSub_ALU.vhf
--- /___/   /\     Timestamp : 05/09/2017 01:47:56
+-- /___/   /\     Timestamp : 05/09/2017 11:29:47
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl D:/Users/Butle/Documents/exilinks/AddSub_ALU.vhf -w D:/Users/Butle/Documents/exilinks/AddSub_ALU.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/thekevinbutler/Documents/exilinks/AddSub_ALU.vhf -w C:/Users/thekevinbutler/Documents/exilinks/AddSub_ALU.sch
 --Design Name: AddSub_ALU
 --Device: spartan3e
 --Purpose:
@@ -99,14 +99,14 @@ architecture BEHAVIORAL of mux8x2to1_MUSER_AddSub_ALU is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_0";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_1";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_2";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_3";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_4";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_5";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_6";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_7";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_46";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_47";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_48";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_49";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_50";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_51";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_52";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_53";
 begin
    XLXI_1 : M2_1_MXILINX_AddSub_ALU
       port map (D0=>A(0),
@@ -521,7 +521,7 @@ architecture BEHAVIORAL of TwosComp_MUSER_AddSub_ALU is
    end component;
    attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_10 : label is "XLXI_10_8";
+   attribute HU_SET of XLXI_10 : label is "XLXI_10_54";
 begin
    XLXI_1 : INV
       port map (I=>NumIn(6),
@@ -1071,26 +1071,31 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity AddSub_ALU is
-   port ( AddSub  : in    std_logic; 
-          AIn     : in    std_logic_vector (7 downto 0); 
-          BIn     : in    std_logic_vector (7 downto 0); 
-          Set     : in    std_logic; 
-          Signed  : in    std_logic; 
-          RegOut  : out   std_logic_vector (7 downto 0); 
-          signNeg : out   std_logic);
+   port ( AddSub   : in    std_logic; 
+          AIn      : in    std_logic_vector (7 downto 0); 
+          BIn      : in    std_logic_vector (7 downto 0); 
+          Set      : in    std_logic; 
+          Signed   : in    std_logic; 
+          Overflow : out   std_logic; 
+          RegOut   : out   std_logic_vector (7 downto 0); 
+          signNeg  : out   std_logic);
 end AddSub_ALU;
 
 architecture BEHAVIORAL of AddSub_ALU is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
+   signal a2s                    : std_logic_vector (7 downto 0);
+   signal b2s                    : std_logic_vector (7 downto 0);
    signal COut                   : std_logic_vector (7 downto 0);
    signal SignLatch              : std_logic;
-   signal XLXN_3                 : std_logic_vector (7 downto 0);
-   signal XLXN_4                 : std_logic_vector (7 downto 0);
-   signal XLXN_6                 : std_logic;
    signal XLXN_10                : std_logic;
    signal XLXN_12                : std_logic;
    signal XLXN_107               : std_logic;
+   signal XLXN_113               : std_logic_vector (1 downto 0);
+   signal XLXN_120               : std_logic;
+   signal XLXN_122               : std_logic;
+   signal XLXN_136               : std_logic;
+   signal XLXN_137               : std_logic;
    signal RegOut_DUMMY           : std_logic_vector (7 downto 0);
    signal XLXI_10_CLR_openSignal : std_logic;
    signal XLXI_11_CLR_openSignal : std_logic;
@@ -1132,27 +1137,65 @@ architecture BEHAVIORAL of AddSub_ALU is
    end component;
    attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_10 : label is "XLXI_10_9";
-   attribute HU_SET of XLXI_11 : label is "XLXI_11_10";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_11";
+   component addsub8
+      port ( A    : in    std_logic_vector (7 downto 0); 
+             B    : in    std_logic_vector (7 downto 0); 
+             CTRL : in    std_logic_vector (1 downto 0); 
+             NEG  : inout std_logic; 
+             OVF  : out   std_logic; 
+             C    : out   std_logic_vector (7 downto 0));
+   end component;
+   
+   component BUF
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
+   
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+   component AND4B2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             I3 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND4B2 : component is "BLACK_BOX";
+   
+   component AND2B1
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_10 : label is "XLXI_10_55";
+   attribute HU_SET of XLXI_11 : label is "XLXI_11_56";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_57";
 begin
    RegOut(7 downto 0) <= RegOut_DUMMY(7 downto 0);
    XLXI_2 : TwosComp_MUSER_AddSub_ALU
       port map (NumIn(7 downto 0)=>AIn(7 downto 0),
                 Signed=>SignLatch,
-                NumOut(7 downto 0)=>XLXN_3(7 downto 0));
+                NumOut(7 downto 0)=>a2s(7 downto 0));
    
    XLXI_3 : TwosComp_MUSER_AddSub_ALU
       port map (NumIn(7 downto 0)=>BIn(7 downto 0),
                 Signed=>SignLatch,
-                NumOut(7 downto 0)=>XLXN_4(7 downto 0));
+                NumOut(7 downto 0)=>b2s(7 downto 0));
    
    XLXI_10 : FJKC_MXILINX_AddSub_ALU
       port map (C=>Set,
                 CLR=>XLXI_10_CLR_openSignal,
                 J=>AddSub,
                 K=>XLXN_10,
-                Q=>XLXN_6);
+                Q=>XLXN_120);
    
    XLXI_11 : FJKC_MXILINX_AddSub_ALU
       port map (C=>Set,
@@ -1175,22 +1218,55 @@ begin
                 NumOut(7 downto 0)=>RegOut_DUMMY(7 downto 0));
    
    XLXI_32 : ADSU8_MXILINX_AddSub_ALU
-      port map (A(7 downto 0)=>XLXN_3(7 downto 0),
+      port map (A(7 downto 0)=>a2s(7 downto 0),
                 ADD=>XLXN_107,
-                B(7 downto 0)=>XLXN_4(7 downto 0),
-                CI=>XLXN_6,
+                B(7 downto 0)=>b2s(7 downto 0),
+                CI=>XLXN_120,
                 CO=>open,
                 OFL=>open,
                 S(7 downto 0)=>COut(7 downto 0));
    
    XLXI_37 : INV
-      port map (I=>XLXN_6,
+      port map (I=>XLXN_120,
                 O=>XLXN_107);
    
    XLXI_38 : AND2
       port map (I0=>RegOut_DUMMY(7),
                 I1=>SignLatch,
                 O=>signNeg);
+   
+   XLXI_39 : addsub8
+      port map (A(7 downto 0)=>a2s(7 downto 0),
+                B(7 downto 0)=>b2s(7 downto 0),
+                CTRL(1 downto 0)=>XLXN_113(1 downto 0),
+                C=>open,
+                OVF=>XLXN_137,
+                NEG=>open);
+   
+   XLXI_41 : BUF
+      port map (I=>SignLatch,
+                O=>XLXN_113(1));
+   
+   XLXI_42 : BUF
+      port map (I=>XLXN_120,
+                O=>XLXN_113(0));
+   
+   XLXI_45 : OR2
+      port map (I0=>XLXN_122,
+                I1=>XLXN_136,
+                O=>Overflow);
+   
+   XLXI_47 : AND4B2
+      port map (I0=>b2s(7),
+                I1=>a2s(7),
+                I2=>COut(7),
+                I3=>SignLatch,
+                O=>XLXN_122);
+   
+   XLXI_49 : AND2B1
+      port map (I0=>SignLatch,
+                I1=>XLXN_137,
+                O=>XLXN_136);
    
 end BEHAVIORAL;
 

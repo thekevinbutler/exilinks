@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : mux4x2to1.vhf
--- /___/   /\     Timestamp : 05/08/2017 23:00:21
+-- /___/   /\     Timestamp : 05/09/2017 09:57:37
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl D:/Users/Butle/Documents/exilinks/mux4x2to1.vhf -w D:/Users/Butle/Documents/exilinks/mux4x2to1.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/thekevinbutler/Documents/exilinks/mux4x2to1.vhf -w C:/Users/thekevinbutler/Documents/exilinks/mux4x2to1.sch
 --Design Name: mux4x2to1
 --Device: spartan3e
 --Purpose:
@@ -99,10 +99,10 @@ architecture BEHAVIORAL of mux4x2to1 is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_98";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_99";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_100";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_101";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_57";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_58";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_59";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_60";
 begin
    XLXI_1 : M2_1_MXILINX_mux4x2to1
       port map (D0=>A(0),

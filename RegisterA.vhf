@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : RegisterA.vhf
--- /___/   /\     Timestamp : 05/08/2017 23:00:23
+-- /___/   /\     Timestamp : 05/09/2017 09:57:34
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl D:/Users/Butle/Documents/exilinks/RegisterA.vhf -w D:/Users/Butle/Documents/exilinks/RegisterA.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/thekevinbutler/Documents/exilinks/RegisterA.vhf -w C:/Users/thekevinbutler/Documents/exilinks/RegisterA.sch
 --Design Name: RegisterA
 --Device: spartan3e
 --Purpose:
@@ -99,14 +99,14 @@ architecture BEHAVIORAL of mux8x2to1_MUSER_RegisterA is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_131";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_132";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_133";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_134";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_135";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_136";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_137";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_138";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_37";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_38";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_39";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_40";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_41";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_42";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_43";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_44";
 begin
    XLXI_1 : M2_1_MXILINX_RegisterA
       port map (D0=>A(0),
@@ -277,7 +277,7 @@ architecture BEHAVIORAL of RegisterGeneric_MUSER_RegisterA is
    end component;
    attribute BOX_TYPE of PULLUP : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_139";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_45";
 begin
    XLXI_2 : FD8CE_MXILINX_RegisterA
       port map (C=>Write,

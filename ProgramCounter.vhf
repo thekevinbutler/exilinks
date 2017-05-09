@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ProgramCounter.vhf
--- /___/   /\     Timestamp : 05/08/2017 23:00:16
+-- /___/   /\     Timestamp : 05/09/2017 09:56:54
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl D:/Users/Butle/Documents/exilinks/ProgramCounter.vhf -w D:/Users/Butle/Documents/exilinks/ProgramCounter.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/thekevinbutler/Documents/exilinks/ProgramCounter.vhf -w C:/Users/thekevinbutler/Documents/exilinks/ProgramCounter.sch
 --Design Name: ProgramCounter
 --Device: spartan3e
 --Purpose:
@@ -99,14 +99,14 @@ architecture BEHAVIORAL of mux8x2to1_MUSER_ProgramCounter is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_0";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_1";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_2";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_3";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_4";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_5";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_6";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_7";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_62";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_63";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_64";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_65";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_66";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_67";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_68";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_69";
 begin
    XLXI_1 : M2_1_MXILINX_ProgramCounter
       port map (D0=>A(0),
@@ -366,7 +366,7 @@ architecture BEHAVIORAL of FTCLEX_MXILINX_ProgramCounter is
    end component;
    attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
    
-   attribute HU_SET of I_36_30 : label is "I_36_30_8";
+   attribute HU_SET of I_36_30 : label is "I_36_30_70";
    attribute RLOC of I_36_35 : label is "X0Y0";
 begin
    Q <= Q_DUMMY;
@@ -568,22 +568,22 @@ architecture BEHAVIORAL of CB8CLED_MXILINX_ProgramCounter is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_16";
-   attribute HU_SET of I_Q1 : label is "I_Q1_15";
-   attribute HU_SET of I_Q2 : label is "I_Q2_14";
-   attribute HU_SET of I_Q3 : label is "I_Q3_13";
-   attribute HU_SET of I_Q4 : label is "I_Q4_12";
-   attribute HU_SET of I_Q5 : label is "I_Q5_11";
-   attribute HU_SET of I_Q6 : label is "I_Q6_10";
-   attribute HU_SET of I_Q7 : label is "I_Q7_9";
-   attribute HU_SET of I_TC : label is "I_TC_21";
-   attribute HU_SET of I_T1 : label is "I_T1_24";
-   attribute HU_SET of I_T2 : label is "I_T2_17";
-   attribute HU_SET of I_T3 : label is "I_T3_18";
-   attribute HU_SET of I_T4 : label is "I_T4_23";
-   attribute HU_SET of I_T5 : label is "I_T5_22";
-   attribute HU_SET of I_T6 : label is "I_T6_19";
-   attribute HU_SET of I_T7 : label is "I_T7_20";
+   attribute HU_SET of I_Q0 : label is "I_Q0_78";
+   attribute HU_SET of I_Q1 : label is "I_Q1_77";
+   attribute HU_SET of I_Q2 : label is "I_Q2_76";
+   attribute HU_SET of I_Q3 : label is "I_Q3_75";
+   attribute HU_SET of I_Q4 : label is "I_Q4_74";
+   attribute HU_SET of I_Q5 : label is "I_Q5_73";
+   attribute HU_SET of I_Q6 : label is "I_Q6_72";
+   attribute HU_SET of I_Q7 : label is "I_Q7_71";
+   attribute HU_SET of I_TC : label is "I_TC_83";
+   attribute HU_SET of I_T1 : label is "I_T1_86";
+   attribute HU_SET of I_T2 : label is "I_T2_79";
+   attribute HU_SET of I_T3 : label is "I_T3_80";
+   attribute HU_SET of I_T4 : label is "I_T4_85";
+   attribute HU_SET of I_T5 : label is "I_T5_84";
+   attribute HU_SET of I_T6 : label is "I_T6_81";
+   attribute HU_SET of I_T7 : label is "I_T7_82";
 begin
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    TC <= TC_DUMMY;
@@ -918,10 +918,10 @@ architecture BEHAVIORAL of ProgramCounter is
    end component;
    attribute BOX_TYPE of OR3 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_115 : label is "XLXI_115_25";
-   attribute HU_SET of XLXI_123 : label is "XLXI_123_26";
-   attribute HU_SET of XLXI_124 : label is "XLXI_124_27";
-   attribute HU_SET of XLXI_128 : label is "XLXI_128_28";
+   attribute HU_SET of XLXI_115 : label is "XLXI_115_87";
+   attribute HU_SET of XLXI_123 : label is "XLXI_123_88";
+   attribute HU_SET of XLXI_124 : label is "XLXI_124_89";
+   attribute HU_SET of XLXI_128 : label is "XLXI_128_90";
 begin
    Q0 <= Q0_DUMMY;
    Q1 <= Q1_DUMMY;

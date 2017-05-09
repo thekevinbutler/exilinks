@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : RegisterC.vhf
--- /___/   /\     Timestamp : 05/08/2017 23:00:21
+-- /___/   /\     Timestamp : 05/09/2017 09:57:36
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl D:/Users/Butle/Documents/exilinks/RegisterC.vhf -w D:/Users/Butle/Documents/exilinks/RegisterC.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/thekevinbutler/Documents/exilinks/RegisterC.vhf -w C:/Users/thekevinbutler/Documents/exilinks/RegisterC.sch
 --Design Name: RegisterC
 --Device: spartan3e
 --Purpose:
@@ -236,7 +236,7 @@ architecture BEHAVIORAL of RegisterGeneric_MUSER_RegisterC is
    end component;
    attribute BOX_TYPE of PULLUP : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_118";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_55";
 begin
    XLXI_2 : FD8CE_MXILINX_RegisterC
       port map (C=>Write,
@@ -293,7 +293,7 @@ architecture BEHAVIORAL of RegisterC is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_119";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_56";
 begin
    XLXI_1 : RegisterGeneric_MUSER_RegisterC
       port map (CLR=>CLR,

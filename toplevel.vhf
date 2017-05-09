@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : toplevel.vhf
--- /___/   /\     Timestamp : 05/09/2017 01:53:46
+-- /___/   /\     Timestamp : 05/09/2017 11:29:54
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl D:/Users/Butle/Documents/exilinks/toplevel.vhf -w D:/Users/Butle/Documents/exilinks/toplevel.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf -w C:/Users/thekevinbutler/Documents/exilinks/toplevel.sch
 --Design Name: toplevel
 --Device: spartan3e
 --Purpose:
@@ -99,14 +99,14 @@ architecture BEHAVIORAL of mux8x2to1_MUSER_toplevel is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_0";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_1";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_2";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_3";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_4";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_5";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_6";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_7";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_58";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_59";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_60";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_61";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_62";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_63";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_64";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_65";
 begin
    XLXI_1 : M2_1_MXILINX_toplevel
       port map (D0=>A(0),
@@ -155,403 +155,6 @@ begin
                 D1=>B(7),
                 S0=>sel,
                 O=>DOut(7));
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity InstructionMem_MUSER_toplevel is
-   port ( EditMode   : in    std_logic; 
-          InstCode   : in    std_logic_vector (7 downto 0); 
-          PCNum      : in    std_logic_vector (7 downto 0); 
-          chosenAddr : out   std_logic_vector (4 downto 0); 
-          InstrOut   : out   std_logic_vector (7 downto 0));
-end InstructionMem_MUSER_toplevel;
-
-architecture BEHAVIORAL of InstructionMem_MUSER_toplevel is
-   attribute BOX_TYPE   : string ;
-   signal AddrContent      : std_logic_vector (7 downto 0);
-   signal WriteClk         : std_logic;
-   signal XLXN_2           : std_logic;
-   signal chosenAddr_DUMMY : std_logic_vector (4 downto 0);
-   component sRAM32x8_ex_pgm_instr
-      port ( nCS  : in    std_logic; 
-             nWE  : in    std_logic; 
-             WCLK : in    std_logic; 
-             A    : in    std_logic_vector (4 downto 0); 
-             D    : in    std_logic_vector (7 downto 0); 
-             Q    : out   std_logic_vector (7 downto 0));
-   end component;
-   
-   component PULLDOWN
-      port ( O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of PULLDOWN : component is "BLACK_BOX";
-   
-   component BUF
-      port ( I : in    std_logic; 
-             O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
-   
-   component mux8x2to1_MUSER_toplevel
-      port ( A    : in    std_logic_vector (7 downto 0); 
-             B    : in    std_logic_vector (7 downto 0); 
-             sel  : in    std_logic; 
-             DOut : out   std_logic_vector (7 downto 0));
-   end component;
-   
-   component INV
-      port ( I : in    std_logic; 
-             O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of INV : component is "BLACK_BOX";
-   
-begin
-   chosenAddr(4 downto 0) <= chosenAddr_DUMMY(4 downto 0);
-   XLXI_1 : sRAM32x8_ex_pgm_instr
-      port map (A(4 downto 0)=>chosenAddr_DUMMY(4 downto 0),
-                D(7 downto 0)=>InstCode(7 downto 0),
-                nCS=>XLXN_2,
-                nWE=>XLXN_2,
-                WCLK=>WriteClk,
-                Q(7 downto 0)=>AddrContent(7 downto 0));
-   
-   XLXI_5 : PULLDOWN
-      port map (O=>XLXN_2);
-   
-   XLXI_10_0 : BUF
-      port map (I=>PCNum(0),
-                O=>chosenAddr_DUMMY(0));
-   
-   XLXI_10_1 : BUF
-      port map (I=>PCNum(1),
-                O=>chosenAddr_DUMMY(1));
-   
-   XLXI_10_2 : BUF
-      port map (I=>PCNum(2),
-                O=>chosenAddr_DUMMY(2));
-   
-   XLXI_10_3 : BUF
-      port map (I=>PCNum(3),
-                O=>chosenAddr_DUMMY(3));
-   
-   XLXI_10_4 : BUF
-      port map (I=>PCNum(4),
-                O=>chosenAddr_DUMMY(4));
-   
-   XLXI_11 : mux8x2to1_MUSER_toplevel
-      port map (A(7 downto 0)=>AddrContent(7 downto 0),
-                B(7 downto 0)=>InstCode(7 downto 0),
-                sel=>EditMode,
-                DOut(7 downto 0)=>InstrOut(7 downto 0));
-   
-   XLXI_12 : INV
-      port map (I=>EditMode,
-                O=>WriteClk);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity FD8CE_MXILINX_toplevel is
-   port ( C   : in    std_logic; 
-          CE  : in    std_logic; 
-          CLR : in    std_logic; 
-          D   : in    std_logic_vector (7 downto 0); 
-          Q   : out   std_logic_vector (7 downto 0));
-end FD8CE_MXILINX_toplevel;
-
-architecture BEHAVIORAL of FD8CE_MXILINX_toplevel is
-   attribute BOX_TYPE   : string ;
-   component FDCE
-      generic( INIT : bit :=  '0');
-      port ( C   : in    std_logic; 
-             CE  : in    std_logic; 
-             CLR : in    std_logic; 
-             D   : in    std_logic; 
-             Q   : out   std_logic);
-   end component;
-   attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
-   
-begin
-   I_Q0 : FDCE
-      port map (C=>C,
-                CE=>CE,
-                CLR=>CLR,
-                D=>D(0),
-                Q=>Q(0));
-   
-   I_Q1 : FDCE
-      port map (C=>C,
-                CE=>CE,
-                CLR=>CLR,
-                D=>D(1),
-                Q=>Q(1));
-   
-   I_Q2 : FDCE
-      port map (C=>C,
-                CE=>CE,
-                CLR=>CLR,
-                D=>D(2),
-                Q=>Q(2));
-   
-   I_Q3 : FDCE
-      port map (C=>C,
-                CE=>CE,
-                CLR=>CLR,
-                D=>D(3),
-                Q=>Q(3));
-   
-   I_Q4 : FDCE
-      port map (C=>C,
-                CE=>CE,
-                CLR=>CLR,
-                D=>D(4),
-                Q=>Q(4));
-   
-   I_Q5 : FDCE
-      port map (C=>C,
-                CE=>CE,
-                CLR=>CLR,
-                D=>D(5),
-                Q=>Q(5));
-   
-   I_Q6 : FDCE
-      port map (C=>C,
-                CE=>CE,
-                CLR=>CLR,
-                D=>D(6),
-                Q=>Q(6));
-   
-   I_Q7 : FDCE
-      port map (C=>C,
-                CE=>CE,
-                CLR=>CLR,
-                D=>D(7),
-                Q=>Q(7));
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity RegisterGeneric_MUSER_toplevel is
-   port ( CLR     : in    std_logic; 
-          DataIn  : in    std_logic_vector (7 downto 0); 
-          Write   : in    std_logic; 
-          DataOut : out   std_logic_vector (7 downto 0));
-end RegisterGeneric_MUSER_toplevel;
-
-architecture BEHAVIORAL of RegisterGeneric_MUSER_toplevel is
-   attribute HU_SET     : string ;
-   attribute BOX_TYPE   : string ;
-   signal XLXN_4  : std_logic;
-   component FD8CE_MXILINX_toplevel
-      port ( C   : in    std_logic; 
-             CE  : in    std_logic; 
-             CLR : in    std_logic; 
-             D   : in    std_logic_vector (7 downto 0); 
-             Q   : out   std_logic_vector (7 downto 0));
-   end component;
-   
-   component PULLUP
-      port ( O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of PULLUP : component is "BLACK_BOX";
-   
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_8";
-begin
-   XLXI_2 : FD8CE_MXILINX_toplevel
-      port map (C=>Write,
-                CE=>XLXN_4,
-                CLR=>CLR,
-                D(7 downto 0)=>DataIn(7 downto 0),
-                Q(7 downto 0)=>DataOut(7 downto 0));
-   
-   XLXI_3 : PULLUP
-      port map (O=>XLXN_4);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity FJKC_MXILINX_toplevel is
-   generic( INIT : bit :=  '0');
-   port ( C   : in    std_logic; 
-          CLR : in    std_logic; 
-          J   : in    std_logic; 
-          K   : in    std_logic; 
-          Q   : out   std_logic);
-end FJKC_MXILINX_toplevel;
-
-architecture BEHAVIORAL of FJKC_MXILINX_toplevel is
-   attribute BOX_TYPE   : string ;
-   attribute RLOC       : string ;
-   signal AD      : std_logic;
-   signal A0      : std_logic;
-   signal A1      : std_logic;
-   signal A2      : std_logic;
-   signal Q_DUMMY : std_logic;
-   component FDC
-      generic( INIT : bit :=  '0');
-      port ( C   : in    std_logic; 
-             CLR : in    std_logic; 
-             D   : in    std_logic; 
-             Q   : out   std_logic);
-   end component;
-   attribute BOX_TYPE of FDC : component is "BLACK_BOX";
-   
-   component AND3B2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND3B2 : component is "BLACK_BOX";
-   
-   component AND3B1
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND3B1 : component is "BLACK_BOX";
-   
-   component OR3
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR3 : component is "BLACK_BOX";
-   
-   component AND2B1
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
-   
-   attribute RLOC of I_36_32 : label is "X0Y0";
-begin
-   Q <= Q_DUMMY;
-   I_36_32 : FDC
-   generic map( INIT => INIT)
-      port map (C=>C,
-                CLR=>CLR,
-                D=>AD,
-                Q=>Q_DUMMY);
-   
-   I_36_37 : AND3B2
-      port map (I0=>J,
-                I1=>K,
-                I2=>Q_DUMMY,
-                O=>A0);
-   
-   I_36_40 : AND3B1
-      port map (I0=>Q_DUMMY,
-                I1=>K,
-                I2=>J,
-                O=>A1);
-   
-   I_36_41 : OR3
-      port map (I0=>A2,
-                I1=>A1,
-                I2=>A0,
-                O=>AD);
-   
-   I_36_43 : AND2B1
-      port map (I0=>K,
-                I1=>J,
-                O=>A2);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity RegisterC_MUSER_toplevel is
-   port ( ALUIn     : in    std_logic_vector (7 downto 0); 
-          CLR       : in    std_logic; 
-          Signed    : in    std_logic; 
-          Write     : in    std_logic; 
-          COut      : out   std_logic_vector (7 downto 0); 
-          SignedOut : out   std_logic);
-end RegisterC_MUSER_toplevel;
-
-architecture BEHAVIORAL of RegisterC_MUSER_toplevel is
-   attribute HU_SET     : string ;
-   attribute BOX_TYPE   : string ;
-   signal XLXN_6    : std_logic;
-   component RegisterGeneric_MUSER_toplevel
-      port ( DataIn  : in    std_logic_vector (7 downto 0); 
-             Write   : in    std_logic; 
-             DataOut : out   std_logic_vector (7 downto 0); 
-             CLR     : in    std_logic);
-   end component;
-   
-   component FJKC_MXILINX_toplevel
-      generic( INIT : bit :=  '0');
-      port ( C   : in    std_logic; 
-             CLR : in    std_logic; 
-             J   : in    std_logic; 
-             K   : in    std_logic; 
-             Q   : out   std_logic);
-   end component;
-   
-   component INV
-      port ( I : in    std_logic; 
-             O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of INV : component is "BLACK_BOX";
-   
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_9";
-begin
-   XLXI_1 : RegisterGeneric_MUSER_toplevel
-      port map (CLR=>CLR,
-                DataIn(7 downto 0)=>ALUIn(7 downto 0),
-                Write=>Write,
-                DataOut(7 downto 0)=>COut(7 downto 0));
-   
-   XLXI_3 : FJKC_MXILINX_toplevel
-      port map (C=>Write,
-                CLR=>CLR,
-                J=>Signed,
-                K=>XLXN_6,
-                Q=>SignedOut);
-   
-   XLXI_4 : INV
-      port map (I=>Signed,
-                O=>XLXN_6);
    
 end BEHAVIORAL;
 
@@ -918,7 +521,7 @@ architecture BEHAVIORAL of TwosComp_MUSER_toplevel is
    end component;
    attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_10 : label is "XLXI_10_10";
+   attribute HU_SET of XLXI_10 : label is "XLXI_10_66";
 begin
    XLXI_1 : INV
       port map (I=>NumIn(6),
@@ -1367,27 +970,132 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
+entity FJKC_MXILINX_toplevel is
+   generic( INIT : bit :=  '0');
+   port ( C   : in    std_logic; 
+          CLR : in    std_logic; 
+          J   : in    std_logic; 
+          K   : in    std_logic; 
+          Q   : out   std_logic);
+end FJKC_MXILINX_toplevel;
+
+architecture BEHAVIORAL of FJKC_MXILINX_toplevel is
+   attribute BOX_TYPE   : string ;
+   attribute RLOC       : string ;
+   signal AD      : std_logic;
+   signal A0      : std_logic;
+   signal A1      : std_logic;
+   signal A2      : std_logic;
+   signal Q_DUMMY : std_logic;
+   component FDC
+      generic( INIT : bit :=  '0');
+      port ( C   : in    std_logic; 
+             CLR : in    std_logic; 
+             D   : in    std_logic; 
+             Q   : out   std_logic);
+   end component;
+   attribute BOX_TYPE of FDC : component is "BLACK_BOX";
+   
+   component AND3B2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND3B2 : component is "BLACK_BOX";
+   
+   component AND3B1
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND3B1 : component is "BLACK_BOX";
+   
+   component OR3
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR3 : component is "BLACK_BOX";
+   
+   component AND2B1
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
+   
+   attribute RLOC of I_36_32 : label is "X0Y0";
+begin
+   Q <= Q_DUMMY;
+   I_36_32 : FDC
+   generic map( INIT => INIT)
+      port map (C=>C,
+                CLR=>CLR,
+                D=>AD,
+                Q=>Q_DUMMY);
+   
+   I_36_37 : AND3B2
+      port map (I0=>J,
+                I1=>K,
+                I2=>Q_DUMMY,
+                O=>A0);
+   
+   I_36_40 : AND3B1
+      port map (I0=>Q_DUMMY,
+                I1=>K,
+                I2=>J,
+                O=>A1);
+   
+   I_36_41 : OR3
+      port map (I0=>A2,
+                I1=>A1,
+                I2=>A0,
+                O=>AD);
+   
+   I_36_43 : AND2B1
+      port map (I0=>K,
+                I1=>J,
+                O=>A2);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
 entity AddSub_ALU_MUSER_toplevel is
-   port ( AddSub  : in    std_logic; 
-          AIn     : in    std_logic_vector (7 downto 0); 
-          BIn     : in    std_logic_vector (7 downto 0); 
-          Set     : in    std_logic; 
-          Signed  : in    std_logic; 
-          RegOut  : out   std_logic_vector (7 downto 0); 
-          signNeg : out   std_logic);
+   port ( AddSub   : in    std_logic; 
+          AIn      : in    std_logic_vector (7 downto 0); 
+          BIn      : in    std_logic_vector (7 downto 0); 
+          Set      : in    std_logic; 
+          Signed   : in    std_logic; 
+          Overflow : out   std_logic; 
+          RegOut   : out   std_logic_vector (7 downto 0); 
+          signNeg  : out   std_logic);
 end AddSub_ALU_MUSER_toplevel;
 
 architecture BEHAVIORAL of AddSub_ALU_MUSER_toplevel is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
+   signal a2s                    : std_logic_vector (7 downto 0);
+   signal b2s                    : std_logic_vector (7 downto 0);
    signal COut                   : std_logic_vector (7 downto 0);
    signal SignLatch              : std_logic;
-   signal XLXN_3                 : std_logic_vector (7 downto 0);
-   signal XLXN_4                 : std_logic_vector (7 downto 0);
-   signal XLXN_6                 : std_logic;
    signal XLXN_10                : std_logic;
    signal XLXN_12                : std_logic;
    signal XLXN_107               : std_logic;
+   signal XLXN_113               : std_logic_vector (1 downto 0);
+   signal XLXN_120               : std_logic;
+   signal XLXN_122               : std_logic;
+   signal XLXN_136               : std_logic;
+   signal XLXN_137               : std_logic;
    signal RegOut_DUMMY           : std_logic_vector (7 downto 0);
    signal XLXI_10_CLR_openSignal : std_logic;
    signal XLXI_11_CLR_openSignal : std_logic;
@@ -1429,27 +1137,65 @@ architecture BEHAVIORAL of AddSub_ALU_MUSER_toplevel is
    end component;
    attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_10 : label is "XLXI_10_11";
-   attribute HU_SET of XLXI_11 : label is "XLXI_11_12";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_13";
+   component addsub8
+      port ( A    : in    std_logic_vector (7 downto 0); 
+             B    : in    std_logic_vector (7 downto 0); 
+             CTRL : in    std_logic_vector (1 downto 0); 
+             NEG  : inout std_logic; 
+             OVF  : out   std_logic; 
+             C    : out   std_logic_vector (7 downto 0));
+   end component;
+   
+   component BUF
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
+   
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+   component AND4B2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             I3 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND4B2 : component is "BLACK_BOX";
+   
+   component AND2B1
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_10 : label is "XLXI_10_67";
+   attribute HU_SET of XLXI_11 : label is "XLXI_11_68";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_69";
 begin
    RegOut(7 downto 0) <= RegOut_DUMMY(7 downto 0);
    XLXI_2 : TwosComp_MUSER_toplevel
       port map (NumIn(7 downto 0)=>AIn(7 downto 0),
                 Signed=>SignLatch,
-                NumOut(7 downto 0)=>XLXN_3(7 downto 0));
+                NumOut(7 downto 0)=>a2s(7 downto 0));
    
    XLXI_3 : TwosComp_MUSER_toplevel
       port map (NumIn(7 downto 0)=>BIn(7 downto 0),
                 Signed=>SignLatch,
-                NumOut(7 downto 0)=>XLXN_4(7 downto 0));
+                NumOut(7 downto 0)=>b2s(7 downto 0));
    
    XLXI_10 : FJKC_MXILINX_toplevel
       port map (C=>Set,
                 CLR=>XLXI_10_CLR_openSignal,
                 J=>AddSub,
                 K=>XLXN_10,
-                Q=>XLXN_6);
+                Q=>XLXN_120);
    
    XLXI_11 : FJKC_MXILINX_toplevel
       port map (C=>Set,
@@ -1472,22 +1218,352 @@ begin
                 NumOut(7 downto 0)=>RegOut_DUMMY(7 downto 0));
    
    XLXI_32 : ADSU8_MXILINX_toplevel
-      port map (A(7 downto 0)=>XLXN_3(7 downto 0),
+      port map (A(7 downto 0)=>a2s(7 downto 0),
                 ADD=>XLXN_107,
-                B(7 downto 0)=>XLXN_4(7 downto 0),
-                CI=>XLXN_6,
+                B(7 downto 0)=>b2s(7 downto 0),
+                CI=>XLXN_120,
                 CO=>open,
                 OFL=>open,
                 S(7 downto 0)=>COut(7 downto 0));
    
    XLXI_37 : INV
-      port map (I=>XLXN_6,
+      port map (I=>XLXN_120,
                 O=>XLXN_107);
    
    XLXI_38 : AND2
       port map (I0=>RegOut_DUMMY(7),
                 I1=>SignLatch,
                 O=>signNeg);
+   
+   XLXI_39 : addsub8
+      port map (A(7 downto 0)=>a2s(7 downto 0),
+                B(7 downto 0)=>b2s(7 downto 0),
+                CTRL(1 downto 0)=>XLXN_113(1 downto 0),
+                C=>open,
+                OVF=>XLXN_137,
+                NEG=>open);
+   
+   XLXI_41 : BUF
+      port map (I=>SignLatch,
+                O=>XLXN_113(1));
+   
+   XLXI_42 : BUF
+      port map (I=>XLXN_120,
+                O=>XLXN_113(0));
+   
+   XLXI_45 : OR2
+      port map (I0=>XLXN_122,
+                I1=>XLXN_136,
+                O=>Overflow);
+   
+   XLXI_47 : AND4B2
+      port map (I0=>b2s(7),
+                I1=>a2s(7),
+                I2=>COut(7),
+                I3=>SignLatch,
+                O=>XLXN_122);
+   
+   XLXI_49 : AND2B1
+      port map (I0=>SignLatch,
+                I1=>XLXN_137,
+                O=>XLXN_136);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity InstructionMem_MUSER_toplevel is
+   port ( EditMode   : in    std_logic; 
+          InstCode   : in    std_logic_vector (7 downto 0); 
+          PCNum      : in    std_logic_vector (7 downto 0); 
+          chosenAddr : out   std_logic_vector (4 downto 0); 
+          InstrOut   : out   std_logic_vector (7 downto 0));
+end InstructionMem_MUSER_toplevel;
+
+architecture BEHAVIORAL of InstructionMem_MUSER_toplevel is
+   attribute BOX_TYPE   : string ;
+   signal AddrContent      : std_logic_vector (7 downto 0);
+   signal WriteClk         : std_logic;
+   signal XLXN_2           : std_logic;
+   signal chosenAddr_DUMMY : std_logic_vector (4 downto 0);
+   component sRAM32x8_ex_pgm_instr
+      port ( nCS  : in    std_logic; 
+             nWE  : in    std_logic; 
+             WCLK : in    std_logic; 
+             A    : in    std_logic_vector (4 downto 0); 
+             D    : in    std_logic_vector (7 downto 0); 
+             Q    : out   std_logic_vector (7 downto 0));
+   end component;
+   
+   component PULLDOWN
+      port ( O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of PULLDOWN : component is "BLACK_BOX";
+   
+   component BUF
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
+   
+   component mux8x2to1_MUSER_toplevel
+      port ( A    : in    std_logic_vector (7 downto 0); 
+             B    : in    std_logic_vector (7 downto 0); 
+             sel  : in    std_logic; 
+             DOut : out   std_logic_vector (7 downto 0));
+   end component;
+   
+   component INV
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of INV : component is "BLACK_BOX";
+   
+begin
+   chosenAddr(4 downto 0) <= chosenAddr_DUMMY(4 downto 0);
+   XLXI_1 : sRAM32x8_ex_pgm_instr
+      port map (A(4 downto 0)=>chosenAddr_DUMMY(4 downto 0),
+                D(7 downto 0)=>InstCode(7 downto 0),
+                nCS=>XLXN_2,
+                nWE=>XLXN_2,
+                WCLK=>WriteClk,
+                Q(7 downto 0)=>AddrContent(7 downto 0));
+   
+   XLXI_5 : PULLDOWN
+      port map (O=>XLXN_2);
+   
+   XLXI_10_0 : BUF
+      port map (I=>PCNum(0),
+                O=>chosenAddr_DUMMY(0));
+   
+   XLXI_10_1 : BUF
+      port map (I=>PCNum(1),
+                O=>chosenAddr_DUMMY(1));
+   
+   XLXI_10_2 : BUF
+      port map (I=>PCNum(2),
+                O=>chosenAddr_DUMMY(2));
+   
+   XLXI_10_3 : BUF
+      port map (I=>PCNum(3),
+                O=>chosenAddr_DUMMY(3));
+   
+   XLXI_10_4 : BUF
+      port map (I=>PCNum(4),
+                O=>chosenAddr_DUMMY(4));
+   
+   XLXI_11 : mux8x2to1_MUSER_toplevel
+      port map (A(7 downto 0)=>AddrContent(7 downto 0),
+                B(7 downto 0)=>InstCode(7 downto 0),
+                sel=>EditMode,
+                DOut(7 downto 0)=>InstrOut(7 downto 0));
+   
+   XLXI_12 : INV
+      port map (I=>EditMode,
+                O=>WriteClk);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity FD8CE_MXILINX_toplevel is
+   port ( C   : in    std_logic; 
+          CE  : in    std_logic; 
+          CLR : in    std_logic; 
+          D   : in    std_logic_vector (7 downto 0); 
+          Q   : out   std_logic_vector (7 downto 0));
+end FD8CE_MXILINX_toplevel;
+
+architecture BEHAVIORAL of FD8CE_MXILINX_toplevel is
+   attribute BOX_TYPE   : string ;
+   component FDCE
+      generic( INIT : bit :=  '0');
+      port ( C   : in    std_logic; 
+             CE  : in    std_logic; 
+             CLR : in    std_logic; 
+             D   : in    std_logic; 
+             Q   : out   std_logic);
+   end component;
+   attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
+   
+begin
+   I_Q0 : FDCE
+      port map (C=>C,
+                CE=>CE,
+                CLR=>CLR,
+                D=>D(0),
+                Q=>Q(0));
+   
+   I_Q1 : FDCE
+      port map (C=>C,
+                CE=>CE,
+                CLR=>CLR,
+                D=>D(1),
+                Q=>Q(1));
+   
+   I_Q2 : FDCE
+      port map (C=>C,
+                CE=>CE,
+                CLR=>CLR,
+                D=>D(2),
+                Q=>Q(2));
+   
+   I_Q3 : FDCE
+      port map (C=>C,
+                CE=>CE,
+                CLR=>CLR,
+                D=>D(3),
+                Q=>Q(3));
+   
+   I_Q4 : FDCE
+      port map (C=>C,
+                CE=>CE,
+                CLR=>CLR,
+                D=>D(4),
+                Q=>Q(4));
+   
+   I_Q5 : FDCE
+      port map (C=>C,
+                CE=>CE,
+                CLR=>CLR,
+                D=>D(5),
+                Q=>Q(5));
+   
+   I_Q6 : FDCE
+      port map (C=>C,
+                CE=>CE,
+                CLR=>CLR,
+                D=>D(6),
+                Q=>Q(6));
+   
+   I_Q7 : FDCE
+      port map (C=>C,
+                CE=>CE,
+                CLR=>CLR,
+                D=>D(7),
+                Q=>Q(7));
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity RegisterGeneric_MUSER_toplevel is
+   port ( CLR     : in    std_logic; 
+          DataIn  : in    std_logic_vector (7 downto 0); 
+          Write   : in    std_logic; 
+          DataOut : out   std_logic_vector (7 downto 0));
+end RegisterGeneric_MUSER_toplevel;
+
+architecture BEHAVIORAL of RegisterGeneric_MUSER_toplevel is
+   attribute HU_SET     : string ;
+   attribute BOX_TYPE   : string ;
+   signal XLXN_4  : std_logic;
+   component FD8CE_MXILINX_toplevel
+      port ( C   : in    std_logic; 
+             CE  : in    std_logic; 
+             CLR : in    std_logic; 
+             D   : in    std_logic_vector (7 downto 0); 
+             Q   : out   std_logic_vector (7 downto 0));
+   end component;
+   
+   component PULLUP
+      port ( O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of PULLUP : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_70";
+begin
+   XLXI_2 : FD8CE_MXILINX_toplevel
+      port map (C=>Write,
+                CE=>XLXN_4,
+                CLR=>CLR,
+                D(7 downto 0)=>DataIn(7 downto 0),
+                Q(7 downto 0)=>DataOut(7 downto 0));
+   
+   XLXI_3 : PULLUP
+      port map (O=>XLXN_4);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity RegisterC_MUSER_toplevel is
+   port ( ALUIn     : in    std_logic_vector (7 downto 0); 
+          CLR       : in    std_logic; 
+          Signed    : in    std_logic; 
+          Write     : in    std_logic; 
+          COut      : out   std_logic_vector (7 downto 0); 
+          SignedOut : out   std_logic);
+end RegisterC_MUSER_toplevel;
+
+architecture BEHAVIORAL of RegisterC_MUSER_toplevel is
+   attribute HU_SET     : string ;
+   attribute BOX_TYPE   : string ;
+   signal XLXN_6    : std_logic;
+   component RegisterGeneric_MUSER_toplevel
+      port ( DataIn  : in    std_logic_vector (7 downto 0); 
+             Write   : in    std_logic; 
+             DataOut : out   std_logic_vector (7 downto 0); 
+             CLR     : in    std_logic);
+   end component;
+   
+   component FJKC_MXILINX_toplevel
+      generic( INIT : bit :=  '0');
+      port ( C   : in    std_logic; 
+             CLR : in    std_logic; 
+             J   : in    std_logic; 
+             K   : in    std_logic; 
+             Q   : out   std_logic);
+   end component;
+   
+   component INV
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of INV : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_71";
+begin
+   XLXI_1 : RegisterGeneric_MUSER_toplevel
+      port map (CLR=>CLR,
+                DataIn(7 downto 0)=>ALUIn(7 downto 0),
+                Write=>Write,
+                DataOut(7 downto 0)=>COut(7 downto 0));
+   
+   XLXI_3 : FJKC_MXILINX_toplevel
+      port map (C=>Write,
+                CLR=>CLR,
+                J=>Signed,
+                K=>XLXN_6,
+                Q=>SignedOut);
+   
+   XLXI_4 : INV
+      port map (I=>Signed,
+                O=>XLXN_6);
    
 end BEHAVIORAL;
 
@@ -2063,10 +2139,10 @@ architecture BEHAVIORAL of mux4x2to1_MUSER_toplevel is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_14";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_15";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_16";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_17";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_72";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_73";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_74";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_75";
 begin
    XLXI_1 : M2_1_MXILINX_toplevel
       port map (D0=>A(0),
@@ -2217,7 +2293,7 @@ architecture BEHAVIORAL of DisplayNumbers_MUSER_toplevel is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_18 : label is "XLXI_18_18";
+   attribute HU_SET of XLXI_18 : label is "XLXI_18_76";
 begin
    XLXI_3 : bin2BCD3en
       port map (CLK=>ssdClock,
@@ -2454,7 +2530,7 @@ architecture BEHAVIORAL of FTCLEX_MXILINX_toplevel is
    end component;
    attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
    
-   attribute HU_SET of I_36_30 : label is "I_36_30_19";
+   attribute HU_SET of I_36_30 : label is "I_36_30_77";
    attribute RLOC of I_36_35 : label is "X0Y0";
 begin
    Q <= Q_DUMMY;
@@ -2656,22 +2732,22 @@ architecture BEHAVIORAL of CB8CLED_MXILINX_toplevel is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_27";
-   attribute HU_SET of I_Q1 : label is "I_Q1_26";
-   attribute HU_SET of I_Q2 : label is "I_Q2_25";
-   attribute HU_SET of I_Q3 : label is "I_Q3_24";
-   attribute HU_SET of I_Q4 : label is "I_Q4_23";
-   attribute HU_SET of I_Q5 : label is "I_Q5_22";
-   attribute HU_SET of I_Q6 : label is "I_Q6_21";
-   attribute HU_SET of I_Q7 : label is "I_Q7_20";
-   attribute HU_SET of I_TC : label is "I_TC_32";
-   attribute HU_SET of I_T1 : label is "I_T1_35";
-   attribute HU_SET of I_T2 : label is "I_T2_28";
-   attribute HU_SET of I_T3 : label is "I_T3_29";
-   attribute HU_SET of I_T4 : label is "I_T4_34";
-   attribute HU_SET of I_T5 : label is "I_T5_33";
-   attribute HU_SET of I_T6 : label is "I_T6_30";
-   attribute HU_SET of I_T7 : label is "I_T7_31";
+   attribute HU_SET of I_Q0 : label is "I_Q0_85";
+   attribute HU_SET of I_Q1 : label is "I_Q1_84";
+   attribute HU_SET of I_Q2 : label is "I_Q2_83";
+   attribute HU_SET of I_Q3 : label is "I_Q3_82";
+   attribute HU_SET of I_Q4 : label is "I_Q4_81";
+   attribute HU_SET of I_Q5 : label is "I_Q5_80";
+   attribute HU_SET of I_Q6 : label is "I_Q6_79";
+   attribute HU_SET of I_Q7 : label is "I_Q7_78";
+   attribute HU_SET of I_TC : label is "I_TC_90";
+   attribute HU_SET of I_T1 : label is "I_T1_93";
+   attribute HU_SET of I_T2 : label is "I_T2_86";
+   attribute HU_SET of I_T3 : label is "I_T3_87";
+   attribute HU_SET of I_T4 : label is "I_T4_92";
+   attribute HU_SET of I_T5 : label is "I_T5_91";
+   attribute HU_SET of I_T6 : label is "I_T6_88";
+   attribute HU_SET of I_T7 : label is "I_T7_89";
 begin
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    TC <= TC_DUMMY;
@@ -3006,10 +3082,10 @@ architecture BEHAVIORAL of ProgramCounter_MUSER_toplevel is
    end component;
    attribute BOX_TYPE of OR3 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_115 : label is "XLXI_115_36";
-   attribute HU_SET of XLXI_123 : label is "XLXI_123_37";
-   attribute HU_SET of XLXI_124 : label is "XLXI_124_38";
-   attribute HU_SET of XLXI_128 : label is "XLXI_128_39";
+   attribute HU_SET of XLXI_115 : label is "XLXI_115_94";
+   attribute HU_SET of XLXI_123 : label is "XLXI_123_95";
+   attribute HU_SET of XLXI_124 : label is "XLXI_124_96";
+   attribute HU_SET of XLXI_128 : label is "XLXI_128_97";
 begin
    Q0 <= Q0_DUMMY;
    Q1 <= Q1_DUMMY;
@@ -3195,8 +3271,8 @@ architecture BEHAVIORAL of M4_1E_MXILINX_toplevel is
    end component;
    attribute BOX_TYPE of MUXF5 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_M01 : label is "I_M01_41";
-   attribute HU_SET of I_M23 : label is "I_M23_40";
+   attribute HU_SET of I_M01 : label is "I_M01_99";
+   attribute HU_SET of I_M23 : label is "I_M23_98";
 begin
    I_M01 : M2_1E_MXILINX_toplevel
       port map (D0=>D0,
@@ -3356,9 +3432,9 @@ architecture BEHAVIORAL of KeyPad_MUSER_toplevel is
    end component;
    attribute BOX_TYPE of PULLDOWN : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_69 : label is "XLXI_69_43";
-   attribute HU_SET of XLXI_70 : label is "XLXI_70_44";
-   attribute HU_SET of XLXI_110 : label is "XLXI_110_42";
+   attribute HU_SET of XLXI_69 : label is "XLXI_69_101";
+   attribute HU_SET of XLXI_70 : label is "XLXI_70_102";
+   attribute HU_SET of XLXI_110 : label is "XLXI_110_100";
 begin
    rowI_DUMMY(3 downto 0) <= rowI(3 downto 0);
    XLXI_67 : keyCR4b
@@ -3454,7 +3530,7 @@ entity toplevel is
           anO         : out   std_logic_vector (3 downto 0); 
           ClkDiv0     : out   std_logic; 
           ClkDiv1     : out   std_logic; 
-          ClockOut    : out   std_logic; 
+          Overflow    : out   std_logic; 
           sseg        : out   std_logic_vector (7 downto 0); 
           Col         : inout std_logic_vector (3 downto 0));
 end toplevel;
@@ -3471,6 +3547,7 @@ architecture BEHAVIORAL of toplevel is
    signal CD0Inv                  : std_logic;
    signal CD1Inv                  : std_logic;
    signal clk1m                   : std_logic;
+   signal ClockOut                : std_logic;
    signal CLRCmd                  : std_logic;
    signal cl1                     : std_logic;
    signal cl1k                    : std_logic;
@@ -3507,7 +3584,6 @@ architecture BEHAVIORAL of toplevel is
    signal XLXN_185                : std_logic;
    signal XLXN_266                : std_logic;
    signal XLXN_293                : std_logic;
-   signal ClockOut_DUMMY          : std_logic;
    signal AddrLEDs_DUMMY          : std_logic_vector (4 downto 0);
    signal ClkDiv0_DUMMY           : std_logic;
    signal ClkDiv1_DUMMY           : std_logic;
@@ -3672,16 +3748,6 @@ architecture BEHAVIORAL of toplevel is
    end component;
    attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
    
-   component AddSub_ALU_MUSER_toplevel
-      port ( AIn     : in    std_logic_vector (7 downto 0); 
-             BIn     : in    std_logic_vector (7 downto 0); 
-             AddSub  : in    std_logic; 
-             Signed  : in    std_logic; 
-             Set     : in    std_logic; 
-             RegOut  : out   std_logic_vector (7 downto 0); 
-             signNeg : out   std_logic);
-   end component;
-   
    component AND3
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
@@ -3708,12 +3774,22 @@ architecture BEHAVIORAL of toplevel is
              SignedOut : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_114 : label is "XLXI_114_45";
+   component AddSub_ALU_MUSER_toplevel
+      port ( AIn      : in    std_logic_vector (7 downto 0); 
+             BIn      : in    std_logic_vector (7 downto 0); 
+             AddSub   : in    std_logic; 
+             Signed   : in    std_logic; 
+             Set      : in    std_logic; 
+             RegOut   : out   std_logic_vector (7 downto 0); 
+             signNeg  : out   std_logic; 
+             Overflow : out   std_logic);
+   end component;
+   
+   attribute HU_SET of XLXI_114 : label is "XLXI_114_103";
 begin
    AddrLEDs(4 downto 0) <= AddrLEDs_DUMMY(4 downto 0);
    ClkDiv0 <= ClkDiv0_DUMMY;
    ClkDiv1 <= ClkDiv1_DUMMY;
-   ClockOut <= ClockOut_DUMMY;
    XLXI_9 : SSD_1dig
       port map (dp_in=>XLXN_129,
                 hexD(4 downto 0)=>Digit(4 downto 0),
@@ -3744,7 +3820,7 @@ begin
                 E=>pUp,
                 S0=>HzMode,
                 S1=>DebugState,
-                O=>ClockOut_DUMMY);
+                O=>ClockOut);
    
    XLXI_123 : ProgramCounter_MUSER_toplevel
       port map (DebugMode=>DebugState,
@@ -3754,7 +3830,7 @@ begin
                 OverridePC(7 downto 0)=>KeyPadOut(7 downto 0),
                 PrgmMode=>ProgState,
                 resetPC=>RSTCmd,
-                SysClkIn=>ClockOut_DUMMY,
+                SysClkIn=>ClockOut,
                 PCOut(7 downto 0)=>XLXN_59(7 downto 0),
                 Q0=>ClkDiv0_DUMMY,
                 Q1=>ClkDiv1_DUMMY);
@@ -3867,15 +3943,6 @@ begin
                 I1=>LAC,
                 O=>XLXN_185);
    
-   XLXI_191 : AddSub_ALU_MUSER_toplevel
-      port map (AddSub=>MathMode,
-                AIn(7 downto 0)=>AOut(7 downto 0),
-                BIn(7 downto 0)=>BOut(7 downto 0),
-                Set=>XLXN_266,
-                Signed=>SignMode,
-                RegOut(7 downto 0)=>ALURes(7 downto 0),
-                signNeg=>Negative);
-   
    XLXI_195 : AND3
       port map (I0=>XLXN_293,
                 I1=>ClkDiv0_DUMMY,
@@ -3896,6 +3963,16 @@ begin
                 Write=>LDC,
                 COut(7 downto 0)=>COut(7 downto 0),
                 SignedOut=>CSigned);
+   
+   XLXI_203 : AddSub_ALU_MUSER_toplevel
+      port map (AddSub=>MathMode,
+                AIn(7 downto 0)=>AOut(7 downto 0),
+                BIn(7 downto 0)=>BOut(7 downto 0),
+                Set=>XLXN_266,
+                Signed=>SignMode,
+                Overflow=>Overflow,
+                RegOut(7 downto 0)=>ALURes(7 downto 0),
+                signNeg=>Negative);
    
 end BEHAVIORAL;
 

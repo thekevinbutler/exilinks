@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=D:\Users\Butle\Documents\exilinks\toplevel.ncd
-OUTFILE=D:\Users\Butle\Documents\exilinks\toplevel.bit
+INFILE=C:\Users\thekevinbutler\Documents\exilinks\toplevel.ncd
+OUTFILE=C:\Users\thekevinbutler\Documents\exilinks\toplevel.bit
 FAMILY=Spartan3E
 PART=xc3s100e-4cp132
-WORKINGDIR=D:\Users\Butle\Documents\exilinks
+WORKINGDIR=C:\Users\thekevinbutler\Documents\exilinks
 LICENSE=WebPack
-USER_INFO=174218040_0_0_110
+USER_INFO=211306630_0_0_632

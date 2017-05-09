@@ -1,14 +1,13 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue May 09 01:54:08 2017
+// Written by: Map P.20131013 on Tue May 09 11:32:00 2017
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "B8" LOCATE = SITE "B8" LEVEL 1;
-COMP "ClkDiv0" LOCATE = SITE "P4" LEVEL 1;
-COMP "ClkDiv1" LOCATE = SITE "N4" LEVEL 1;
+COMP "ClkDiv0" LOCATE = SITE "N4" LEVEL 1;
+COMP "ClkDiv1" LOCATE = SITE "P4" LEVEL 1;
 COMP "AddrMode" LOCATE = SITE "E2" LEVEL 1;
 COMP "DataMode" LOCATE = SITE "G3" LEVEL 1;
-COMP "ClockOut" LOCATE = SITE "G1" LEVEL 1;
 COMP "ShowC" LOCATE = SITE "A7" LEVEL 1;
 COMP "DebugMode" LOCATE = SITE "L3" LEVEL 1;
 COMP "DebugStep" LOCATE = SITE "M4" LEVEL 1;
@@ -25,6 +24,7 @@ COMP "sseg<5>" LOCATE = SITE "H12" LEVEL 1;
 COMP "sseg<6>" LOCATE = SITE "L14" LEVEL 1;
 COMP "sseg<7>" LOCATE = SITE "N13" LEVEL 1;
 COMP "IncrementPC" LOCATE = SITE "C11" LEVEL 1;
+COMP "Overflow" LOCATE = SITE "G1" LEVEL 1;
 COMP "Col<0>" LOCATE = SITE "C6" LEVEL 1;
 COMP "Col<1>" LOCATE = SITE "B6" LEVEL 1;
 COMP "Col<2>" LOCATE = SITE "C5" LEVEL 1;

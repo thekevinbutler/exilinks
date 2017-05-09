@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : InstructionDecode.vhf
--- /___/   /\     Timestamp : 05/08/2017 23:00:21
+-- /___/   /\     Timestamp : 05/09/2017 09:57:28
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl D:/Users/Butle/Documents/exilinks/InstructionDecode.vhf -w D:/Users/Butle/Documents/exilinks/InstructionDecode.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/thekevinbutler/Documents/exilinks/InstructionDecode.vhf -w C:/Users/thekevinbutler/Documents/exilinks/InstructionDecode.sch
 --Design Name: InstructionDecode
 --Device: spartan3e
 --Purpose:

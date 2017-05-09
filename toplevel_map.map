@@ -9,7 +9,7 @@ Target Device  : xc3s100e
 Target Package : cp132
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Tue May 09 01:54:07 2017
+Mapped Date    : Tue May 09 11:31:52 2017
 
 Mapping design into LUTs...
 Running directed packing...
@@ -20,23 +20,23 @@ WARNING:Pack:249 - The following adjacent carry multiplexers occupy different
 Running delay-based LUT packing...
 Running related packing...
 Updating timing models...
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ClockOut_OBUF is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_123/XLXN_39 is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net LDB is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net LDC is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXN_184 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ClockOut is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXN_266 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_123/XLXN_39 is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
+WARNING:PhysDesignRules:372 - Gated clock. Clock net LDC is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net LDB is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXN_184 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net HLTCmd is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
@@ -50,14 +50,14 @@ Number of errors:      0
 Number of warnings:    8
 Logic Utilization:
   Number of Slice Flip Flops:           703 out of   1,920   36%
-  Number of 4 input LUTs:               730 out of   1,920   38%
+  Number of 4 input LUTs:               740 out of   1,920   38%
 Logic Distribution:
-  Number of occupied Slices:            703 out of     960   73%
-    Number of Slices containing only related logic:     703 out of     703 100%
-    Number of Slices containing unrelated logic:          0 out of     703   0%
+  Number of occupied Slices:            711 out of     960   74%
+    Number of Slices containing only related logic:     711 out of     711 100%
+    Number of Slices containing unrelated logic:          0 out of     711   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         829 out of   1,920   43%
-    Number used as logic:               730
+  Total Number of 4 input LUTs:         839 out of   1,920   43%
+    Number used as logic:               740
     Number used as a route-thru:         99
 
   The Slice Logic Distribution report is not meaningful if the design is
@@ -67,11 +67,11 @@ Logic Distribution:
   Number of BUFGMUXs:                     5 out of      24   20%
 
   Number of RPM macros:           15
-Average Fanout of Non-Clock Nets:                2.68
+Average Fanout of Non-Clock Nets:                2.69
 
-Peak Memory Usage:  292 MB
-Total REAL time to MAP completion:  1 secs 
-Total CPU time to MAP completion:   1 secs 
+Peak Memory Usage:  373 MB
+Total REAL time to MAP completion:  10 secs 
+Total CPU time to MAP completion:   10 secs 
 
 NOTES:
 

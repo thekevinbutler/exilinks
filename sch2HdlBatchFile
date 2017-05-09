@@ -1,1 +1,3 @@
-sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,D:/Users/Butle/Documents/exilinks/toplevel.vhf,-w,D:/Users/Butle/Documents/exilinks/toplevel.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf,-w,C:/Users/thekevinbutler/Documents/exilinks/toplevel.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/thekevinbutler/Documents/exilinks/AddSub_ALU.vhf,-w,C:/Users/thekevinbutler/Documents/exilinks/AddSub_ALU.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf,-w,C:/Users/thekevinbutler/Documents/exilinks/toplevel.sch

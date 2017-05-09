@@ -60,8 +60,7 @@
         <signal name="XLXN_184" />
         <signal name="XLXN_185" />
         <signal name="LAC" />
-        <signal name="Negative">
-        </signal>
+        <signal name="Negative" />
         <signal name="ALURes(7:0)" />
         <signal name="AddS" />
         <signal name="SubS" />
@@ -72,10 +71,10 @@
         <signal name="XLXN_266" />
         <signal name="XLXN_293" />
         <signal name="CSigned" />
+        <signal name="Overflow" />
         <port polarity="Input" name="B8" />
         <port polarity="BiDirectional" name="Col(3:0)" />
         <port polarity="Input" name="rowI(3:0)" />
-        <port polarity="Output" name="ClockOut" />
         <port polarity="Input" name="DebugStep" />
         <port polarity="Input" name="HzMode" />
         <port polarity="Output" name="ClkDiv0" />
@@ -90,6 +89,7 @@
         <port polarity="Input" name="InstrMode" />
         <port polarity="Input" name="ShowC" />
         <port polarity="Output" name="sseg(7:0)" />
+        <port polarity="Output" name="Overflow" />
         <blockdef name="DCM_50M">
             <timestamp>2017-4-25T17:45:18</timestamp>
             <rect width="256" x="64" y="-256" height="256" />
@@ -329,7 +329,8 @@
             <line x2="64" y1="-48" y2="-144" x1="64" />
         </blockdef>
         <blockdef name="AddSub_ALU">
-            <timestamp>2017-5-9T8:47:44</timestamp>
+            <timestamp>2017-5-9T18:29:15</timestamp>
+            <line x2="384" y1="288" y2="288" x1="320" />
             <rect width="64" x="320" y="212" height="24" />
             <line x2="384" y1="224" y2="224" x1="320" />
             <line x2="384" y1="96" y2="96" x1="320" />
@@ -340,7 +341,7 @@
             <line x2="0" y1="-160" y2="-160" x1="64" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
-            <rect width="256" x="64" y="-256" height="576" />
+            <rect width="256" x="64" y="-256" height="640" />
         </blockdef>
         <blockdef name="and3">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -520,15 +521,6 @@
             <blockpin signalname="SignMode" name="SignMode" />
             <blockpin signalname="MathMode" name="MathMode" />
         </block>
-        <block symbolname="AddSub_ALU" name="XLXI_191">
-            <blockpin signalname="AOut(7:0)" name="AIn(7:0)" />
-            <blockpin signalname="BOut(7:0)" name="BIn(7:0)" />
-            <blockpin signalname="MathMode" name="AddSub" />
-            <blockpin signalname="SignMode" name="Signed" />
-            <blockpin signalname="XLXN_266" name="Set" />
-            <blockpin signalname="ALURes(7:0)" name="RegOut(7:0)" />
-            <blockpin signalname="Negative" name="signNeg" />
-        </block>
         <block symbolname="and3" name="XLXI_195">
             <blockpin signalname="XLXN_293" name="I0" />
             <blockpin signalname="ClkDiv0" name="I1" />
@@ -562,6 +554,16 @@
             <blockpin signalname="AddrLEDs(4:0)" name="chosenAddr(4:0)" />
             <blockpin signalname="InstrState" name="EditMode" />
             <blockpin signalname="Instruction(7:0)" name="InstrOut(7:0)" />
+        </block>
+        <block symbolname="AddSub_ALU" name="XLXI_203">
+            <blockpin signalname="AOut(7:0)" name="AIn(7:0)" />
+            <blockpin signalname="BOut(7:0)" name="BIn(7:0)" />
+            <blockpin signalname="MathMode" name="AddSub" />
+            <blockpin signalname="SignMode" name="Signed" />
+            <blockpin signalname="XLXN_266" name="Set" />
+            <blockpin signalname="ALURes(7:0)" name="RegOut(7:0)" />
+            <blockpin signalname="Negative" name="signNeg" />
+            <blockpin signalname="Overflow" name="Overflow" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -600,6 +602,7 @@
         <instance x="1424" y="4560" name="XLXI_111" orien="R0">
         </instance>
         <branch name="ClockOut">
+            <attrtext style="alignment:SOFT-VRIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1104" y="2800" type="branch" />
             <wire x2="1104" y1="2736" y2="2736" x1="1088" />
             <wire x2="1120" y1="2736" y2="2736" x1="1104" />
             <wire x2="1104" y1="2736" y2="2800" x1="1104" />
@@ -913,8 +916,6 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2688" y="3632" type="branch" />
             <wire x2="2688" y1="3632" y2="3632" x1="2672" />
         </branch>
-        <instance x="5392" y="2864" name="XLXI_191" orien="R0">
-        </instance>
         <branch name="AOut(7:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5312" y="2640" type="branch" />
             <wire x2="5392" y1="2640" y2="2640" x1="5312" />
@@ -1105,6 +1106,11 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1824" y="2368" type="branch" />
             <wire x2="1856" y1="2368" y2="2368" x1="1824" />
         </branch>
-        <iomarker fontsize="28" x="1104" y="2800" name="ClockOut" orien="R90" />
+        <branch name="Overflow">
+            <wire x2="5840" y1="3152" y2="3152" x1="5776" />
+        </branch>
+        <iomarker fontsize="28" x="5840" y="3152" name="Overflow" orien="R0" />
+        <instance x="5392" y="2864" name="XLXI_203" orien="R0">
+        </instance>
     </sheet>
 </drawing>
