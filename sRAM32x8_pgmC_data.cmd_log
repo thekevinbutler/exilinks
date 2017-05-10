@@ -1,0 +1,2 @@
+vhdtdtfi -lib work Modules/ProgramC/sRAM32x8_pgmC_data.vhd -prj finalproject -o sRAM32x8_pgmC_data.spl -module sRAM32x8_pgmC_data -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w sRAM32x8_pgmC_data.spl C:/Users/thekevinbutler/Documents/exilinks/sRAM32x8_pgmC_data.sym 

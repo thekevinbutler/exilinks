@@ -176,7 +176,7 @@
             <rect width="256" x="64" y="-192" height="832" />
         </blockdef>
         <blockdef name="InstructionMem">
-            <timestamp>2017-5-7T1:27:59</timestamp>
+            <timestamp>2017-5-9T18:42:6</timestamp>
             <line x2="0" y1="32" y2="32" x1="64" />
             <rect width="64" x="400" y="20" height="24" />
             <line x2="464" y1="32" y2="32" x1="400" />
@@ -213,7 +213,7 @@
             <rect width="256" x="64" y="-512" height="640" />
         </blockdef>
         <blockdef name="DataMem">
-            <timestamp>2017-5-7T2:51:42</timestamp>
+            <timestamp>2017-5-9T18:42:1</timestamp>
             <line x2="0" y1="32" y2="32" x1="64" />
             <rect width="64" x="0" y="-108" height="24" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
@@ -329,7 +329,7 @@
             <line x2="64" y1="-48" y2="-144" x1="64" />
         </blockdef>
         <blockdef name="AddSub_ALU">
-            <timestamp>2017-5-9T18:29:15</timestamp>
+            <timestamp>2017-5-9T21:21:37</timestamp>
             <line x2="384" y1="288" y2="288" x1="320" />
             <rect width="64" x="320" y="212" height="24" />
             <line x2="384" y1="224" y2="224" x1="320" />
@@ -431,8 +431,8 @@
         <block symbolname="DataMem" name="XLXI_127">
             <blockpin signalname="AddrLEDs(4:0)" name="AddrIn(4:0)" />
             <blockpin signalname="KeyPadOut(7:0)" name="DataIn(7:0)" />
-            <blockpin signalname="Data(7:0)" name="DataOut(7:0)" />
             <blockpin signalname="DataState" name="EditMode" />
+            <blockpin signalname="Data(7:0)" name="DataOut(7:0)" />
         </block>
         <block symbolname="inv" name="XLXI_154">
             <blockpin signalname="ClkDiv1" name="I" />
@@ -551,8 +551,8 @@
         <block symbolname="InstructionMem" name="XLXI_124">
             <blockpin signalname="KeyPadOut(7:0)" name="InstCode(7:0)" />
             <blockpin signalname="XLXN_59(7:0)" name="PCNum(7:0)" />
-            <blockpin signalname="AddrLEDs(4:0)" name="chosenAddr(4:0)" />
             <blockpin signalname="InstrState" name="EditMode" />
+            <blockpin signalname="AddrLEDs(4:0)" name="chosenAddr(4:0)" />
             <blockpin signalname="Instruction(7:0)" name="InstrOut(7:0)" />
         </block>
         <block symbolname="AddSub_ALU" name="XLXI_203">
@@ -561,9 +561,9 @@
             <blockpin signalname="MathMode" name="AddSub" />
             <blockpin signalname="SignMode" name="Signed" />
             <blockpin signalname="XLXN_266" name="Set" />
-            <blockpin signalname="ALURes(7:0)" name="RegOut(7:0)" />
             <blockpin signalname="Negative" name="signNeg" />
             <blockpin signalname="Overflow" name="Overflow" />
+            <blockpin signalname="ALURes(7:0)" name="RegOut(7:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">

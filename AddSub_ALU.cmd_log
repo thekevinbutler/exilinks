@@ -30,3 +30,8 @@ sch2sym -intstyle ise -family spartan3e -w -refsym AddSub_ALU C:/Users/thekevinb
 sch2sym -intstyle ise -family spartan3e -w -refsym AddSub_ALU C:/Users/thekevinbutler/Documents/exilinks/AddSub_ALU.sch C:/Users/thekevinbutler/Documents/exilinks/AddSub_ALU.sym 
 sch2sym -intstyle ise -family spartan3e -w -refsym AddSub_ALU C:/Users/thekevinbutler/Documents/exilinks/AddSub_ALU.sch C:/Users/thekevinbutler/Documents/exilinks/AddSub_ALU.sym 
 sch2sym -intstyle ise -family spartan3e -w -refsym AddSub_ALU C:/Users/thekevinbutler/Documents/exilinks/AddSub_ALU.sch C:/Users/thekevinbutler/Documents/exilinks/AddSub_ALU.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym AddSub_ALU C:/Users/thekevinbutler/Documents/exilinks/AddSub_ALU.sch C:/Users/thekevinbutler/Documents/exilinks/AddSub_ALU.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym AddSub_ALU C:/Users/thekevinbutler/Documents/exilinks/AddSub_ALU.sch C:/Users/thekevinbutler/Documents/exilinks/AddSub_ALU.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym AddSub_ALU C:/Users/thekevinbutler/Documents/exilinks/AddSub_ALU.sch C:/Users/thekevinbutler/Documents/exilinks/AddSub_ALU.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym AddSub_ALU C:/Users/thekevinbutler/Documents/exilinks/AddSub_ALU.sch C:/Users/thekevinbutler/Documents/exilinks/AddSub_ALU.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym AddSub_ALU C:/Users/thekevinbutler/Documents/exilinks/AddSub_ALU.sch C:/Users/thekevinbutler/Documents/exilinks/AddSub_ALU.sym 

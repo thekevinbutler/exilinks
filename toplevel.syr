@@ -3,13 +3,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.40 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.40 secs
  
 --> Reading design: toplevel.prj
@@ -108,16 +108,16 @@ Compiling vhdl file "C:/Users/thekevinbutler/Documents/exilinks/Modules/CRenc4bi
 Architecture behavioral of Entity crenc4bin is up to date.
 Compiling vhdl file "C:/Users/thekevinbutler/Documents/exilinks/Modules/keyCR4b.vhd" in Library work.
 Architecture behavioral of Entity keycr4b is up to date.
-Compiling vhdl file "C:/Users/thekevinbutler/Documents/exilinks/Modules/sRAM32x8_ex_pgm_instr.vhd" in Library work.
-Architecture behavioral of Entity sram32x8_ex_pgm_instr is up to date.
+Compiling vhdl file "C:/Users/thekevinbutler/Documents/exilinks/Modules/ProgramC/sRAM32x8_pgmC_instr.vhd" in Library work.
+Architecture behavioral of Entity sram32x8_pgmc_instr is up to date.
 Compiling vhdl file "C:/Users/thekevinbutler/Documents/exilinks/Modules/bin2BCD3en.vhd" in Library work.
 Architecture behavioral of Entity bin2bcd3en is up to date.
 Compiling vhdl file "C:/Users/thekevinbutler/Documents/exilinks/Modules/mux4SSD.vhd" in Library work.
 Architecture behavioral of Entity mux4ssd is up to date.
 Compiling vhdl file "C:/Users/thekevinbutler/Documents/exilinks/Modules/sel_strobeB.vhd" in Library work.
 Architecture behavioral of Entity sel_strobeb is up to date.
-Compiling vhdl file "C:/Users/thekevinbutler/Documents/exilinks/Modules/sRAM32x8_ex_pgm_data.vhd" in Library work.
-Architecture behavioral of Entity sram32x8_ex_pgm_data is up to date.
+Compiling vhdl file "C:/Users/thekevinbutler/Documents/exilinks/Modules/ProgramC/sRAM32x8_pgmC_data.vhd" in Library work.
+Architecture behavioral of Entity sram32x8_pgmc_data is up to date.
 Compiling vhdl file "C:/Users/thekevinbutler/Documents/exilinks/Modules/addsub8.vhd" in Library work.
 Architecture minimalist of Entity fulladd is up to date.
 Architecture corinthian of Entity iod8 is up to date.
@@ -134,6 +134,8 @@ Entity <mux8x2to1_muser_toplevel> compiled.
 Entity <mux8x2to1_muser_toplevel> (Architecture <behavioral>) compiled.
 Entity <add8_mxilinx_toplevel> compiled.
 Entity <add8_mxilinx_toplevel> (Architecture <behavioral>) compiled.
+Entity <Force2sComplement_MUSER_toplevel> compiled.
+Entity <Force2sComplement_MUSER_toplevel> (Architecture <BEHAVIORAL>) compiled.
 Entity <twoscomp_muser_toplevel> compiled.
 Entity <twoscomp_muser_toplevel> (Architecture <behavioral>) compiled.
 Entity <adsu8_mxilinx_toplevel> compiled.
@@ -189,6 +191,8 @@ Entity <mux8x2to1_muser_addsub_alu> compiled.
 Entity <mux8x2to1_muser_addsub_alu> (Architecture <behavioral>) compiled.
 Entity <add8_mxilinx_addsub_alu> compiled.
 Entity <add8_mxilinx_addsub_alu> (Architecture <behavioral>) compiled.
+Entity <Force2sComplement_MUSER_AddSub_ALU> compiled.
+Entity <Force2sComplement_MUSER_AddSub_ALU> (Architecture <BEHAVIORAL>) compiled.
 Entity <twoscomp_muser_addsub_alu> compiled.
 Entity <twoscomp_muser_addsub_alu> (Architecture <behavioral>) compiled.
 Entity <adsu8_mxilinx_addsub_alu> compiled.
@@ -239,6 +243,11 @@ Architecture behavioral of Entity registergeneric_muser_registerc is up to date.
 Architecture behavioral of Entity registerc is up to date.
 Compiling vhdl file "C:/Users/thekevinbutler/Documents/exilinks/Demux1to16.vhf" in Library work.
 Architecture behavioral of Entity demux1to16 is up to date.
+Compiling vhdl file "C:/Users/thekevinbutler/Documents/exilinks/Force2sComplement.vhf" in Library work.
+Entity <ADD8_MXILINX_Force2sComplement> compiled.
+Entity <ADD8_MXILINX_Force2sComplement> (Architecture <BEHAVIORAL>) compiled.
+Entity <Force2sComplement> compiled.
+Entity <Force2sComplement> (Architecture <BEHAVIORAL>) compiled.
 Compiling vhdl file "C:/Users/thekevinbutler/Documents/exilinks/mux4x2to1.vhf" in Library work.
 Architecture behavioral of Entity m2_1_mxilinx_mux4x2to1 is up to date.
 Architecture behavioral of Entity mux4x2to1 is up to date.
@@ -305,7 +314,7 @@ Analyzing hierarchy for entity <M2_1_MXILINX_toplevel> in library <work> (archit
 
 Analyzing hierarchy for entity <mux8x2to1_MUSER_toplevel> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <sRAM32x8_ex_pgm_instr> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <sRAM32x8_pgmC_instr> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <bin2BCD3en> in library <work> (architecture <behavioral>).
 
@@ -315,7 +324,7 @@ Analyzing hierarchy for entity <sel_strobeB> in library <work> (architecture <be
 
 Analyzing hierarchy for entity <mux4x2to1_MUSER_toplevel> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <sRAM32x8_ex_pgm_data> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <sRAM32x8_pgmC_data> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <Demux1to16_MUSER_toplevel> in library <work> (architecture <behavioral>).
 
@@ -328,6 +337,8 @@ Analyzing hierarchy for entity <TwosComp_MUSER_toplevel> in library <work> (arch
 Analyzing hierarchy for entity <ADSU8_MXILINX_toplevel> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <addsub8> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Force2sComplement_MUSER_toplevel> in library <work> (architecture <BEHAVIORAL>).
 
 Analyzing hierarchy for entity <CRenc4bin> in library <work> (architecture <behavioral>).
 
@@ -365,9 +376,9 @@ Analyzing hierarchy for entity <fulladd> in library <work> (architecture <minima
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <toplevel> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 3798: Unconnected output port 'CLK10k' of component 'DCM_50M'.
-    Set user-defined property "HU_SET =  XLXI_114_103" for instance <XLXI_114> in unit <toplevel>.
-WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 3866: Unconnected output port 'NOP' of component 'InstructionDecode_MUSER_toplevel'.
+WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 3958: Unconnected output port 'CLK10k' of component 'DCM_50M'.
+    Set user-defined property "HU_SET =  XLXI_114_107" for instance <XLXI_114> in unit <toplevel>.
+WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 4026: Unconnected output port 'NOP' of component 'InstructionDecode_MUSER_toplevel'.
 Entity <toplevel> analyzed. Unit <toplevel> generated.
 
 Analyzing Entity <SSD_1dig> in library <work> (Architecture <behavioral>).
@@ -380,10 +391,10 @@ Analyzing generic Entity <DCM_50M> in library <work> (Architecture <behavioral>)
 Entity <DCM_50M> analyzed. Unit <DCM_50M> generated.
 
 Analyzing Entity <KeyPad_MUSER_toplevel> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_69_101" for instance <XLXI_69> in unit <KeyPad_MUSER_toplevel>.
-    Set user-defined property "HU_SET =  XLXI_70_102" for instance <XLXI_70> in unit <KeyPad_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  XLXI_69_105" for instance <XLXI_69> in unit <KeyPad_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  XLXI_70_106" for instance <XLXI_70> in unit <KeyPad_MUSER_toplevel>.
     Set user-defined property "INIT =  0" for instance <XLXI_89> in unit <KeyPad_MUSER_toplevel>.
-    Set user-defined property "HU_SET =  XLXI_110_100" for instance <XLXI_110> in unit <KeyPad_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  XLXI_110_104" for instance <XLXI_110> in unit <KeyPad_MUSER_toplevel>.
 Entity <KeyPad_MUSER_toplevel> analyzed. Unit <KeyPad_MUSER_toplevel> generated.
 
 Analyzing Entity <keyCR4b> in library <work> (Architecture <behavioral>).
@@ -400,45 +411,45 @@ Analyzing Entity <FD4CE_MXILINX_toplevel> in library <work> (Architecture <behav
 Entity <FD4CE_MXILINX_toplevel> analyzed. Unit <FD4CE_MXILINX_toplevel> generated.
 
 Analyzing Entity <M4_1E_MXILINX_toplevel> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  I_M01_99" for instance <I_M01> in unit <M4_1E_MXILINX_toplevel>.
-    Set user-defined property "HU_SET =  I_M23_98" for instance <I_M23> in unit <M4_1E_MXILINX_toplevel>.
+    Set user-defined property "HU_SET =  I_M01_103" for instance <I_M01> in unit <M4_1E_MXILINX_toplevel>.
+    Set user-defined property "HU_SET =  I_M23_102" for instance <I_M23> in unit <M4_1E_MXILINX_toplevel>.
 Entity <M4_1E_MXILINX_toplevel> analyzed. Unit <M4_1E_MXILINX_toplevel> generated.
 
 Analyzing Entity <M2_1E_MXILINX_toplevel> in library <work> (Architecture <behavioral>).
 Entity <M2_1E_MXILINX_toplevel> analyzed. Unit <M2_1E_MXILINX_toplevel> generated.
 
 Analyzing Entity <ProgramCounter_MUSER_toplevel> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 3100: Unconnected output port 'CEO' of component 'CB8CLED_MXILINX_toplevel'.
-WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 3100: Unconnected output port 'TC' of component 'CB8CLED_MXILINX_toplevel'.
-    Set user-defined property "HU_SET =  XLXI_115_94" for instance <XLXI_115> in unit <ProgramCounter_MUSER_toplevel>.
-    Set user-defined property "HU_SET =  XLXI_123_95" for instance <XLXI_123> in unit <ProgramCounter_MUSER_toplevel>.
-    Set user-defined property "HU_SET =  XLXI_124_96" for instance <XLXI_124> in unit <ProgramCounter_MUSER_toplevel>.
-    Set user-defined property "HU_SET =  XLXI_128_97" for instance <XLXI_128> in unit <ProgramCounter_MUSER_toplevel>.
+WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 3260: Unconnected output port 'CEO' of component 'CB8CLED_MXILINX_toplevel'.
+WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 3260: Unconnected output port 'TC' of component 'CB8CLED_MXILINX_toplevel'.
+    Set user-defined property "HU_SET =  XLXI_115_98" for instance <XLXI_115> in unit <ProgramCounter_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  XLXI_123_99" for instance <XLXI_123> in unit <ProgramCounter_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  XLXI_124_100" for instance <XLXI_124> in unit <ProgramCounter_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  XLXI_128_101" for instance <XLXI_128> in unit <ProgramCounter_MUSER_toplevel>.
     Set user-defined property "INIT =  0" for instance <XLXI_141> in unit <ProgramCounter_MUSER_toplevel>.
 Entity <ProgramCounter_MUSER_toplevel> analyzed. Unit <ProgramCounter_MUSER_toplevel> generated.
 
 Analyzing Entity <CB8CLED_MXILINX_toplevel> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  I_Q0_85" for instance <I_Q0> in unit <CB8CLED_MXILINX_toplevel>.
-    Set user-defined property "HU_SET =  I_Q1_84" for instance <I_Q1> in unit <CB8CLED_MXILINX_toplevel>.
-    Set user-defined property "HU_SET =  I_Q2_83" for instance <I_Q2> in unit <CB8CLED_MXILINX_toplevel>.
-    Set user-defined property "HU_SET =  I_Q3_82" for instance <I_Q3> in unit <CB8CLED_MXILINX_toplevel>.
-    Set user-defined property "HU_SET =  I_Q4_81" for instance <I_Q4> in unit <CB8CLED_MXILINX_toplevel>.
-    Set user-defined property "HU_SET =  I_Q5_80" for instance <I_Q5> in unit <CB8CLED_MXILINX_toplevel>.
-    Set user-defined property "HU_SET =  I_Q6_79" for instance <I_Q6> in unit <CB8CLED_MXILINX_toplevel>.
-    Set user-defined property "HU_SET =  I_Q7_78" for instance <I_Q7> in unit <CB8CLED_MXILINX_toplevel>.
-    Set user-defined property "HU_SET =  I_TC_90" for instance <I_TC> in unit <CB8CLED_MXILINX_toplevel>.
-    Set user-defined property "HU_SET =  I_T1_93" for instance <I_T1> in unit <CB8CLED_MXILINX_toplevel>.
-    Set user-defined property "HU_SET =  I_T2_86" for instance <I_T2> in unit <CB8CLED_MXILINX_toplevel>.
-    Set user-defined property "HU_SET =  I_T3_87" for instance <I_T3> in unit <CB8CLED_MXILINX_toplevel>.
-    Set user-defined property "HU_SET =  I_T4_92" for instance <I_T4> in unit <CB8CLED_MXILINX_toplevel>.
-    Set user-defined property "HU_SET =  I_T5_91" for instance <I_T5> in unit <CB8CLED_MXILINX_toplevel>.
-    Set user-defined property "HU_SET =  I_T6_88" for instance <I_T6> in unit <CB8CLED_MXILINX_toplevel>.
-    Set user-defined property "HU_SET =  I_T7_89" for instance <I_T7> in unit <CB8CLED_MXILINX_toplevel>.
+    Set user-defined property "HU_SET =  I_Q0_89" for instance <I_Q0> in unit <CB8CLED_MXILINX_toplevel>.
+    Set user-defined property "HU_SET =  I_Q1_88" for instance <I_Q1> in unit <CB8CLED_MXILINX_toplevel>.
+    Set user-defined property "HU_SET =  I_Q2_87" for instance <I_Q2> in unit <CB8CLED_MXILINX_toplevel>.
+    Set user-defined property "HU_SET =  I_Q3_86" for instance <I_Q3> in unit <CB8CLED_MXILINX_toplevel>.
+    Set user-defined property "HU_SET =  I_Q4_85" for instance <I_Q4> in unit <CB8CLED_MXILINX_toplevel>.
+    Set user-defined property "HU_SET =  I_Q5_84" for instance <I_Q5> in unit <CB8CLED_MXILINX_toplevel>.
+    Set user-defined property "HU_SET =  I_Q6_83" for instance <I_Q6> in unit <CB8CLED_MXILINX_toplevel>.
+    Set user-defined property "HU_SET =  I_Q7_82" for instance <I_Q7> in unit <CB8CLED_MXILINX_toplevel>.
+    Set user-defined property "HU_SET =  I_TC_94" for instance <I_TC> in unit <CB8CLED_MXILINX_toplevel>.
+    Set user-defined property "HU_SET =  I_T1_97" for instance <I_T1> in unit <CB8CLED_MXILINX_toplevel>.
+    Set user-defined property "HU_SET =  I_T2_90" for instance <I_T2> in unit <CB8CLED_MXILINX_toplevel>.
+    Set user-defined property "HU_SET =  I_T3_91" for instance <I_T3> in unit <CB8CLED_MXILINX_toplevel>.
+    Set user-defined property "HU_SET =  I_T4_96" for instance <I_T4> in unit <CB8CLED_MXILINX_toplevel>.
+    Set user-defined property "HU_SET =  I_T5_95" for instance <I_T5> in unit <CB8CLED_MXILINX_toplevel>.
+    Set user-defined property "HU_SET =  I_T6_92" for instance <I_T6> in unit <CB8CLED_MXILINX_toplevel>.
+    Set user-defined property "HU_SET =  I_T7_93" for instance <I_T7> in unit <CB8CLED_MXILINX_toplevel>.
 Entity <CB8CLED_MXILINX_toplevel> analyzed. Unit <CB8CLED_MXILINX_toplevel> generated.
 
 Analyzing generic Entity <FTCLEX_MXILINX_toplevel> in library <work> (Architecture <behavioral>).
 	INIT = '0'
-    Set user-defined property "HU_SET =  I_36_30_77" for instance <I_36_30> in unit <FTCLEX_MXILINX_toplevel>.
+    Set user-defined property "HU_SET =  I_36_30_81" for instance <I_36_30> in unit <FTCLEX_MXILINX_toplevel>.
     Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_toplevel>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_toplevel>.
 Entity <FTCLEX_MXILINX_toplevel> analyzed. Unit <FTCLEX_MXILINX_toplevel> generated.
@@ -456,25 +467,25 @@ Analyzing Entity <M2_1_MXILINX_toplevel> in library <work> (Architecture <behavi
 Entity <M2_1_MXILINX_toplevel> analyzed. Unit <M2_1_MXILINX_toplevel> generated.
 
 Analyzing Entity <mux8x2to1_MUSER_toplevel> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_1_58" for instance <XLXI_1> in unit <mux8x2to1_MUSER_toplevel>.
-    Set user-defined property "HU_SET =  XLXI_2_59" for instance <XLXI_2> in unit <mux8x2to1_MUSER_toplevel>.
-    Set user-defined property "HU_SET =  XLXI_3_60" for instance <XLXI_3> in unit <mux8x2to1_MUSER_toplevel>.
-    Set user-defined property "HU_SET =  XLXI_4_61" for instance <XLXI_4> in unit <mux8x2to1_MUSER_toplevel>.
-    Set user-defined property "HU_SET =  XLXI_5_62" for instance <XLXI_5> in unit <mux8x2to1_MUSER_toplevel>.
-    Set user-defined property "HU_SET =  XLXI_6_63" for instance <XLXI_6> in unit <mux8x2to1_MUSER_toplevel>.
-    Set user-defined property "HU_SET =  XLXI_7_64" for instance <XLXI_7> in unit <mux8x2to1_MUSER_toplevel>.
-    Set user-defined property "HU_SET =  XLXI_8_65" for instance <XLXI_8> in unit <mux8x2to1_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  XLXI_1_61" for instance <XLXI_1> in unit <mux8x2to1_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  XLXI_2_62" for instance <XLXI_2> in unit <mux8x2to1_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  XLXI_3_63" for instance <XLXI_3> in unit <mux8x2to1_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  XLXI_4_64" for instance <XLXI_4> in unit <mux8x2to1_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  XLXI_5_65" for instance <XLXI_5> in unit <mux8x2to1_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  XLXI_6_66" for instance <XLXI_6> in unit <mux8x2to1_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  XLXI_7_67" for instance <XLXI_7> in unit <mux8x2to1_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  XLXI_8_68" for instance <XLXI_8> in unit <mux8x2to1_MUSER_toplevel>.
 Entity <mux8x2to1_MUSER_toplevel> analyzed. Unit <mux8x2to1_MUSER_toplevel> generated.
 
 Analyzing Entity <InstructionMem_MUSER_toplevel> in library <work> (Architecture <behavioral>).
 Entity <InstructionMem_MUSER_toplevel> analyzed. Unit <InstructionMem_MUSER_toplevel> generated.
 
-Analyzing Entity <sRAM32x8_ex_pgm_instr> in library <work> (Architecture <behavioral>).
-Entity <sRAM32x8_ex_pgm_instr> analyzed. Unit <sRAM32x8_ex_pgm_instr> generated.
+Analyzing Entity <sRAM32x8_pgmC_instr> in library <work> (Architecture <behavioral>).
+Entity <sRAM32x8_pgmC_instr> analyzed. Unit <sRAM32x8_pgmC_instr> generated.
 
 Analyzing Entity <DisplayNumbers_MUSER_toplevel> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 2298: Unconnected output port 'RBout' of component 'bin2BCD3en'.
-    Set user-defined property "HU_SET =  XLXI_18_76" for instance <XLXI_18> in unit <DisplayNumbers_MUSER_toplevel>.
+WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 2458: Unconnected output port 'RBout' of component 'bin2BCD3en'.
+    Set user-defined property "HU_SET =  XLXI_18_80" for instance <XLXI_18> in unit <DisplayNumbers_MUSER_toplevel>.
 Entity <DisplayNumbers_MUSER_toplevel> analyzed. Unit <DisplayNumbers_MUSER_toplevel> generated.
 
 Analyzing Entity <bin2BCD3en> in library <work> (Architecture <behavioral>).
@@ -490,30 +501,30 @@ Analyzing Entity <sel_strobeB> in library <work> (Architecture <behavioral>).
 Entity <sel_strobeB> analyzed. Unit <sel_strobeB> generated.
 
 Analyzing Entity <mux4x2to1_MUSER_toplevel> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_1_72" for instance <XLXI_1> in unit <mux4x2to1_MUSER_toplevel>.
-    Set user-defined property "HU_SET =  XLXI_2_73" for instance <XLXI_2> in unit <mux4x2to1_MUSER_toplevel>.
-    Set user-defined property "HU_SET =  XLXI_3_74" for instance <XLXI_3> in unit <mux4x2to1_MUSER_toplevel>.
-    Set user-defined property "HU_SET =  XLXI_4_75" for instance <XLXI_4> in unit <mux4x2to1_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  XLXI_1_76" for instance <XLXI_1> in unit <mux4x2to1_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  XLXI_2_77" for instance <XLXI_2> in unit <mux4x2to1_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  XLXI_3_78" for instance <XLXI_3> in unit <mux4x2to1_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  XLXI_4_79" for instance <XLXI_4> in unit <mux4x2to1_MUSER_toplevel>.
 Entity <mux4x2to1_MUSER_toplevel> analyzed. Unit <mux4x2to1_MUSER_toplevel> generated.
 
 Analyzing Entity <DataMem_MUSER_toplevel> in library <work> (Architecture <behavioral>).
 Entity <DataMem_MUSER_toplevel> analyzed. Unit <DataMem_MUSER_toplevel> generated.
 
-Analyzing Entity <sRAM32x8_ex_pgm_data> in library <work> (Architecture <behavioral>).
-Entity <sRAM32x8_ex_pgm_data> analyzed. Unit <sRAM32x8_ex_pgm_data> generated.
+Analyzing Entity <sRAM32x8_pgmC_data> in library <work> (Architecture <behavioral>).
+Entity <sRAM32x8_pgmC_data> analyzed. Unit <sRAM32x8_pgmC_data> generated.
 
 Analyzing Entity <InstructionDecode_MUSER_toplevel> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 1848: Unconnected output port 'Out11' of component 'Demux1to16_MUSER_toplevel'.
-WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 1848: Unconnected output port 'Out10' of component 'Demux1to16_MUSER_toplevel'.
-WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 1848: Unconnected output port 'Out13' of component 'Demux1to16_MUSER_toplevel'.
-WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 1848: Unconnected output port 'Out12' of component 'Demux1to16_MUSER_toplevel'.
+WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 2008: Unconnected output port 'Out11' of component 'Demux1to16_MUSER_toplevel'.
+WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 2008: Unconnected output port 'Out10' of component 'Demux1to16_MUSER_toplevel'.
+WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 2008: Unconnected output port 'Out13' of component 'Demux1to16_MUSER_toplevel'.
+WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 2008: Unconnected output port 'Out12' of component 'Demux1to16_MUSER_toplevel'.
 Entity <InstructionDecode_MUSER_toplevel> analyzed. Unit <InstructionDecode_MUSER_toplevel> generated.
 
 Analyzing Entity <Demux1to16_MUSER_toplevel> in library <work> (Architecture <behavioral>).
 Entity <Demux1to16_MUSER_toplevel> analyzed. Unit <Demux1to16_MUSER_toplevel> generated.
 
 Analyzing Entity <RegisterGeneric_MUSER_toplevel> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_2_70" for instance <XLXI_2> in unit <RegisterGeneric_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  XLXI_2_74" for instance <XLXI_2> in unit <RegisterGeneric_MUSER_toplevel>.
 Entity <RegisterGeneric_MUSER_toplevel> analyzed. Unit <RegisterGeneric_MUSER_toplevel> generated.
 
 Analyzing Entity <FD8CE_MXILINX_toplevel> in library <work> (Architecture <behavioral>).
@@ -534,23 +545,22 @@ Analyzing Entity <RegisterA_MUSER_toplevel> in library <work> (Architecture <beh
 Entity <RegisterA_MUSER_toplevel> analyzed. Unit <RegisterA_MUSER_toplevel> generated.
 
 Analyzing Entity <RegisterC_MUSER_toplevel> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_3_71" for instance <XLXI_3> in unit <RegisterC_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  XLXI_3_75" for instance <XLXI_3> in unit <RegisterC_MUSER_toplevel>.
 Entity <RegisterC_MUSER_toplevel> analyzed. Unit <RegisterC_MUSER_toplevel> generated.
 
 Analyzing Entity <AddSub_ALU_MUSER_toplevel> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_10_67" for instance <XLXI_10> in unit <AddSub_ALU_MUSER_toplevel>.
-    Set user-defined property "HU_SET =  XLXI_11_68" for instance <XLXI_11> in unit <AddSub_ALU_MUSER_toplevel>.
-WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 1220: Unconnected output port 'CO' of component 'ADSU8_MXILINX_toplevel'.
-WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 1220: Unconnected output port 'OFL' of component 'ADSU8_MXILINX_toplevel'.
-    Set user-defined property "HU_SET =  XLXI_32_69" for instance <XLXI_32> in unit <AddSub_ALU_MUSER_toplevel>.
-WARNING:Xst:754 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 1238: Unconnected inout port 'NEG' of component 'addsub8'.
-WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 1238: Unconnected output port 'C' of component 'addsub8'.
+    Set user-defined property "HU_SET =  XLXI_10_71" for instance <XLXI_10> in unit <AddSub_ALU_MUSER_toplevel>.
+    Set user-defined property "HU_SET =  XLXI_11_72" for instance <XLXI_11> in unit <AddSub_ALU_MUSER_toplevel>.
+WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 1345: Unconnected output port 'CO' of component 'ADSU8_MXILINX_toplevel'.
+WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 1345: Unconnected output port 'OFL' of component 'ADSU8_MXILINX_toplevel'.
+    Set user-defined property "HU_SET =  XLXI_32_73" for instance <XLXI_32> in unit <AddSub_ALU_MUSER_toplevel>.
+WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 1358: Unconnected output port 'C' of component 'addsub8'.
 Entity <AddSub_ALU_MUSER_toplevel> analyzed. Unit <AddSub_ALU_MUSER_toplevel> generated.
 
 Analyzing Entity <TwosComp_MUSER_toplevel> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 554: Unconnected output port 'CO' of component 'ADD8_MXILINX_toplevel'.
-WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 554: Unconnected output port 'OFL' of component 'ADD8_MXILINX_toplevel'.
-    Set user-defined property "HU_SET =  XLXI_10_66" for instance <XLXI_10> in unit <TwosComp_MUSER_toplevel>.
+WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 640: Unconnected output port 'CO' of component 'ADD8_MXILINX_toplevel'.
+WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 640: Unconnected output port 'OFL' of component 'ADD8_MXILINX_toplevel'.
+    Set user-defined property "HU_SET =  XLXI_10_70" for instance <XLXI_10> in unit <TwosComp_MUSER_toplevel>.
 Entity <TwosComp_MUSER_toplevel> analyzed. Unit <TwosComp_MUSER_toplevel> generated.
 
 Analyzing Entity <ADD8_MXILINX_toplevel> in library <work> (Architecture <behavioral>).
@@ -602,6 +612,12 @@ Entity <FA8> analyzed. Unit <FA8> generated.
 
 Analyzing Entity <fulladd> in library <work> (Architecture <minimalist>).
 Entity <fulladd> analyzed. Unit <fulladd> generated.
+
+Analyzing Entity <Force2sComplement_MUSER_toplevel> in library <work> (Architecture <BEHAVIORAL>).
+WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 530: Unconnected output port 'CO' of component 'ADD8_MXILINX_toplevel'.
+WARNING:Xst:753 - "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf" line 530: Unconnected output port 'OFL' of component 'ADD8_MXILINX_toplevel'.
+    Set user-defined property "HU_SET =  XLXI_2_69" for instance <XLXI_2> in unit <Force2sComplement_MUSER_toplevel>.
+Entity <Force2sComplement_MUSER_toplevel> analyzed. Unit <Force2sComplement_MUSER_toplevel> generated.
 
 
 =========================================================================
@@ -655,17 +671,17 @@ Synthesizing Unit <CRenc4bin>.
 Unit <CRenc4bin> synthesized.
 
 
-Synthesizing Unit <sRAM32x8_ex_pgm_instr>.
-    Related source file is "C:/Users/thekevinbutler/Documents/exilinks/Modules/sRAM32x8_ex_pgm_instr.vhd".
+Synthesizing Unit <sRAM32x8_pgmC_instr>.
+    Related source file is "C:/Users/thekevinbutler/Documents/exilinks/Modules/ProgramC/sRAM32x8_pgmC_instr.vhd".
     Found 8-bit tristate buffer for signal <Q>.
     Found 256-bit register for signal <mem>.
-    Found 8-bit 32-to-1 multiplexer for signal <Q$mux0000> created at line 74.
+    Found 8-bit 32-to-1 multiplexer for signal <Q$mux0000> created at line 71.
 INFO:Xst:738 - HDL ADVISOR - 256 flip-flops were inferred for signal <mem>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
     Summary:
 	inferred 256 D-type flip-flop(s).
 	inferred   8 Multiplexer(s).
 	inferred   8 Tristate(s).
-Unit <sRAM32x8_ex_pgm_instr> synthesized.
+Unit <sRAM32x8_pgmC_instr> synthesized.
 
 
 Synthesizing Unit <bin2BCD3en>.
@@ -704,17 +720,17 @@ Synthesizing Unit <sel_strobeB>.
 Unit <sel_strobeB> synthesized.
 
 
-Synthesizing Unit <sRAM32x8_ex_pgm_data>.
-    Related source file is "C:/Users/thekevinbutler/Documents/exilinks/Modules/sRAM32x8_ex_pgm_data.vhd".
+Synthesizing Unit <sRAM32x8_pgmC_data>.
+    Related source file is "C:/Users/thekevinbutler/Documents/exilinks/Modules/ProgramC/sRAM32x8_pgmC_data.vhd".
     Found 8-bit tristate buffer for signal <Q>.
     Found 256-bit register for signal <mem>.
-    Found 8-bit 32-to-1 multiplexer for signal <Q$mux0000> created at line 74.
+    Found 8-bit 32-to-1 multiplexer for signal <Q$mux0000> created at line 71.
 INFO:Xst:738 - HDL ADVISOR - 256 flip-flops were inferred for signal <mem>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
     Summary:
 	inferred 256 D-type flip-flop(s).
 	inferred   8 Multiplexer(s).
 	inferred   8 Tristate(s).
-Unit <sRAM32x8_ex_pgm_data> synthesized.
+Unit <sRAM32x8_pgmC_data> synthesized.
 
 
 Synthesizing Unit <IoD8>.
@@ -842,6 +858,12 @@ WARNING:Xst:1780 - Signal <Cm> is never used or assigned. This unconnected signa
 Unit <addsub8> synthesized.
 
 
+Synthesizing Unit <Force2sComplement_MUSER_toplevel>.
+    Related source file is "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf".
+WARNING:Xst:653 - Signal <XLXI_2_B_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+Unit <Force2sComplement_MUSER_toplevel> synthesized.
+
+
 Synthesizing Unit <InstructionMem_MUSER_toplevel>.
     Related source file is "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf".
 WARNING:Xst:647 - Input <PCNum<7:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -887,6 +909,7 @@ Unit <ProgramCounter_MUSER_toplevel> synthesized.
 
 Synthesizing Unit <AddSub_ALU_MUSER_toplevel>.
     Related source file is "C:/Users/thekevinbutler/Documents/exilinks/toplevel.vhf".
+WARNING:Xst:653 - Signal <XLXI_59_I0_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_11_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_10_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 Unit <AddSub_ALU_MUSER_toplevel> synthesized.
@@ -978,8 +1001,8 @@ Macro Statistics
 INFO:Xst:2261 - The FF/Latch <RBout_1> in Unit <bin2BCD3en> is equivalent to the following FF/Latch, which will be removed : <RBout_0> 
 WARNING:Xst:1710 - FF/Latch <RBout_3> (without init value) has a constant value of 1 in block <bin2BCD3en>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RBout_1> (without init value) has a constant value of 0 in block <bin2BCD3en>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2042 - Unit sRAM32x8_ex_pgm_data: 8 internal tristates are replaced by logic (pull-up yes): Q<0>, Q<1>, Q<2>, Q<3>, Q<4>, Q<5>, Q<6>, Q<7>.
-WARNING:Xst:2042 - Unit sRAM32x8_ex_pgm_instr: 8 internal tristates are replaced by logic (pull-up yes): Q<0>, Q<1>, Q<2>, Q<3>, Q<4>, Q<5>, Q<6>, Q<7>.
+WARNING:Xst:2042 - Unit sRAM32x8_pgmC_data: 8 internal tristates are replaced by logic (pull-up yes): Q<0>, Q<1>, Q<2>, Q<3>, Q<4>, Q<5>, Q<6>, Q<7>.
+WARNING:Xst:2042 - Unit sRAM32x8_pgmC_instr: 8 internal tristates are replaced by logic (pull-up yes): Q<0>, Q<1>, Q<2>, Q<3>, Q<4>, Q<5>, Q<6>, Q<7>.
 
 Optimizing unit <toplevel> ...
 
@@ -987,9 +1010,9 @@ Optimizing unit <DCM_50M> ...
 
 Optimizing unit <CRenc4bin> ...
 
-Optimizing unit <sRAM32x8_ex_pgm_instr> ...
+Optimizing unit <sRAM32x8_pgmC_instr> ...
 
-Optimizing unit <sRAM32x8_ex_pgm_data> ...
+Optimizing unit <sRAM32x8_pgmC_data> ...
 
 Optimizing unit <InputState_MUSER_toplevel> ...
 
@@ -1020,6 +1043,8 @@ Optimizing unit <M4_1E_MXILINX_toplevel> ...
 Optimizing unit <mux8x2to1_MUSER_toplevel> ...
 
 Optimizing unit <FTCLEX_MXILINX_toplevel> ...
+
+Optimizing unit <Force2sComplement_MUSER_toplevel> ...
 
 Optimizing unit <addsub8> ...
 
@@ -1109,9 +1134,9 @@ Design Statistics
 # IOs                              : 38
 
 Cell Usage :
-# BELS                             : 1951
-#      AND2                        : 121
-#      AND2B1                      : 114
+# BELS                             : 2014
+#      AND2                        : 129
+#      AND2B1                      : 123
 #      AND2B2                      : 2
 #      AND3                        : 5
 #      AND3B1                      : 7
@@ -1122,28 +1147,28 @@ Cell Usage :
 #      AND4B3                      : 1
 #      AND4B4                      : 1
 #      AND5                        : 17
-#      AND5B4                      : 1
+#      AND5B4                      : 2
 #      BUF                         : 18
-#      GND                         : 5
-#      INV                         : 63
+#      GND                         : 6
+#      INV                         : 71
 #      LUT1                        : 98
 #      LUT2                        : 113
 #      LUT3                        : 369
-#      LUT4                        : 103
-#      MUXCY                       : 225
-#      MUXCY_D                     : 4
-#      MUXCY_L                     : 24
+#      LUT4                        : 104
+#      MUXCY                       : 226
+#      MUXCY_D                     : 5
+#      MUXCY_L                     : 30
 #      MUXF5                       : 145
 #      MUXF6                       : 64
 #      MUXF7                       : 32
 #      MUXF8                       : 16
-#      OR2                         : 114
+#      OR2                         : 123
 #      OR3                         : 6
-#      OR4                         : 1
+#      OR4                         : 2
 #      VCC                         : 2
-#      XOR2                        : 36
+#      XOR2                        : 45
 #      XOR3                        : 8
-#      XORCY                       : 224
+#      XORCY                       : 232
 # FlipFlops/Latches                : 705
 #      FD                          : 5
 #      FDC                         : 7
@@ -1159,10 +1184,10 @@ Cell Usage :
 # IO Buffers                       : 37
 #      IBUF                        : 13
 #      OBUF                        : 24
-# Others                           : 80
-#      FMAP                        : 32
+# Others                           : 89
+#      FMAP                        : 40
 #      PULLDOWN                    : 33
-#      PULLUP                      : 15
+#      PULLUP                      : 16
 =========================================================================
 
 Device utilization summary:
@@ -1170,9 +1195,9 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-4 
 
- Number of Slices:                      373  out of    960    38%  
+ Number of Slices:                      378  out of    960    39%  
  Number of Slice Flip Flops:            705  out of   1920    36%  
- Number of 4 input LUTs:                746  out of   1920    38%  
+ Number of 4 input LUTs:                755  out of   1920    39%  
  Number of IOs:                          38
  Number of bonded IOBs:                  38  out of     83    45%  
  Number of GCLKs:                         5  out of     24    20%  
@@ -1202,12 +1227,12 @@ XLXI_111/XLXI_67/G1/keyO                       | NONE(XLXI_111/XLXI_89)         
 B8                                             | BUFGP                                  | 33    |
 XLXI_50/clk_1m1                                | BUFG                                   | 33    |
 XLXI_50/clk_1k1                                | BUFG                                   | 72    |
-DataState1(XLXI_173/XLXI_70:O)                 | BUFG(*)(XLXI_127/XLXI_1/mem_3_7)       | 256   |
+DataState1(XLXI_173/XLXI_70:O)                 | BUFG(*)(XLXI_127/XLXI_8/mem_3_7)       | 256   |
 LDC(XLXI_139/XLXI_1/XLXI_6:O)                  | NONE(*)(XLXI_202/XLXI_3/I_36_32)       | 9     |
 XLXN_184(XLXI_185:O)                           | NONE(*)(XLXI_178/XLXI_1/XLXI_2/I_Q0)   | 8     |
 XLXI_123/XLXI_123/Q                            | NONE(XLXI_168/XLXI_2/I_Q0)             | 17    |
 LDB(XLXI_139/XLXI_1/XLXI_3:O)                  | NONE(*)(XLXI_171/XLXI_2/I_Q0)          | 8     |
-InstrState1(XLXI_173/XLXI_69:O)                | BUFG(*)(XLXI_124/XLXI_1/mem_6_0)       | 256   |
+InstrState1(XLXI_173/XLXI_69:O)                | BUFG(*)(XLXI_124/XLXI_13/mem_6_0)      | 256   |
 XLXI_123/XLXI_128/O(XLXI_123/XLXI_128/I_36_8:O)| NONE(*)(XLXI_123/XLXI_115/I_Q7/I_36_35)| 8     |
 XLXI_114/O(XLXI_114/I_O:O)                     | NONE(*)(XLXI_123/XLXI_123/I_36_32)     | 1     |
 HLTCmd(XLXI_139/XLXI_5:O)                      | NONE(*)(XLXI_123/XLXI_141)             | 1     |
@@ -1672,10 +1697,10 @@ Delay:               2.470ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'XLXN_266'
-  Clock period: 3.967ns (frequency: 252.080MHz)
+  Clock period: 4.080ns (frequency: 245.098MHz)
   Total number of paths / destination ports: 4 / 2
 -------------------------------------------------------------------------
-Delay:               3.967ns (Levels of Logic = 2)
+Delay:               4.080ns (Levels of Logic = 2)
   Source:            XLXI_203/XLXI_11/I_36_32 (FF)
   Destination:       XLXI_203/XLXI_11/I_36_32 (FF)
   Source Clock:      XLXN_266 rising
@@ -1685,13 +1710,13 @@ Delay:               3.967ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              9   0.591   0.820  I_36_32 (Q)
+     FDC:C->Q             11   0.591   0.933  I_36_32 (Q)
      AND3B2:I2->O          1   0.704   0.420  I_36_37 (A0)
      OR3:I2->O             1   0.704   0.420  I_36_41 (AD)
      FDC:D                     0.308          I_36_32
     ----------------------------------------
-    Total                      3.967ns (2.307ns logic, 1.660ns route)
-                                       (58.2% logic, 41.8% route)
+    Total                      4.080ns (2.307ns logic, 1.773ns route)
+                                       (56.5% logic, 43.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'DataState1'
@@ -1699,10 +1724,10 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'DataState1'
 -------------------------------------------------------------------------
 Offset:              15.003ns (Levels of Logic = 10)
   Source:            ProgramMode (PAD)
-  Destination:       XLXI_127/XLXI_1/mem_3_7 (FF)
+  Destination:       XLXI_127/XLXI_8/mem_3_7 (FF)
   Destination Clock: DataState1 falling
 
-  Data Path: ProgramMode to XLXI_127/XLXI_1/mem_3_7
+  Data Path: ProgramMode to XLXI_127/XLXI_8/mem_3_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -1715,9 +1740,9 @@ Offset:              15.003ns (Levels of Logic = 10)
      OR2:I1->O             1   0.704   0.420  I_36_8 (O)
      end scope: 'XLXI_123/XLXI_136/XLXI_1'
      BUF:I->O            273   0.704   1.513  XLXI_124/XLXI_10_0 (AddrLEDs_0_OBUF)
-     LUT4:I0->O            4   0.704   0.762  XLXI_127/XLXI_1/mem_17_and000011 (XLXI_127/XLXI_1/N8)
-     LUT3:I0->O            8   0.704   0.757  XLXI_127/XLXI_1/mem_25_and00001 (XLXI_127/XLXI_1/mem_25_and0000)
-     FDE:CE                    0.555          XLXI_127/XLXI_1/mem_25_0
+     LUT4:I0->O            4   0.704   0.762  XLXI_127/XLXI_8/mem_17_and000011 (XLXI_127/XLXI_8/N8)
+     LUT3:I0->O            8   0.704   0.757  XLXI_127/XLXI_8/mem_25_and00001 (XLXI_127/XLXI_8/mem_25_and0000)
+     FDE:CE                    0.555          XLXI_127/XLXI_8/mem_25_0
     ----------------------------------------
     Total                     15.003ns (7.405ns logic, 7.598ns route)
                                        (49.4% logic, 50.6% route)
@@ -1744,12 +1769,12 @@ Offset:              18.411ns (Levels of Logic = 18)
      OR2:I1->O             1   0.704   0.420  I_36_8 (O)
      end scope: 'XLXI_123/XLXI_136/XLXI_1'
      BUF:I->O            273   0.704   1.513  XLXI_124/XLXI_10_0 (AddrLEDs_0_OBUF)
-     LUT3:I0->O            1   0.704   0.000  XLXI_127/XLXI_1/Mmux_Q_mux0000_6 (XLXI_127/XLXI_1/Mmux_Q_mux0000_6)
-     MUXF5:I1->O           1   0.321   0.000  XLXI_127/XLXI_1/Mmux_Q_mux0000_5_f5 (XLXI_127/XLXI_1/Mmux_Q_mux0000_5_f5)
-     MUXF6:I1->O           1   0.521   0.000  XLXI_127/XLXI_1/Mmux_Q_mux0000_4_f6 (XLXI_127/XLXI_1/Mmux_Q_mux0000_4_f6)
-     MUXF7:I1->O           1   0.521   0.000  XLXI_127/XLXI_1/Mmux_Q_mux0000_3_f7 (XLXI_127/XLXI_1/Mmux_Q_mux0000_3_f7)
-     MUXF8:I1->O           1   0.521   0.595  XLXI_127/XLXI_1/Mmux_Q_mux0000_2_f8 (XLXI_127/XLXI_1/Q_mux0000<0>)
-     LUT2:I0->O            1   0.704   0.420  XLXI_127/XLXI_1/Q<0>LogicTrst1 (XLXI_127/XLXN_4<0>)
+     LUT3:I0->O            1   0.704   0.000  XLXI_127/XLXI_8/Mmux_Q_mux0000_6 (XLXI_127/XLXI_8/Mmux_Q_mux0000_6)
+     MUXF5:I1->O           1   0.321   0.000  XLXI_127/XLXI_8/Mmux_Q_mux0000_5_f5 (XLXI_127/XLXI_8/Mmux_Q_mux0000_5_f5)
+     MUXF6:I1->O           1   0.521   0.000  XLXI_127/XLXI_8/Mmux_Q_mux0000_4_f6 (XLXI_127/XLXI_8/Mmux_Q_mux0000_4_f6)
+     MUXF7:I1->O           1   0.521   0.000  XLXI_127/XLXI_8/Mmux_Q_mux0000_3_f7 (XLXI_127/XLXI_8/Mmux_Q_mux0000_3_f7)
+     MUXF8:I1->O           1   0.521   0.595  XLXI_127/XLXI_8/Mmux_Q_mux0000_2_f8 (XLXI_127/XLXI_8/Q_mux0000<0>)
+     LUT2:I0->O            1   0.704   0.420  XLXI_127/XLXI_8/Q<0>LogicTrst1 (XLXI_127/XLXN_4<0>)
      begin scope: 'XLXI_127/XLXI_6/XLXI_1'
      AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
      OR2:I1->O             2   0.704   0.447  I_36_8 (O)
@@ -1766,10 +1791,10 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'InstrState1'
 -------------------------------------------------------------------------
 Offset:              15.003ns (Levels of Logic = 10)
   Source:            ProgramMode (PAD)
-  Destination:       XLXI_124/XLXI_1/mem_7_0 (FF)
+  Destination:       XLXI_124/XLXI_13/mem_7_0 (FF)
   Destination Clock: InstrState1 falling
 
-  Data Path: ProgramMode to XLXI_124/XLXI_1/mem_7_0
+  Data Path: ProgramMode to XLXI_124/XLXI_13/mem_7_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -1782,9 +1807,9 @@ Offset:              15.003ns (Levels of Logic = 10)
      OR2:I1->O             1   0.704   0.420  I_36_8 (O)
      end scope: 'XLXI_123/XLXI_136/XLXI_1'
      BUF:I->O            273   0.704   1.513  XLXI_124/XLXI_10_0 (AddrLEDs_0_OBUF)
-     LUT4:I0->O            4   0.704   0.762  XLXI_124/XLXI_1/mem_17_and000011 (XLXI_124/XLXI_1/N8)
-     LUT3:I0->O            8   0.704   0.757  XLXI_124/XLXI_1/mem_29_and00001 (XLXI_124/XLXI_1/mem_29_and0000)
-     FDE:CE                    0.555          XLXI_124/XLXI_1/mem_29_0
+     LUT4:I0->O            4   0.704   0.762  XLXI_124/XLXI_13/mem_17_and000011 (XLXI_124/XLXI_13/N8)
+     LUT3:I0->O            8   0.704   0.757  XLXI_124/XLXI_13/mem_29_and00001 (XLXI_124/XLXI_13/mem_29_and0000)
+     FDE:CE                    0.555          XLXI_124/XLXI_13/mem_29_0
     ----------------------------------------
     Total                     15.003ns (7.405ns logic, 7.598ns route)
                                        (49.4% logic, 50.6% route)
@@ -1841,9 +1866,9 @@ Offset:              5.839ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXN_266'
-  Total number of paths / destination ports: 108 / 1
+  Total number of paths / destination ports: 217 / 1
 -------------------------------------------------------------------------
-Offset:              19.509ns (Levels of Logic = 16)
+Offset:              20.297ns (Levels of Logic = 16)
   Source:            XLXI_203/XLXI_11/I_36_32 (FF)
   Destination:       Overflow (PAD)
   Source Clock:      XLXN_266 rising
@@ -1852,7 +1877,7 @@ Offset:              19.509ns (Levels of Logic = 16)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              9   0.591   0.820  I_36_32 (Q)
+     FDC:C->Q             11   0.591   0.933  I_36_32 (Q)
      end scope: 'XLXI_203/XLXI_11'
      AND2:I0->O           16   0.704   1.034  XLXI_203/XLXI_3/XLXI_29 (XLXI_203/XLXI_3/XLXN_34)
      begin scope: 'XLXI_203/XLXI_3/XLXI_26/XLXI_1'
@@ -1865,20 +1890,20 @@ Offset:              19.509ns (Levels of Logic = 16)
      LUT4:I3->O            1   0.704   0.455  XLXI_203/XLXI_39/summy8/FA3/Cout1 (XLXI_203/XLXI_39/summy8/t<3>)
      LUT4:I2->O            1   0.704   0.424  XLXI_203/XLXI_39/summy8/FA5/Cout1_SW0 (N68)
      LUT4:I3->O            1   0.704   0.455  XLXI_203/XLXI_39/summy8/FA5/Cout1 (XLXI_203/XLXI_39/summy8/t<5>)
-     LUT4:I2->O            1   0.704   0.424  XLXI_203/XLXI_39/OVF1_SW0 (N66)
-     LUT4:I3->O            1   0.704   0.420  XLXI_203/XLXI_39/OVF1 (XLXI_203/XLXN_137)
-     AND2B1:I1->O          1   0.704   0.420  XLXI_203/XLXI_49 (XLXI_203/XLXN_136)
-     OR2:I1->O             1   0.704   0.420  XLXI_203/XLXI_45 (Overflow_OBUF)
+     LUT4:I2->O            2   0.704   0.451  XLXI_203/XLXI_39/summy8/FA7/Cout1_SW0 (N66)
+     LUT4:I3->O            1   0.704   0.420  XLXI_203/XLXI_39/C<2>11 (XLXI_203/XLXN_167)
+     AND2B1:I1->O         18   0.704   1.068  XLXI_203/XLXI_57 (XLXI_203/XLXN_174)
+     OR4:I3->O             1   0.704   0.420  XLXI_203/XLXI_58 (Overflow_OBUF)
      OBUF:I->O                 3.272          Overflow_OBUF (Overflow)
     ----------------------------------------
-    Total                     19.509ns (12.632ns logic, 6.877ns route)
-                                       (64.7% logic, 35.3% route)
+    Total                     20.297ns (12.632ns logic, 7.665ns route)
+                                       (62.2% logic, 37.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'LDB'
-  Total number of paths / destination ports: 260 / 8
+  Total number of paths / destination ports: 464 / 8
 -------------------------------------------------------------------------
-Offset:              20.858ns (Levels of Logic = 20)
+Offset:              21.533ns (Levels of Logic = 20)
   Source:            XLXI_171/XLXI_2/I_Q0 (FF)
   Destination:       Overflow (PAD)
   Source Clock:      LDB rising
@@ -1905,20 +1930,20 @@ Offset:              20.858ns (Levels of Logic = 20)
      LUT4:I3->O            1   0.704   0.455  XLXI_203/XLXI_39/summy8/FA3/Cout1 (XLXI_203/XLXI_39/summy8/t<3>)
      LUT4:I2->O            1   0.704   0.424  XLXI_203/XLXI_39/summy8/FA5/Cout1_SW0 (N68)
      LUT4:I3->O            1   0.704   0.455  XLXI_203/XLXI_39/summy8/FA5/Cout1 (XLXI_203/XLXI_39/summy8/t<5>)
-     LUT4:I2->O            1   0.704   0.424  XLXI_203/XLXI_39/OVF1_SW0 (N66)
-     LUT4:I3->O            1   0.704   0.420  XLXI_203/XLXI_39/OVF1 (XLXI_203/XLXN_137)
-     AND2B1:I1->O          1   0.704   0.420  XLXI_203/XLXI_49 (XLXI_203/XLXN_136)
-     OR2:I1->O             1   0.704   0.420  XLXI_203/XLXI_45 (Overflow_OBUF)
+     LUT4:I2->O            2   0.704   0.451  XLXI_203/XLXI_39/summy8/FA7/Cout1_SW0 (N66)
+     LUT4:I3->O            1   0.704   0.420  XLXI_203/XLXI_39/C<2>11 (XLXI_203/XLXN_167)
+     AND2B1:I1->O         18   0.704   1.068  XLXI_203/XLXI_57 (XLXI_203/XLXN_174)
+     OR4:I3->O             1   0.704   0.420  XLXI_203/XLXI_58 (Overflow_OBUF)
      OBUF:I->O                 3.272          Overflow_OBUF (Overflow)
     ----------------------------------------
-    Total                     20.858ns (14.604ns logic, 6.254ns route)
-                                       (70.0% logic, 30.0% route)
+    Total                     21.533ns (14.604ns logic, 6.929ns route)
+                                       (67.8% logic, 32.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXN_184'
-  Total number of paths / destination ports: 330 / 8
+  Total number of paths / destination ports: 604 / 8
 -------------------------------------------------------------------------
-Offset:              20.902ns (Levels of Logic = 20)
+Offset:              21.577ns (Levels of Logic = 20)
   Source:            XLXI_178/XLXI_1/XLXI_2/I_Q0 (FF)
   Destination:       Overflow (PAD)
   Source Clock:      XLXN_184 rising
@@ -1945,14 +1970,14 @@ Offset:              20.902ns (Levels of Logic = 20)
      LUT4:I3->O            1   0.704   0.455  XLXI_203/XLXI_39/summy8/FA3/Cout1 (XLXI_203/XLXI_39/summy8/t<3>)
      LUT4:I2->O            1   0.704   0.424  XLXI_203/XLXI_39/summy8/FA5/Cout1_SW0 (N68)
      LUT4:I3->O            1   0.704   0.455  XLXI_203/XLXI_39/summy8/FA5/Cout1 (XLXI_203/XLXI_39/summy8/t<5>)
-     LUT4:I2->O            1   0.704   0.424  XLXI_203/XLXI_39/OVF1_SW0 (N66)
-     LUT4:I3->O            1   0.704   0.420  XLXI_203/XLXI_39/OVF1 (XLXI_203/XLXN_137)
-     AND2B1:I1->O          1   0.704   0.420  XLXI_203/XLXI_49 (XLXI_203/XLXN_136)
-     OR2:I1->O             1   0.704   0.420  XLXI_203/XLXI_45 (Overflow_OBUF)
+     LUT4:I2->O            2   0.704   0.451  XLXI_203/XLXI_39/summy8/FA7/Cout1_SW0 (N66)
+     LUT4:I3->O            1   0.704   0.420  XLXI_203/XLXI_39/C<2>11 (XLXI_203/XLXN_167)
+     AND2B1:I1->O         18   0.704   1.068  XLXI_203/XLXI_57 (XLXI_203/XLXN_174)
+     OR4:I3->O             1   0.704   0.420  XLXI_203/XLXI_58 (Overflow_OBUF)
      OBUF:I->O                 3.272          Overflow_OBUF (Overflow)
     ----------------------------------------
-    Total                     20.902ns (14.604ns logic, 6.298ns route)
-                                       (69.9% logic, 30.1% route)
+    Total                     21.577ns (14.604ns logic, 6.973ns route)
+                                       (67.7% logic, 32.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_114/O'
@@ -2014,12 +2039,12 @@ Offset:              24.068ns (Levels of Logic = 25)
      OR2:I0->O             1   0.704   0.420  I_36_8 (O)
      end scope: 'XLXI_123/XLXI_136/XLXI_1'
      BUF:I->O            273   0.704   1.513  XLXI_124/XLXI_10_0 (AddrLEDs_0_OBUF)
-     LUT3:I0->O            1   0.704   0.000  XLXI_127/XLXI_1/Mmux_Q_mux0000_6 (XLXI_127/XLXI_1/Mmux_Q_mux0000_6)
-     MUXF5:I1->O           1   0.321   0.000  XLXI_127/XLXI_1/Mmux_Q_mux0000_5_f5 (XLXI_127/XLXI_1/Mmux_Q_mux0000_5_f5)
-     MUXF6:I1->O           1   0.521   0.000  XLXI_127/XLXI_1/Mmux_Q_mux0000_4_f6 (XLXI_127/XLXI_1/Mmux_Q_mux0000_4_f6)
-     MUXF7:I1->O           1   0.521   0.000  XLXI_127/XLXI_1/Mmux_Q_mux0000_3_f7 (XLXI_127/XLXI_1/Mmux_Q_mux0000_3_f7)
-     MUXF8:I1->O           1   0.521   0.595  XLXI_127/XLXI_1/Mmux_Q_mux0000_2_f8 (XLXI_127/XLXI_1/Q_mux0000<0>)
-     LUT2:I0->O            1   0.704   0.420  XLXI_127/XLXI_1/Q<0>LogicTrst1 (XLXI_127/XLXN_4<0>)
+     LUT3:I0->O            1   0.704   0.000  XLXI_127/XLXI_8/Mmux_Q_mux0000_6 (XLXI_127/XLXI_8/Mmux_Q_mux0000_6)
+     MUXF5:I1->O           1   0.321   0.000  XLXI_127/XLXI_8/Mmux_Q_mux0000_5_f5 (XLXI_127/XLXI_8/Mmux_Q_mux0000_5_f5)
+     MUXF6:I1->O           1   0.521   0.000  XLXI_127/XLXI_8/Mmux_Q_mux0000_4_f6 (XLXI_127/XLXI_8/Mmux_Q_mux0000_4_f6)
+     MUXF7:I1->O           1   0.521   0.000  XLXI_127/XLXI_8/Mmux_Q_mux0000_3_f7 (XLXI_127/XLXI_8/Mmux_Q_mux0000_3_f7)
+     MUXF8:I1->O           1   0.521   0.595  XLXI_127/XLXI_8/Mmux_Q_mux0000_2_f8 (XLXI_127/XLXI_8/Q_mux0000<0>)
+     LUT2:I0->O            1   0.704   0.420  XLXI_127/XLXI_8/Q<0>LogicTrst1 (XLXI_127/XLXN_4<0>)
      begin scope: 'XLXI_127/XLXI_6/XLXI_1'
      AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
      OR2:I1->O             2   0.704   0.447  I_36_8 (O)
@@ -2062,12 +2087,12 @@ Offset:              23.676ns (Levels of Logic = 25)
      OR2:I1->O             1   0.704   0.420  I_36_8 (O)
      end scope: 'XLXI_123/XLXI_136/XLXI_1'
      BUF:I->O            273   0.704   1.513  XLXI_124/XLXI_10_0 (AddrLEDs_0_OBUF)
-     LUT3:I0->O            1   0.704   0.000  XLXI_127/XLXI_1/Mmux_Q_mux0000_6 (XLXI_127/XLXI_1/Mmux_Q_mux0000_6)
-     MUXF5:I1->O           1   0.321   0.000  XLXI_127/XLXI_1/Mmux_Q_mux0000_5_f5 (XLXI_127/XLXI_1/Mmux_Q_mux0000_5_f5)
-     MUXF6:I1->O           1   0.521   0.000  XLXI_127/XLXI_1/Mmux_Q_mux0000_4_f6 (XLXI_127/XLXI_1/Mmux_Q_mux0000_4_f6)
-     MUXF7:I1->O           1   0.521   0.000  XLXI_127/XLXI_1/Mmux_Q_mux0000_3_f7 (XLXI_127/XLXI_1/Mmux_Q_mux0000_3_f7)
-     MUXF8:I1->O           1   0.521   0.595  XLXI_127/XLXI_1/Mmux_Q_mux0000_2_f8 (XLXI_127/XLXI_1/Q_mux0000<0>)
-     LUT2:I0->O            1   0.704   0.420  XLXI_127/XLXI_1/Q<0>LogicTrst1 (XLXI_127/XLXN_4<0>)
+     LUT3:I0->O            1   0.704   0.000  XLXI_127/XLXI_8/Mmux_Q_mux0000_6 (XLXI_127/XLXI_8/Mmux_Q_mux0000_6)
+     MUXF5:I1->O           1   0.321   0.000  XLXI_127/XLXI_8/Mmux_Q_mux0000_5_f5 (XLXI_127/XLXI_8/Mmux_Q_mux0000_5_f5)
+     MUXF6:I1->O           1   0.521   0.000  XLXI_127/XLXI_8/Mmux_Q_mux0000_4_f6 (XLXI_127/XLXI_8/Mmux_Q_mux0000_4_f6)
+     MUXF7:I1->O           1   0.521   0.000  XLXI_127/XLXI_8/Mmux_Q_mux0000_3_f7 (XLXI_127/XLXI_8/Mmux_Q_mux0000_3_f7)
+     MUXF8:I1->O           1   0.521   0.595  XLXI_127/XLXI_8/Mmux_Q_mux0000_2_f8 (XLXI_127/XLXI_8/Q_mux0000<0>)
+     LUT2:I0->O            1   0.704   0.420  XLXI_127/XLXI_8/Q<0>LogicTrst1 (XLXI_127/XLXN_4<0>)
      begin scope: 'XLXI_127/XLXI_6/XLXI_1'
      AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
      OR2:I1->O             2   0.704   0.447  I_36_8 (O)
@@ -2094,21 +2119,21 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'DataState1'
   Total number of paths / destination ports: 1792 / 7
 -------------------------------------------------------------------------
 Offset:              18.828ns (Levels of Logic = 20)
-  Source:            XLXI_127/XLXI_1/mem_0_0 (FF)
+  Source:            XLXI_127/XLXI_8/mem_0_0 (FF)
   Destination:       sseg<6> (PAD)
   Source Clock:      DataState1 falling
 
-  Data Path: XLXI_127/XLXI_1/mem_0_0 to sseg<6>
+  Data Path: XLXI_127/XLXI_8/mem_0_0 to sseg<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              1   0.591   0.499  XLXI_127/XLXI_1/mem_0_0 (XLXI_127/XLXI_1/mem_0_0)
-     LUT3:I1->O            1   0.704   0.000  XLXI_127/XLXI_1/Mmux_Q_mux0000_10 (XLXI_127/XLXI_1/Mmux_Q_mux0000_10)
-     MUXF5:I0->O           1   0.321   0.000  XLXI_127/XLXI_1/Mmux_Q_mux0000_8_f5 (XLXI_127/XLXI_1/Mmux_Q_mux0000_8_f5)
-     MUXF6:I0->O           1   0.521   0.000  XLXI_127/XLXI_1/Mmux_Q_mux0000_6_f6 (XLXI_127/XLXI_1/Mmux_Q_mux0000_6_f6)
-     MUXF7:I0->O           1   0.521   0.000  XLXI_127/XLXI_1/Mmux_Q_mux0000_4_f7 (XLXI_127/XLXI_1/Mmux_Q_mux0000_4_f7)
-     MUXF8:I0->O           1   0.521   0.595  XLXI_127/XLXI_1/Mmux_Q_mux0000_2_f8 (XLXI_127/XLXI_1/Q_mux0000<0>)
-     LUT2:I0->O            1   0.704   0.420  XLXI_127/XLXI_1/Q<0>LogicTrst1 (XLXI_127/XLXN_4<0>)
+     FDE:C->Q              1   0.591   0.499  XLXI_127/XLXI_8/mem_0_0 (XLXI_127/XLXI_8/mem_0_0)
+     LUT3:I1->O            1   0.704   0.000  XLXI_127/XLXI_8/Mmux_Q_mux0000_10 (XLXI_127/XLXI_8/Mmux_Q_mux0000_10)
+     MUXF5:I0->O           1   0.321   0.000  XLXI_127/XLXI_8/Mmux_Q_mux0000_8_f5 (XLXI_127/XLXI_8/Mmux_Q_mux0000_8_f5)
+     MUXF6:I0->O           1   0.521   0.000  XLXI_127/XLXI_8/Mmux_Q_mux0000_6_f6 (XLXI_127/XLXI_8/Mmux_Q_mux0000_6_f6)
+     MUXF7:I0->O           1   0.521   0.000  XLXI_127/XLXI_8/Mmux_Q_mux0000_4_f7 (XLXI_127/XLXI_8/Mmux_Q_mux0000_4_f7)
+     MUXF8:I0->O           1   0.521   0.595  XLXI_127/XLXI_8/Mmux_Q_mux0000_2_f8 (XLXI_127/XLXI_8/Q_mux0000<0>)
+     LUT2:I0->O            1   0.704   0.420  XLXI_127/XLXI_8/Q<0>LogicTrst1 (XLXI_127/XLXN_4<0>)
      begin scope: 'XLXI_127/XLXI_6/XLXI_1'
      AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
      OR2:I1->O             2   0.704   0.447  I_36_8 (O)
@@ -2135,21 +2160,21 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'InstrState1'
   Total number of paths / destination ports: 1792 / 7
 -------------------------------------------------------------------------
 Offset:              18.797ns (Levels of Logic = 20)
-  Source:            XLXI_124/XLXI_1/mem_0_0 (FF)
+  Source:            XLXI_124/XLXI_13/mem_0_0 (FF)
   Destination:       sseg<6> (PAD)
   Source Clock:      InstrState1 falling
 
-  Data Path: XLXI_124/XLXI_1/mem_0_0 to sseg<6>
+  Data Path: XLXI_124/XLXI_13/mem_0_0 to sseg<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              1   0.591   0.499  XLXI_124/XLXI_1/mem_0_0 (XLXI_124/XLXI_1/mem_0_0)
-     LUT3:I1->O            1   0.704   0.000  XLXI_124/XLXI_1/Mmux_Q_mux0000_10 (XLXI_124/XLXI_1/Mmux_Q_mux0000_10)
-     MUXF5:I0->O           1   0.321   0.000  XLXI_124/XLXI_1/Mmux_Q_mux0000_8_f5 (XLXI_124/XLXI_1/Mmux_Q_mux0000_8_f5)
-     MUXF6:I0->O           1   0.521   0.000  XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6 (XLXI_124/XLXI_1/Mmux_Q_mux0000_6_f6)
-     MUXF7:I0->O           1   0.521   0.000  XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7 (XLXI_124/XLXI_1/Mmux_Q_mux0000_4_f7)
-     MUXF8:I0->O           1   0.521   0.595  XLXI_124/XLXI_1/Mmux_Q_mux0000_2_f8 (XLXI_124/XLXI_1/Q_mux0000<0>)
-     LUT2:I0->O            1   0.704   0.420  XLXI_124/XLXI_1/Q<0>LogicTrst1 (XLXI_124/AddrContent<0>)
+     FDE:C->Q              1   0.591   0.499  XLXI_124/XLXI_13/mem_0_0 (XLXI_124/XLXI_13/mem_0_0)
+     LUT3:I1->O            1   0.704   0.000  XLXI_124/XLXI_13/Mmux_Q_mux0000_10 (XLXI_124/XLXI_13/Mmux_Q_mux0000_10)
+     MUXF5:I0->O           1   0.321   0.000  XLXI_124/XLXI_13/Mmux_Q_mux0000_8_f5 (XLXI_124/XLXI_13/Mmux_Q_mux0000_8_f5)
+     MUXF6:I0->O           1   0.521   0.000  XLXI_124/XLXI_13/Mmux_Q_mux0000_6_f6 (XLXI_124/XLXI_13/Mmux_Q_mux0000_6_f6)
+     MUXF7:I0->O           1   0.521   0.000  XLXI_124/XLXI_13/Mmux_Q_mux0000_4_f7 (XLXI_124/XLXI_13/Mmux_Q_mux0000_4_f7)
+     MUXF8:I0->O           1   0.521   0.595  XLXI_124/XLXI_13/Mmux_Q_mux0000_2_f8 (XLXI_124/XLXI_13/Q_mux0000<0>)
+     LUT2:I0->O            1   0.704   0.420  XLXI_124/XLXI_13/Q<0>LogicTrst1 (XLXI_124/AddrContent<0>)
      begin scope: 'XLXI_124/XLXI_11/XLXI_1'
      AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
      OR2:I1->O             2   0.704   0.447  I_36_8 (O)
@@ -2214,12 +2239,12 @@ Delay:               29.259ns (Levels of Logic = 28)
      OR2:I1->O             1   0.704   0.420  I_36_8 (O)
      end scope: 'XLXI_123/XLXI_136/XLXI_1'
      BUF:I->O            273   0.704   1.513  XLXI_124/XLXI_10_0 (AddrLEDs_0_OBUF)
-     LUT3:I0->O            1   0.704   0.000  XLXI_127/XLXI_1/Mmux_Q_mux0000_6 (XLXI_127/XLXI_1/Mmux_Q_mux0000_6)
-     MUXF5:I1->O           1   0.321   0.000  XLXI_127/XLXI_1/Mmux_Q_mux0000_5_f5 (XLXI_127/XLXI_1/Mmux_Q_mux0000_5_f5)
-     MUXF6:I1->O           1   0.521   0.000  XLXI_127/XLXI_1/Mmux_Q_mux0000_4_f6 (XLXI_127/XLXI_1/Mmux_Q_mux0000_4_f6)
-     MUXF7:I1->O           1   0.521   0.000  XLXI_127/XLXI_1/Mmux_Q_mux0000_3_f7 (XLXI_127/XLXI_1/Mmux_Q_mux0000_3_f7)
-     MUXF8:I1->O           1   0.521   0.595  XLXI_127/XLXI_1/Mmux_Q_mux0000_2_f8 (XLXI_127/XLXI_1/Q_mux0000<0>)
-     LUT2:I0->O            1   0.704   0.420  XLXI_127/XLXI_1/Q<0>LogicTrst1 (XLXI_127/XLXN_4<0>)
+     LUT3:I0->O            1   0.704   0.000  XLXI_127/XLXI_8/Mmux_Q_mux0000_6 (XLXI_127/XLXI_8/Mmux_Q_mux0000_6)
+     MUXF5:I1->O           1   0.321   0.000  XLXI_127/XLXI_8/Mmux_Q_mux0000_5_f5 (XLXI_127/XLXI_8/Mmux_Q_mux0000_5_f5)
+     MUXF6:I1->O           1   0.521   0.000  XLXI_127/XLXI_8/Mmux_Q_mux0000_4_f6 (XLXI_127/XLXI_8/Mmux_Q_mux0000_4_f6)
+     MUXF7:I1->O           1   0.521   0.000  XLXI_127/XLXI_8/Mmux_Q_mux0000_3_f7 (XLXI_127/XLXI_8/Mmux_Q_mux0000_3_f7)
+     MUXF8:I1->O           1   0.521   0.595  XLXI_127/XLXI_8/Mmux_Q_mux0000_2_f8 (XLXI_127/XLXI_8/Q_mux0000<0>)
+     LUT2:I0->O            1   0.704   0.420  XLXI_127/XLXI_8/Q<0>LogicTrst1 (XLXI_127/XLXN_4<0>)
      begin scope: 'XLXI_127/XLXI_6/XLXI_1'
      AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
      OR2:I1->O             2   0.704   0.447  I_36_8 (O)
@@ -2244,14 +2269,14 @@ Delay:               29.259ns (Levels of Logic = 28)
 =========================================================================
 
 
-Total REAL time to Xst completion: 67.00 secs
-Total CPU time to Xst completion: 67.11 secs
+Total REAL time to Xst completion: 99.00 secs
+Total CPU time to Xst completion: 98.67 secs
  
 --> 
 
-Total memory usage is 439452 kilobytes
+Total memory usage is 455692 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   72 (   0 filtered)
+Number of warnings :   75 (   0 filtered)
 Number of infos    :    9 (   0 filtered)
 

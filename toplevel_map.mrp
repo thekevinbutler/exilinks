@@ -9,7 +9,7 @@ Target Device  : xc3s100e
 Target Package : cp132
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Tue May 09 11:31:52 2017
+Mapped Date    : Tue May 09 14:24:49 2017
 
 Design Summary
 --------------
@@ -17,14 +17,14 @@ Number of errors:      0
 Number of warnings:    8
 Logic Utilization:
   Number of Slice Flip Flops:           703 out of   1,920   36%
-  Number of 4 input LUTs:               740 out of   1,920   38%
+  Number of 4 input LUTs:               768 out of   1,920   40%
 Logic Distribution:
-  Number of occupied Slices:            711 out of     960   74%
-    Number of Slices containing only related logic:     711 out of     711 100%
-    Number of Slices containing unrelated logic:          0 out of     711   0%
+  Number of occupied Slices:            723 out of     960   75%
+    Number of Slices containing only related logic:     723 out of     723 100%
+    Number of Slices containing unrelated logic:          0 out of     723   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         839 out of   1,920   43%
-    Number used as logic:               740
+  Total Number of 4 input LUTs:         867 out of   1,920   45%
+    Number used as logic:               768
     Number used as a route-thru:         99
 
   The Slice Logic Distribution report is not meaningful if the design is
@@ -33,12 +33,12 @@ Logic Distribution:
   Number of bonded IOBs:                 38 out of      83   45%
   Number of BUFGMUXs:                     5 out of      24   20%
 
-  Number of RPM macros:           15
-Average Fanout of Non-Clock Nets:                2.69
+  Number of RPM macros:           16
+Average Fanout of Non-Clock Nets:                2.67
 
 Peak Memory Usage:  373 MB
-Total REAL time to MAP completion:  10 secs 
-Total CPU time to MAP completion:   10 secs 
+Total REAL time to MAP completion:  9 secs 
+Total CPU time to MAP completion:   9 secs 
 
 NOTES:
 
@@ -108,7 +108,7 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net HLTCmd is sourced by a
 Section 3 - Informational
 -------------------------
 INFO:LIT:243 - Logical network XLXI_123/XLXI_115/CEO has no load.
-INFO:LIT:395 - The above info message is repeated 7 more times for the following
+INFO:LIT:395 - The above info message is repeated 8 more times for the following
    (max. 5 shown):
    XLXI_123/XLXI_136/XLXI_8/O,
    XLXI_123/XLXI_136/XLXI_7/O,
@@ -123,9 +123,9 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-  58 block(s) removed
-  88 block(s) optimized away
-  80 signal(s) removed
+  61 block(s) removed
+  89 block(s) optimized away
+  83 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -232,6 +232,10 @@ The signal "XLXI_203/XLXI_31/XLXI_10/CO" is sourceless and has been removed.
  Sourceless block "XLXI_203/XLXI_31/XLXI_10/I_36_239" (XOR) removed.
   The signal "XLXI_203/XLXI_31/XLXI_10/OFL" is sourceless and has been removed.
 The signal "XLXI_203/XLXI_31/XLXI_10/dummy" is sourceless and has been removed.
+The signal "XLXI_203/XLXI_60/XLXI_2/CO" is sourceless and has been removed.
+ Sourceless block "XLXI_203/XLXI_60/XLXI_2/I_36_239" (XOR) removed.
+  The signal "XLXI_203/XLXI_60/XLXI_2/OFL" is sourceless and has been removed.
+The signal "XLXI_203/XLXI_60/XLXI_2/dummy" is sourceless and has been removed.
 The signal "XLXI_203/XLXI_32/CO" is sourceless and has been removed.
  Sourceless block "XLXI_203/XLXI_32/I_36_221" (XOR) removed.
   The signal "XLXI_203/XLXI_32/OFL" is sourceless and has been removed.
@@ -284,10 +288,12 @@ Unused block "XLXI_203/XLXI_2/XLXI_10/XST_GND" (ZERO) removed.
 Unused block "XLXI_203/XLXI_3/XLXI_10/XST_GND" (ZERO) removed.
 Unused block "XLXI_203/XLXI_31/XLXI_10/XST_GND" (ZERO) removed.
 Unused block "XLXI_203/XLXI_32/XST_GND" (ZERO) removed.
+Unused block "XLXI_203/XLXI_60/XLXI_2/XST_GND" (ZERO) removed.
 Unused block "XLXI_203/XLXI_2/XLXI_10/I_36_64" (MUX) removed.
 Unused block "XLXI_203/XLXI_3/XLXI_10/I_36_64" (MUX) removed.
 Unused block "XLXI_203/XLXI_31/XLXI_10/I_36_64" (MUX) removed.
 Unused block "XLXI_203/XLXI_32/I_36_64" (MUX) removed.
+Unused block "XLXI_203/XLXI_60/XLXI_2/I_36_64" (MUX) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
@@ -384,6 +390,7 @@ PULLDOWN 		XLXI_203/XLXI_31/XLXI_25_4
 PULLDOWN 		XLXI_203/XLXI_31/XLXI_25_5
 PULLDOWN 		XLXI_203/XLXI_31/XLXI_25_6
 PULLDOWN 		XLXI_203/XLXI_31/XLXI_25_7
+PULLUP 		XLXI_203/XLXI_60/XLXI_3
 INV 		XLXI_50/RST_inv1_INV_0
 PULLUP 		XLXI_65
 INV 		XLXI_9/sseg_7_not00001_INV_0
@@ -448,21 +455,22 @@ Section 6 - IOB Properties
 
 Section 7 - RPMs
 ----------------
-XLXI_123/XLXI_115/XLXI_115_I_Q0_85      
-XLXI_123/XLXI_115/XLXI_115_I_Q1_84      
-XLXI_123/XLXI_115/XLXI_115_I_Q2_83      
-XLXI_123/XLXI_115/XLXI_115_I_Q3_82      
-XLXI_123/XLXI_115/XLXI_115_I_Q4_81      
-XLXI_123/XLXI_115/XLXI_115_I_Q5_80      
-XLXI_123_XLXI_123_95                    
-XLXI_123_XLXI_124_96                    
-XLXI_202_XLXI_3_71                      
-XLXI_203_XLXI_10_67                     
-XLXI_203_XLXI_11_68                     
-XLXI_203_XLXI_2_XLXI_10_66              
-XLXI_203_XLXI_31_XLXI_10_66             
-XLXI_203_XLXI_32_69                     
-XLXI_203_XLXI_3_XLXI_10_66              
+XLXI_123/XLXI_115/XLXI_115_I_Q0_89      
+XLXI_123/XLXI_115/XLXI_115_I_Q1_88      
+XLXI_123/XLXI_115/XLXI_115_I_Q2_87      
+XLXI_123/XLXI_115/XLXI_115_I_Q3_86      
+XLXI_123/XLXI_115/XLXI_115_I_Q4_85      
+XLXI_123/XLXI_115/XLXI_115_I_Q5_84      
+XLXI_123_XLXI_123_99                    
+XLXI_123_XLXI_124_100                   
+XLXI_202_XLXI_3_75                      
+XLXI_203_XLXI_10_71                     
+XLXI_203_XLXI_11_72                     
+XLXI_203_XLXI_2_XLXI_10_70              
+XLXI_203_XLXI_31_XLXI_10_70             
+XLXI_203_XLXI_32_73                     
+XLXI_203_XLXI_3_XLXI_10_70              
+XLXI_203_XLXI_60_XLXI_2_69              
 
 Section 8 - Guide Report
 ------------------------

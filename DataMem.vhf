@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : DataMem.vhf
--- /___/   /\     Timestamp : 05/09/2017 09:57:35
+-- /___/   /\     Timestamp : 05/09/2017 11:42:51
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -99,14 +99,14 @@ architecture BEHAVIORAL of mux8x2to1_MUSER_DataMem is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_47";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_48";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_49";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_50";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_51";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_52";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_53";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_54";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_54";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_55";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_56";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_57";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_58";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_59";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_60";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_61";
 begin
    XLXI_1 : M2_1_MXILINX_DataMem
       port map (D0=>A(0),
@@ -178,15 +178,6 @@ architecture BEHAVIORAL of DataMem is
    signal XLXN_2   : std_logic;
    signal XLXN_3   : std_logic;
    signal XLXN_4   : std_logic_vector (7 downto 0);
-   component sRAM32x8_ex_pgm_data
-      port ( nCS  : in    std_logic; 
-             nWE  : in    std_logic; 
-             WCLK : in    std_logic; 
-             A    : in    std_logic_vector (4 downto 0); 
-             D    : in    std_logic_vector (7 downto 0); 
-             Q    : out   std_logic_vector (7 downto 0));
-   end component;
-   
    component PULLDOWN
       port ( O : out   std_logic);
    end component;
@@ -205,15 +196,16 @@ architecture BEHAVIORAL of DataMem is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-begin
-   XLXI_1 : sRAM32x8_ex_pgm_data
-      port map (A(4 downto 0)=>AddrIn(4 downto 0),
-                D(7 downto 0)=>DataIn(7 downto 0),
-                nCS=>XLXN_2,
-                nWE=>XLXN_2,
-                WCLK=>XLXN_3,
-                Q(7 downto 0)=>XLXN_4(7 downto 0));
+   component sRAM32x8_pgmC_data
+      port ( nCS  : in    std_logic; 
+             nWE  : in    std_logic; 
+             WCLK : in    std_logic; 
+             A    : in    std_logic_vector (4 downto 0); 
+             D    : in    std_logic_vector (7 downto 0); 
+             Q    : out   std_logic_vector (7 downto 0));
+   end component;
    
+begin
    XLXI_5 : PULLDOWN
       port map (O=>XLXN_2);
    
@@ -226,6 +218,14 @@ begin
    XLXI_7 : INV
       port map (I=>EditMode,
                 O=>XLXN_3);
+   
+   XLXI_8 : sRAM32x8_pgmC_data
+      port map (A(4 downto 0)=>AddrIn(4 downto 0),
+                D(7 downto 0)=>DataIn(7 downto 0),
+                nCS=>XLXN_2,
+                nWE=>XLXN_2,
+                WCLK=>XLXN_3,
+                Q(7 downto 0)=>XLXN_4(7 downto 0));
    
 end BEHAVIORAL;
 

@@ -17,19 +17,6 @@
         <port polarity="Input" name="DataIn(7:0)" />
         <port polarity="Output" name="DataOut(7:0)" />
         <port polarity="Input" name="EditMode" />
-        <blockdef name="sRAM32x8_ex_pgm_data">
-            <timestamp>2017-5-6T4:16:48</timestamp>
-            <rect width="256" x="64" y="-320" height="320" />
-            <line x2="0" y1="-288" y2="-288" x1="64" />
-            <line x2="0" y1="-224" y2="-224" x1="64" />
-            <line x2="0" y1="-160" y2="-160" x1="64" />
-            <rect width="64" x="0" y="-108" height="24" />
-            <line x2="0" y1="-96" y2="-96" x1="64" />
-            <rect width="64" x="0" y="-44" height="24" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
-            <rect width="64" x="320" y="-300" height="24" />
-            <line x2="384" y1="-288" y2="-288" x1="320" />
-        </blockdef>
         <blockdef name="pulldown">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-160" y2="-128" x1="64" />
@@ -64,14 +51,19 @@
             <line x2="64" y1="0" y2="-64" x1="64" />
             <circle r="16" cx="144" cy="-32" />
         </blockdef>
-        <block symbolname="sRAM32x8_ex_pgm_data" name="XLXI_1">
-            <blockpin signalname="XLXN_2" name="nCS" />
-            <blockpin signalname="XLXN_2" name="nWE" />
-            <blockpin signalname="XLXN_3" name="WCLK" />
-            <blockpin signalname="AddrIn(4:0)" name="A(4:0)" />
-            <blockpin signalname="DataIn(7:0)" name="D(7:0)" />
-            <blockpin signalname="XLXN_4(7:0)" name="Q(7:0)" />
-        </block>
+        <blockdef name="sRAM32x8_pgmC_data">
+            <timestamp>2017-5-9T18:40:28</timestamp>
+            <rect width="256" x="64" y="-320" height="320" />
+            <line x2="0" y1="-288" y2="-288" x1="64" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="320" y="-300" height="24" />
+            <line x2="384" y1="-288" y2="-288" x1="320" />
+        </blockdef>
         <block symbolname="pulldown" name="XLXI_5">
             <blockpin signalname="XLXN_2" name="O" />
         </block>
@@ -85,10 +77,16 @@
             <blockpin signalname="EditMode" name="I" />
             <blockpin signalname="XLXN_3" name="O" />
         </block>
+        <block symbolname="sRAM32x8_pgmC_data" name="XLXI_8">
+            <blockpin signalname="XLXN_2" name="nCS" />
+            <blockpin signalname="XLXN_2" name="nWE" />
+            <blockpin signalname="XLXN_3" name="WCLK" />
+            <blockpin signalname="AddrIn(4:0)" name="A(4:0)" />
+            <blockpin signalname="DataIn(7:0)" name="D(7:0)" />
+            <blockpin signalname="XLXN_4(7:0)" name="Q(7:0)" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <instance x="1392" y="1104" name="XLXI_1" orien="R0">
-        </instance>
         <branch name="XLXN_2">
             <wire x2="1376" y1="848" y2="848" x1="1328" />
             <wire x2="1376" y1="848" y2="880" x1="1376" />
@@ -135,5 +133,7 @@
             <wire x2="2000" y1="816" y2="912" x1="2000" />
             <wire x2="2240" y1="912" y2="912" x1="2000" />
         </branch>
+        <instance x="1392" y="1104" name="XLXI_8" orien="R0">
+        </instance>
     </sheet>
 </drawing>

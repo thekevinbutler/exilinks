@@ -9,7 +9,7 @@ Target Device  : xc3s100e
 Target Package : cp132
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Tue May 09 11:31:52 2017
+Mapped Date    : Tue May 09 14:24:49 2017
 
 Mapping design into LUTs...
 Running directed packing...
@@ -50,14 +50,14 @@ Number of errors:      0
 Number of warnings:    8
 Logic Utilization:
   Number of Slice Flip Flops:           703 out of   1,920   36%
-  Number of 4 input LUTs:               740 out of   1,920   38%
+  Number of 4 input LUTs:               768 out of   1,920   40%
 Logic Distribution:
-  Number of occupied Slices:            711 out of     960   74%
-    Number of Slices containing only related logic:     711 out of     711 100%
-    Number of Slices containing unrelated logic:          0 out of     711   0%
+  Number of occupied Slices:            723 out of     960   75%
+    Number of Slices containing only related logic:     723 out of     723 100%
+    Number of Slices containing unrelated logic:          0 out of     723   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         839 out of   1,920   43%
-    Number used as logic:               740
+  Total Number of 4 input LUTs:         867 out of   1,920   45%
+    Number used as logic:               768
     Number used as a route-thru:         99
 
   The Slice Logic Distribution report is not meaningful if the design is
@@ -66,12 +66,12 @@ Logic Distribution:
   Number of bonded IOBs:                 38 out of      83   45%
   Number of BUFGMUXs:                     5 out of      24   20%
 
-  Number of RPM macros:           15
-Average Fanout of Non-Clock Nets:                2.69
+  Number of RPM macros:           16
+Average Fanout of Non-Clock Nets:                2.67
 
 Peak Memory Usage:  373 MB
-Total REAL time to MAP completion:  10 secs 
-Total CPU time to MAP completion:   10 secs 
+Total REAL time to MAP completion:  9 secs 
+Total CPU time to MAP completion:   9 secs 
 
 NOTES:
 
